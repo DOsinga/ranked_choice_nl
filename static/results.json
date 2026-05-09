@@ -1,0 +1,9726 @@
+{
+  "party_colors": {
+    "D66": "#4eac50",
+    "PVV": "#152e62",
+    "VVD": "#142bc2",
+    "GL-PvdA": "#ca3631",
+    "CDA": "#47915e",
+    "JA21": "#29356f",
+    "FvD": "#79231e",
+    "BBB": "#9dc043",
+    "DENK": "#52b4b1",
+    "SGP": "#d9652c",
+    "PvdD": "#2d6a34",
+    "CU": "#4aa5e5",
+    "SP": "#e23122",
+    "50+": "#862079",
+    "Volt": "#4a2675",
+    "BIJ1": "#D40075",
+    "NSC": "#1E3A5F"
+  },
+  "party_positions": {
+    "SP": 1.17,
+    "PvdD": 1.5,
+    "BIJ1": 1.0,
+    "GL-PvdA": 2.75,
+    "DENK": 3.89,
+    "Volt": 4.55,
+    "CU": 4.58,
+    "D66": 4.67,
+    "50+": 5.0,
+    "CDA": 5.75,
+    "NSC": 6.58,
+    "BBB": 7.75,
+    "VVD": 7.67,
+    "SGP": 8.0,
+    "JA21": 8.25,
+    "PVV": 9.08,
+    "FvD": 9.83
+  },
+  "systems": {
+    "fptp": {
+      "label": "First Past the Post"
+    },
+    "runoff": {
+      "label": "Two-Round Runoff"
+    },
+    "rcv": {
+      "label": "Ranked Choice Voting"
+    },
+    "median": {
+      "label": "Median Voter"
+    },
+    "proportional": {
+      "label": "Proportional Representation"
+    }
+  },
+  "gemeenten": {
+    "G0014": {
+      "name": "Groningen",
+      "shares": {
+        "D66": 24.5,
+        "GL-PvdA": 24.2,
+        "VVD": 10.3,
+        "CDA": 8.7,
+        "PVV": 8.4,
+        "SP": 4.6,
+        "PvdD": 4.1,
+        "JA21": 3.5,
+        "FvD": 3.0,
+        "CU": 2.3,
+        "Volt": 2.1,
+        "BBB": 1.2,
+        "DENK": 0.8,
+        "50+": 0.8,
+        "SGP": 0.6,
+        "BIJ1": 0.6,
+        "NSC": 0.4
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0034": {
+      "name": "Almere",
+      "shares": {
+        "PVV": 19.4,
+        "D66": 16.8,
+        "VVD": 14.3,
+        "GL-PvdA": 14.2,
+        "CDA": 6.3,
+        "JA21": 5.8,
+        "DENK": 5.4,
+        "FvD": 5.0,
+        "PvdD": 2.4,
+        "SP": 2.4,
+        "50+": 1.8,
+        "CU": 1.6,
+        "BBB": 1.5,
+        "BIJ1": 1.1,
+        "Volt": 0.9,
+        "NSC": 0.6,
+        "SGP": 0.5
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0037": {
+      "name": "Stadskanaal",
+      "shares": {
+        "PVV": 26.6,
+        "CDA": 14.9,
+        "VVD": 11.3,
+        "D66": 8.3,
+        "FvD": 7.8,
+        "GL-PvdA": 7.7,
+        "CU": 4.9,
+        "JA21": 4.5,
+        "BBB": 4.4,
+        "SP": 3.6,
+        "SGP": 2.7,
+        "50+": 1.5,
+        "PvdD": 0.8,
+        "Volt": 0.4,
+        "NSC": 0.4,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0047": {
+      "name": "Veendam",
+      "shares": {
+        "PVV": 24.9,
+        "VVD": 14.4,
+        "D66": 12.5,
+        "GL-PvdA": 11.5,
+        "CDA": 9.4,
+        "FvD": 7.2,
+        "SP": 4.4,
+        "JA21": 4.2,
+        "BBB": 3.8,
+        "50+": 1.9,
+        "CU": 1.6,
+        "DENK": 1.4,
+        "PvdD": 1.1,
+        "SGP": 0.7,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0050": {
+      "name": "Zeewolde",
+      "shares": {
+        "VVD": 16.9,
+        "PVV": 16.9,
+        "D66": 14.6,
+        "CDA": 13.3,
+        "JA21": 7.5,
+        "GL-PvdA": 6.7,
+        "FvD": 6.2,
+        "CU": 4.8,
+        "BBB": 4.8,
+        "SGP": 2.3,
+        "50+": 1.4,
+        "PvdD": 1.2,
+        "SP": 1.1,
+        "Volt": 0.8,
+        "DENK": 0.8,
+        "NSC": 0.5,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0059": {
+      "name": "Achtkarspelen",
+      "shares": {
+        "PVV": 27.4,
+        "CDA": 17.7,
+        "VVD": 9.5,
+        "FvD": 9.4,
+        "D66": 7.1,
+        "GL-PvdA": 6.9,
+        "JA21": 5.4,
+        "CU": 5.0,
+        "BBB": 4.8,
+        "SGP": 3.2,
+        "SP": 1.2,
+        "50+": 1.0,
+        "PvdD": 0.8,
+        "NSC": 0.3,
+        "Volt": 0.3,
+        "DENK": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "BBB"
+      }
+    },
+    "G0060": {
+      "name": "Ameland",
+      "shares": {
+        "CDA": 16.4,
+        "VVD": 16.0,
+        "PVV": 15.6,
+        "D66": 12.7,
+        "GL-PvdA": 9.6,
+        "BBB": 8.9,
+        "JA21": 7.6,
+        "FvD": 5.8,
+        "SP": 1.7,
+        "Volt": 1.4,
+        "CU": 1.3,
+        "50+": 1.2,
+        "PvdD": 1.0,
+        "NSC": 0.4,
+        "SGP": 0.4,
+        "DENK": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0072": {
+      "name": "Harlingen",
+      "shares": {
+        "PVV": 19.6,
+        "VVD": 14.9,
+        "D66": 13.8,
+        "GL-PvdA": 13.2,
+        "CDA": 12.2,
+        "FvD": 6.8,
+        "JA21": 5.8,
+        "BBB": 3.2,
+        "SP": 2.6,
+        "CU": 1.9,
+        "50+": 1.8,
+        "PvdD": 1.8,
+        "Volt": 0.7,
+        "SGP": 0.7,
+        "NSC": 0.5,
+        "DENK": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0074": {
+      "name": "Heerenveen",
+      "shares": {
+        "D66": 16.6,
+        "PVV": 16.0,
+        "VVD": 14.6,
+        "GL-PvdA": 13.9,
+        "CDA": 12.8,
+        "FvD": 6.4,
+        "JA21": 5.7,
+        "BBB": 4.4,
+        "SP": 2.1,
+        "CU": 1.9,
+        "PvdD": 1.6,
+        "50+": 1.3,
+        "DENK": 0.9,
+        "Volt": 0.7,
+        "SGP": 0.6,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0080": {
+      "name": "Leeuwarden",
+      "shares": {
+        "GL-PvdA": 18.7,
+        "D66": 18.6,
+        "PVV": 14.7,
+        "VVD": 11.5,
+        "CDA": 11.0,
+        "FvD": 5.4,
+        "JA21": 5.4,
+        "SP": 2.9,
+        "PvdD": 2.7,
+        "BBB": 2.6,
+        "CU": 1.9,
+        "50+": 1.3,
+        "Volt": 1.1,
+        "DENK": 0.9,
+        "SGP": 0.5,
+        "NSC": 0.5,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "GL-PvdA",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0085": {
+      "name": "Ooststellingwerf",
+      "shares": {
+        "PVV": 19.2,
+        "CDA": 13.2,
+        "VVD": 12.7,
+        "D66": 12.0,
+        "GL-PvdA": 11.3,
+        "FvD": 8.4,
+        "BBB": 7.7,
+        "JA21": 5.4,
+        "SP": 2.4,
+        "CU": 2.1,
+        "50+": 1.7,
+        "PvdD": 1.6,
+        "SGP": 1.1,
+        "Volt": 0.5,
+        "NSC": 0.5,
+        "DENK": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0086": {
+      "name": "Opsterland",
+      "shares": {
+        "PVV": 16.6,
+        "CDA": 14.7,
+        "D66": 12.7,
+        "GL-PvdA": 12.5,
+        "VVD": 12.2,
+        "FvD": 7.3,
+        "BBB": 6.6,
+        "JA21": 5.7,
+        "CU": 3.8,
+        "SP": 2.2,
+        "SGP": 1.9,
+        "PvdD": 1.3,
+        "50+": 1.2,
+        "Volt": 0.6,
+        "NSC": 0.5,
+        "DENK": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0088": {
+      "name": "Schiermonnikoog",
+      "shares": {
+        "GL-PvdA": 22.2,
+        "D66": 20.7,
+        "CDA": 14.7,
+        "VVD": 11.6,
+        "PVV": 9.0,
+        "PvdD": 4.5,
+        "CU": 3.3,
+        "JA21": 3.1,
+        "BBB": 3.0,
+        "SP": 2.9,
+        "FvD": 1.5,
+        "Volt": 1.4,
+        "50+": 0.9,
+        "NSC": 0.5,
+        "BIJ1": 0.4,
+        "SGP": 0.3,
+        "DENK": 0.0
+      },
+      "winners": {
+        "fptp": "GL-PvdA",
+        "runoff": "D66",
+        "rcv": "GL-PvdA",
+        "median": "D66"
+      }
+    },
+    "G0090": {
+      "name": "Smallingerland",
+      "shares": {
+        "PVV": 18.8,
+        "CDA": 16.2,
+        "D66": 13.2,
+        "GL-PvdA": 12.5,
+        "VVD": 10.6,
+        "FvD": 6.6,
+        "CU": 5.0,
+        "JA21": 4.8,
+        "BBB": 3.0,
+        "SGP": 2.6,
+        "SP": 2.4,
+        "50+": 1.4,
+        "PvdD": 1.3,
+        "Volt": 0.6,
+        "DENK": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "CDA"
+      }
+    },
+    "G0093": {
+      "name": "Terschelling",
+      "shares": {
+        "D66": 18.8,
+        "VVD": 17.3,
+        "GL-PvdA": 16.0,
+        "CDA": 12.3,
+        "PVV": 11.2,
+        "JA21": 5.9,
+        "FvD": 5.1,
+        "BBB": 4.6,
+        "PvdD": 2.4,
+        "SP": 1.9,
+        "Volt": 1.4,
+        "CU": 1.3,
+        "50+": 1.0,
+        "NSC": 0.5,
+        "SGP": 0.2,
+        "BIJ1": 0.0,
+        "DENK": 0.0
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0096": {
+      "name": "Vlieland",
+      "shares": {
+        "D66": 21.1,
+        "GL-PvdA": 17.6,
+        "VVD": 14.8,
+        "CDA": 11.8,
+        "PVV": 10.8,
+        "PvdD": 4.9,
+        "FvD": 4.9,
+        "JA21": 4.2,
+        "BBB": 3.0,
+        "SP": 2.3,
+        "Volt": 1.2,
+        "50+": 1.2,
+        "CU": 1.1,
+        "NSC": 0.6,
+        "SGP": 0.5,
+        "BIJ1": 0.1,
+        "DENK": 0.0
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0098": {
+      "name": "Weststellingwerf",
+      "shares": {
+        "PVV": 21.3,
+        "VVD": 13.9,
+        "CDA": 12.4,
+        "D66": 11.4,
+        "GL-PvdA": 10.2,
+        "BBB": 8.3,
+        "FvD": 7.9,
+        "JA21": 6.1,
+        "SP": 2.0,
+        "50+": 1.8,
+        "CU": 1.4,
+        "PvdD": 1.2,
+        "SGP": 0.7,
+        "DENK": 0.6,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0106": {
+      "name": "Assen",
+      "shares": {
+        "D66": 17.7,
+        "GL-PvdA": 15.2,
+        "PVV": 14.4,
+        "VVD": 13.5,
+        "CDA": 12.6,
+        "JA21": 4.9,
+        "CU": 4.8,
+        "FvD": 4.7,
+        "SP": 3.0,
+        "BBB": 2.5,
+        "PvdD": 1.7,
+        "50+": 1.6,
+        "SGP": 1.1,
+        "Volt": 0.9,
+        "DENK": 0.8,
+        "NSC": 0.5,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0109": {
+      "name": "Coevorden",
+      "shares": {
+        "PVV": 20.5,
+        "VVD": 16.0,
+        "CDA": 13.5,
+        "D66": 11.5,
+        "GL-PvdA": 9.7,
+        "BBB": 7.5,
+        "FvD": 7.0,
+        "JA21": 6.1,
+        "SP": 2.0,
+        "50+": 1.7,
+        "PvdD": 1.2,
+        "CU": 1.1,
+        "SGP": 0.9,
+        "Volt": 0.6,
+        "NSC": 0.4,
+        "DENK": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0114": {
+      "name": "Emmen",
+      "shares": {
+        "PVV": 28.4,
+        "VVD": 12.8,
+        "CDA": 12.4,
+        "D66": 10.5,
+        "GL-PvdA": 9.5,
+        "FvD": 7.4,
+        "JA21": 5.8,
+        "BBB": 4.0,
+        "SP": 2.3,
+        "50+": 2.3,
+        "CU": 1.4,
+        "PvdD": 1.0,
+        "SGP": 0.7,
+        "DENK": 0.6,
+        "Volt": 0.4,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0118": {
+      "name": "Hoogeveen",
+      "shares": {
+        "PVV": 24.4,
+        "CDA": 16.2,
+        "VVD": 11.7,
+        "D66": 9.2,
+        "FvD": 8.5,
+        "GL-PvdA": 7.3,
+        "JA21": 6.5,
+        "BBB": 4.6,
+        "CU": 3.4,
+        "SGP": 2.4,
+        "SP": 1.9,
+        "50+": 1.5,
+        "PvdD": 0.9,
+        "DENK": 0.6,
+        "NSC": 0.4,
+        "Volt": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0119": {
+      "name": "Meppel",
+      "shares": {
+        "D66": 16.9,
+        "PVV": 15.3,
+        "VVD": 15.0,
+        "CDA": 13.1,
+        "GL-PvdA": 11.9,
+        "JA21": 6.1,
+        "FvD": 5.8,
+        "BBB": 3.7,
+        "CU": 3.3,
+        "SP": 2.2,
+        "PvdD": 1.7,
+        "50+": 1.5,
+        "DENK": 1.2,
+        "Volt": 0.9,
+        "SGP": 0.8,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0141": {
+      "name": "Almelo",
+      "shares": {
+        "PVV": 24.3,
+        "VVD": 13.6,
+        "D66": 13.2,
+        "CDA": 12.3,
+        "GL-PvdA": 9.2,
+        "JA21": 6.3,
+        "FvD": 5.8,
+        "DENK": 3.9,
+        "BBB": 2.7,
+        "SP": 2.1,
+        "CU": 1.8,
+        "50+": 1.6,
+        "PvdD": 1.0,
+        "SGP": 0.8,
+        "Volt": 0.6,
+        "NSC": 0.6,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0147": {
+      "name": "Borne",
+      "shares": {
+        "CDA": 18.8,
+        "VVD": 17.5,
+        "D66": 16.3,
+        "PVV": 15.9,
+        "GL-PvdA": 8.9,
+        "JA21": 7.3,
+        "FvD": 4.5,
+        "BBB": 3.4,
+        "SP": 1.7,
+        "50+": 1.5,
+        "NSC": 1.0,
+        "CU": 0.9,
+        "PvdD": 0.8,
+        "Volt": 0.6,
+        "DENK": 0.4,
+        "SGP": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0148": {
+      "name": "Dalfsen",
+      "shares": {
+        "CDA": 22.1,
+        "VVD": 14.0,
+        "PVV": 13.7,
+        "D66": 11.9,
+        "BBB": 8.4,
+        "JA21": 6.4,
+        "GL-PvdA": 6.4,
+        "FvD": 5.1,
+        "CU": 5.1,
+        "SGP": 2.6,
+        "50+": 1.1,
+        "SP": 1.0,
+        "PvdD": 0.7,
+        "NSC": 0.6,
+        "Volt": 0.5,
+        "DENK": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "VVD",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0150": {
+      "name": "Deventer",
+      "shares": {
+        "D66": 20.8,
+        "GL-PvdA": 18.0,
+        "PVV": 13.1,
+        "VVD": 11.7,
+        "CDA": 9.9,
+        "JA21": 4.7,
+        "BBB": 4.6,
+        "FvD": 3.7,
+        "DENK": 3.0,
+        "PvdD": 2.7,
+        "SP": 2.3,
+        "CU": 1.6,
+        "Volt": 1.6,
+        "50+": 1.3,
+        "NSC": 0.4,
+        "SGP": 0.3,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0153": {
+      "name": "Enschede",
+      "shares": {
+        "PVV": 19.6,
+        "D66": 17.1,
+        "GL-PvdA": 14.0,
+        "VVD": 11.7,
+        "CDA": 10.3,
+        "JA21": 5.8,
+        "FvD": 5.5,
+        "DENK": 3.0,
+        "SP": 2.3,
+        "CU": 2.2,
+        "BBB": 2.0,
+        "PvdD": 1.8,
+        "50+": 1.6,
+        "Volt": 1.5,
+        "NSC": 1.0,
+        "SGP": 0.6,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0158": {
+      "name": "Haaksbergen",
+      "shares": {
+        "CDA": 18.5,
+        "PVV": 17.7,
+        "VVD": 16.7,
+        "D66": 13.7,
+        "JA21": 8.1,
+        "GL-PvdA": 6.4,
+        "FvD": 6.2,
+        "BBB": 5.9,
+        "50+": 1.7,
+        "SP": 1.4,
+        "DENK": 1.2,
+        "NSC": 0.6,
+        "Volt": 0.6,
+        "PvdD": 0.6,
+        "CU": 0.5,
+        "SGP": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0160": {
+      "name": "Hardenberg",
+      "shares": {
+        "CDA": 19.6,
+        "PVV": 19.2,
+        "VVD": 12.2,
+        "D66": 8.6,
+        "BBB": 7.6,
+        "CU": 7.5,
+        "JA21": 7.0,
+        "FvD": 6.9,
+        "GL-PvdA": 5.1,
+        "SGP": 2.2,
+        "50+": 1.2,
+        "SP": 1.1,
+        "PvdD": 0.7,
+        "Volt": 0.4,
+        "NSC": 0.4,
+        "DENK": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0163": {
+      "name": "Hellendoorn",
+      "shares": {
+        "CDA": 23.3,
+        "PVV": 16.0,
+        "VVD": 13.8,
+        "D66": 12.6,
+        "JA21": 7.0,
+        "BBB": 6.8,
+        "GL-PvdA": 6.5,
+        "FvD": 5.4,
+        "CU": 2.1,
+        "50+": 1.5,
+        "SP": 1.5,
+        "SGP": 1.0,
+        "PvdD": 0.8,
+        "NSC": 0.8,
+        "Volt": 0.5,
+        "DENK": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "NSC"
+      }
+    },
+    "G0164": {
+      "name": "Hengelo (O)",
+      "shares": {
+        "D66": 17.4,
+        "PVV": 16.4,
+        "CDA": 13.9,
+        "VVD": 13.4,
+        "GL-PvdA": 12.5,
+        "JA21": 6.9,
+        "FvD": 5.2,
+        "SP": 3.0,
+        "BBB": 2.3,
+        "DENK": 1.8,
+        "50+": 1.5,
+        "PvdD": 1.5,
+        "CU": 1.5,
+        "Volt": 1.2,
+        "NSC": 1.0,
+        "SGP": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0166": {
+      "name": "Kampen",
+      "shares": {
+        "CDA": 17.1,
+        "PVV": 16.8,
+        "SGP": 11.6,
+        "D66": 9.2,
+        "VVD": 9.1,
+        "CU": 8.3,
+        "GL-PvdA": 7.3,
+        "JA21": 5.8,
+        "FvD": 5.8,
+        "BBB": 3.5,
+        "SP": 1.4,
+        "DENK": 1.0,
+        "PvdD": 1.0,
+        "50+": 1.0,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0168": {
+      "name": "Losser",
+      "shares": {
+        "PVV": 22.3,
+        "CDA": 17.4,
+        "VVD": 16.3,
+        "D66": 11.0,
+        "JA21": 8.4,
+        "GL-PvdA": 6.3,
+        "FvD": 6.2,
+        "BBB": 5.8,
+        "50+": 1.9,
+        "SP": 1.4,
+        "NSC": 0.8,
+        "PvdD": 0.7,
+        "Volt": 0.6,
+        "CU": 0.5,
+        "DENK": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0171": {
+      "name": "Noordoostpolder",
+      "shares": {
+        "CDA": 17.5,
+        "PVV": 17.3,
+        "VVD": 13.8,
+        "D66": 9.7,
+        "FvD": 7.3,
+        "GL-PvdA": 6.7,
+        "JA21": 6.3,
+        "BBB": 5.9,
+        "SGP": 5.6,
+        "CU": 4.3,
+        "SP": 1.5,
+        "50+": 1.2,
+        "PvdD": 1.0,
+        "DENK": 1.0,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0173": {
+      "name": "Oldenzaal",
+      "shares": {
+        "CDA": 17.3,
+        "PVV": 17.2,
+        "VVD": 17.1,
+        "D66": 16.2,
+        "GL-PvdA": 8.4,
+        "JA21": 8.2,
+        "FvD": 5.3,
+        "BBB": 2.8,
+        "SP": 1.7,
+        "50+": 1.5,
+        "DENK": 1.1,
+        "PvdD": 0.9,
+        "NSC": 0.9,
+        "Volt": 0.7,
+        "CU": 0.5,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0175": {
+      "name": "Ommen",
+      "shares": {
+        "CDA": 22.2,
+        "VVD": 13.1,
+        "PVV": 12.8,
+        "D66": 11.0,
+        "BBB": 9.1,
+        "GL-PvdA": 6.8,
+        "CU": 6.2,
+        "JA21": 6.1,
+        "FvD": 5.7,
+        "SGP": 2.3,
+        "SP": 1.3,
+        "PvdD": 1.0,
+        "50+": 0.9,
+        "Volt": 0.6,
+        "NSC": 0.6,
+        "DENK": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "CDA"
+      }
+    },
+    "G0177": {
+      "name": "Raalte",
+      "shares": {
+        "CDA": 22.3,
+        "VVD": 16.4,
+        "D66": 13.7,
+        "PVV": 12.7,
+        "BBB": 9.5,
+        "JA21": 7.4,
+        "GL-PvdA": 7.2,
+        "FvD": 4.5,
+        "50+": 1.1,
+        "NSC": 1.1,
+        "SP": 1.1,
+        "CU": 1.0,
+        "PvdD": 0.8,
+        "Volt": 0.5,
+        "DENK": 0.4,
+        "SGP": 0.3,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0180": {
+      "name": "Staphorst",
+      "shares": {
+        "SGP": 33.0,
+        "PVV": 13.6,
+        "CDA": 12.4,
+        "FvD": 10.0,
+        "CU": 7.7,
+        "VVD": 6.6,
+        "JA21": 5.1,
+        "BBB": 3.7,
+        "D66": 3.5,
+        "GL-PvdA": 2.6,
+        "SP": 0.5,
+        "PvdD": 0.4,
+        "50+": 0.4,
+        "NSC": 0.3,
+        "DENK": 0.2,
+        "Volt": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "SGP"
+      }
+    },
+    "G0183": {
+      "name": "Tubbergen",
+      "shares": {
+        "CDA": 22.7,
+        "PVV": 21.4,
+        "VVD": 15.9,
+        "BBB": 11.7,
+        "JA21": 9.4,
+        "D66": 7.7,
+        "FvD": 5.3,
+        "GL-PvdA": 2.9,
+        "50+": 0.9,
+        "SP": 0.6,
+        "NSC": 0.5,
+        "Volt": 0.3,
+        "PvdD": 0.3,
+        "SGP": 0.2,
+        "CU": 0.2,
+        "DENK": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0184": {
+      "name": "Urk",
+      "shares": {
+        "SGP": 54.3,
+        "PVV": 17.3,
+        "FvD": 9.0,
+        "CDA": 6.1,
+        "CU": 5.3,
+        "BBB": 2.9,
+        "JA21": 1.7,
+        "VVD": 1.2,
+        "D66": 0.7,
+        "GL-PvdA": 0.6,
+        "SP": 0.3,
+        "DENK": 0.2,
+        "PvdD": 0.2,
+        "NSC": 0.1,
+        "Volt": 0.1,
+        "50+": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "SGP"
+      }
+    },
+    "G0189": {
+      "name": "Wierden",
+      "shares": {
+        "CDA": 22.7,
+        "VVD": 16.8,
+        "PVV": 16.2,
+        "D66": 8.7,
+        "JA21": 7.9,
+        "BBB": 5.9,
+        "FvD": 5.2,
+        "SGP": 4.6,
+        "GL-PvdA": 4.4,
+        "CU": 4.0,
+        "SP": 1.0,
+        "50+": 0.9,
+        "NSC": 0.6,
+        "PvdD": 0.5,
+        "Volt": 0.3,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "VVD",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0193": {
+      "name": "Zwolle",
+      "shares": {
+        "D66": 21.0,
+        "GL-PvdA": 17.0,
+        "CDA": 12.7,
+        "VVD": 11.4,
+        "PVV": 11.0,
+        "CU": 5.5,
+        "JA21": 4.7,
+        "FvD": 3.7,
+        "PvdD": 2.9,
+        "SP": 2.2,
+        "BBB": 1.7,
+        "Volt": 1.4,
+        "DENK": 1.4,
+        "SGP": 1.3,
+        "50+": 1.0,
+        "NSC": 0.5,
+        "BIJ1": 0.4
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0197": {
+      "name": "Aalten",
+      "shares": {
+        "CDA": 23.3,
+        "PVV": 15.0,
+        "VVD": 12.7,
+        "D66": 12.3,
+        "GL-PvdA": 8.5,
+        "BBB": 7.5,
+        "JA21": 6.4,
+        "FvD": 5.5,
+        "CU": 2.4,
+        "SP": 1.4,
+        "50+": 1.3,
+        "SGP": 1.0,
+        "PvdD": 0.9,
+        "NSC": 0.6,
+        "DENK": 0.5,
+        "Volt": 0.5,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "CDA"
+      }
+    },
+    "G0200": {
+      "name": "Apeldoorn",
+      "shares": {
+        "D66": 17.6,
+        "PVV": 15.1,
+        "VVD": 14.7,
+        "CDA": 12.7,
+        "GL-PvdA": 11.6,
+        "JA21": 6.0,
+        "FvD": 4.7,
+        "SGP": 3.9,
+        "CU": 3.0,
+        "BBB": 2.3,
+        "DENK": 1.8,
+        "PvdD": 1.7,
+        "SP": 1.7,
+        "50+": 1.6,
+        "Volt": 0.9,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0202": {
+      "name": "Arnhem",
+      "shares": {
+        "D66": 21.7,
+        "GL-PvdA": 21.0,
+        "PVV": 13.5,
+        "VVD": 10.5,
+        "CDA": 7.2,
+        "PvdD": 4.2,
+        "JA21": 4.2,
+        "DENK": 3.9,
+        "FvD": 3.7,
+        "SP": 2.8,
+        "Volt": 2.0,
+        "CU": 1.4,
+        "BBB": 1.1,
+        "50+": 1.1,
+        "BIJ1": 0.8,
+        "NSC": 0.4,
+        "SGP": 0.4
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0203": {
+      "name": "Barneveld",
+      "shares": {
+        "SGP": 24.9,
+        "CDA": 15.9,
+        "PVV": 14.2,
+        "VVD": 11.1,
+        "CU": 6.4,
+        "D66": 6.3,
+        "FvD": 5.5,
+        "JA21": 5.4,
+        "BBB": 3.6,
+        "GL-PvdA": 3.4,
+        "DENK": 1.0,
+        "SP": 0.6,
+        "PvdD": 0.6,
+        "50+": 0.6,
+        "Volt": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "SGP"
+      }
+    },
+    "G0209": {
+      "name": "Beuningen",
+      "shares": {
+        "PVV": 20.4,
+        "D66": 18.6,
+        "VVD": 18.5,
+        "CDA": 11.2,
+        "GL-PvdA": 10.2,
+        "JA21": 7.3,
+        "FvD": 4.2,
+        "BBB": 2.2,
+        "SP": 1.9,
+        "50+": 1.7,
+        "PvdD": 1.2,
+        "Volt": 0.8,
+        "DENK": 0.5,
+        "CU": 0.5,
+        "NSC": 0.4,
+        "SGP": 0.2,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0213": {
+      "name": "Brummen",
+      "shares": {
+        "PVV": 17.7,
+        "D66": 16.4,
+        "VVD": 16.3,
+        "CDA": 12.5,
+        "GL-PvdA": 12.3,
+        "JA21": 6.3,
+        "FvD": 4.9,
+        "BBB": 4.4,
+        "PvdD": 1.7,
+        "SP": 1.7,
+        "50+": 1.7,
+        "DENK": 1.4,
+        "CU": 0.9,
+        "Volt": 0.8,
+        "SGP": 0.6,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0214": {
+      "name": "Buren",
+      "shares": {
+        "PVV": 23.5,
+        "VVD": 18.1,
+        "D66": 12.1,
+        "CDA": 10.0,
+        "JA21": 7.4,
+        "GL-PvdA": 7.1,
+        "FvD": 5.9,
+        "SGP": 5.4,
+        "BBB": 4.2,
+        "CU": 1.6,
+        "PvdD": 1.3,
+        "50+": 1.2,
+        "SP": 0.9,
+        "Volt": 0.7,
+        "NSC": 0.3,
+        "DENK": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0216": {
+      "name": "Culemborg",
+      "shares": {
+        "GL-PvdA": 19.5,
+        "D66": 18.5,
+        "PVV": 14.0,
+        "VVD": 13.4,
+        "CDA": 9.9,
+        "JA21": 4.8,
+        "DENK": 4.5,
+        "FvD": 3.7,
+        "PvdD": 2.4,
+        "SP": 1.7,
+        "CU": 1.7,
+        "BBB": 1.6,
+        "Volt": 1.5,
+        "50+": 1.3,
+        "SGP": 0.9,
+        "NSC": 0.3,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "GL-PvdA",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0221": {
+      "name": "Doesburg",
+      "shares": {
+        "PVV": 19.2,
+        "D66": 16.8,
+        "GL-PvdA": 14.7,
+        "VVD": 13.7,
+        "CDA": 11.5,
+        "FvD": 5.3,
+        "JA21": 5.1,
+        "SP": 2.8,
+        "DENK": 2.6,
+        "BBB": 2.1,
+        "50+": 1.8,
+        "PvdD": 1.5,
+        "Volt": 1.2,
+        "CU": 0.9,
+        "NSC": 0.4,
+        "SGP": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0222": {
+      "name": "Doetinchem",
+      "shares": {
+        "PVV": 18.4,
+        "D66": 16.9,
+        "VVD": 15.6,
+        "CDA": 12.7,
+        "GL-PvdA": 11.1,
+        "JA21": 6.8,
+        "FvD": 5.2,
+        "BBB": 3.5,
+        "SP": 1.9,
+        "50+": 1.5,
+        "DENK": 1.4,
+        "PvdD": 1.3,
+        "CU": 1.2,
+        "SGP": 1.1,
+        "Volt": 0.8,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0225": {
+      "name": "Druten",
+      "shares": {
+        "PVV": 22.2,
+        "VVD": 18.5,
+        "D66": 16.6,
+        "CDA": 12.2,
+        "GL-PvdA": 8.7,
+        "JA21": 7.2,
+        "FvD": 4.4,
+        "BBB": 2.9,
+        "SP": 1.8,
+        "50+": 1.5,
+        "DENK": 1.1,
+        "PvdD": 1.0,
+        "Volt": 0.8,
+        "NSC": 0.4,
+        "CU": 0.4,
+        "SGP": 0.2,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0226": {
+      "name": "Duiven",
+      "shares": {
+        "VVD": 18.7,
+        "D66": 18.6,
+        "PVV": 18.3,
+        "CDA": 12.7,
+        "GL-PvdA": 9.7,
+        "JA21": 7.3,
+        "FvD": 4.3,
+        "BBB": 2.5,
+        "50+": 2.0,
+        "SP": 1.5,
+        "PvdD": 1.2,
+        "CU": 0.8,
+        "Volt": 0.7,
+        "DENK": 0.6,
+        "NSC": 0.5,
+        "SGP": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0228": {
+      "name": "Ede",
+      "shares": {
+        "CDA": 14.0,
+        "SGP": 13.2,
+        "D66": 12.9,
+        "PVV": 12.7,
+        "VVD": 12.0,
+        "GL-PvdA": 9.5,
+        "CU": 6.7,
+        "JA21": 5.1,
+        "FvD": 4.4,
+        "BBB": 2.4,
+        "DENK": 2.1,
+        "PvdD": 1.5,
+        "SP": 1.1,
+        "50+": 0.9,
+        "Volt": 0.8,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "SGP",
+        "median": "NSC"
+      }
+    },
+    "G0230": {
+      "name": "Elburg",
+      "shares": {
+        "CDA": 17.7,
+        "PVV": 17.2,
+        "SGP": 15.4,
+        "VVD": 10.9,
+        "CU": 10.1,
+        "D66": 6.9,
+        "JA21": 5.8,
+        "FvD": 5.6,
+        "GL-PvdA": 4.2,
+        "BBB": 3.1,
+        "50+": 1.0,
+        "SP": 0.9,
+        "PvdD": 0.5,
+        "NSC": 0.4,
+        "Volt": 0.3,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0232": {
+      "name": "Epe",
+      "shares": {
+        "PVV": 18.1,
+        "VVD": 16.5,
+        "CDA": 14.3,
+        "D66": 13.5,
+        "GL-PvdA": 8.4,
+        "JA21": 6.1,
+        "FvD": 5.1,
+        "SGP": 4.8,
+        "BBB": 4.1,
+        "CU": 3.1,
+        "50+": 1.6,
+        "DENK": 1.2,
+        "PvdD": 1.2,
+        "SP": 1.1,
+        "Volt": 0.6,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0233": {
+      "name": "Ermelo",
+      "shares": {
+        "CDA": 20.0,
+        "VVD": 12.7,
+        "PVV": 12.7,
+        "D66": 11.5,
+        "GL-PvdA": 8.4,
+        "SGP": 8.3,
+        "CU": 7.0,
+        "JA21": 5.9,
+        "FvD": 5.4,
+        "BBB": 2.5,
+        "PvdD": 1.5,
+        "SP": 1.1,
+        "50+": 1.0,
+        "Volt": 0.7,
+        "DENK": 0.6,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "CDA"
+      }
+    },
+    "G0243": {
+      "name": "Harderwijk",
+      "shares": {
+        "CDA": 16.7,
+        "VVD": 14.9,
+        "D66": 14.6,
+        "PVV": 14.5,
+        "GL-PvdA": 8.7,
+        "JA21": 7.0,
+        "CU": 5.8,
+        "FvD": 4.4,
+        "DENK": 3.6,
+        "SGP": 2.8,
+        "BBB": 2.2,
+        "PvdD": 1.4,
+        "SP": 1.2,
+        "50+": 0.9,
+        "Volt": 0.8,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0244": {
+      "name": "Hattem",
+      "shares": {
+        "CDA": 19.0,
+        "D66": 14.6,
+        "VVD": 13.1,
+        "PVV": 11.9,
+        "GL-PvdA": 10.2,
+        "CU": 10.2,
+        "JA21": 5.9,
+        "FvD": 4.3,
+        "BBB": 2.8,
+        "SGP": 2.7,
+        "SP": 1.2,
+        "50+": 1.2,
+        "PvdD": 1.2,
+        "Volt": 0.8,
+        "NSC": 0.4,
+        "DENK": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "CDA"
+      }
+    },
+    "G0246": {
+      "name": "Heerde",
+      "shares": {
+        "CDA": 19.9,
+        "PVV": 18.2,
+        "VVD": 12.4,
+        "D66": 10.2,
+        "CU": 8.1,
+        "GL-PvdA": 6.6,
+        "JA21": 5.5,
+        "FvD": 5.4,
+        "BBB": 4.9,
+        "SGP": 4.4,
+        "50+": 1.3,
+        "PvdD": 1.0,
+        "SP": 1.0,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "DENK": 0.3,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0252": {
+      "name": "Heumen",
+      "shares": {
+        "D66": 22.1,
+        "GL-PvdA": 16.9,
+        "VVD": 16.5,
+        "CDA": 13.8,
+        "PVV": 12.6,
+        "JA21": 5.5,
+        "FvD": 3.1,
+        "BBB": 2.2,
+        "PvdD": 1.7,
+        "SP": 1.7,
+        "Volt": 1.5,
+        "50+": 0.9,
+        "CU": 0.5,
+        "DENK": 0.5,
+        "NSC": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0262": {
+      "name": "Lochem",
+      "shares": {
+        "D66": 19.5,
+        "VVD": 16.6,
+        "CDA": 14.4,
+        "GL-PvdA": 14.3,
+        "PVV": 9.6,
+        "BBB": 7.7,
+        "JA21": 5.2,
+        "FvD": 4.3,
+        "PvdD": 1.8,
+        "SP": 1.5,
+        "50+": 1.3,
+        "Volt": 1.3,
+        "DENK": 0.8,
+        "CU": 0.8,
+        "NSC": 0.5,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0263": {
+      "name": "Maasdriel",
+      "shares": {
+        "PVV": 27.1,
+        "VVD": 19.3,
+        "CDA": 12.1,
+        "D66": 12.0,
+        "JA21": 7.6,
+        "GL-PvdA": 5.9,
+        "FvD": 5.4,
+        "BBB": 3.0,
+        "SGP": 1.9,
+        "50+": 1.4,
+        "SP": 1.2,
+        "PvdD": 1.0,
+        "CU": 0.7,
+        "Volt": 0.7,
+        "DENK": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0267": {
+      "name": "Nijkerk",
+      "shares": {
+        "PVV": 17.3,
+        "CDA": 17.3,
+        "VVD": 14.0,
+        "D66": 12.0,
+        "JA21": 7.1,
+        "SGP": 6.4,
+        "CU": 6.4,
+        "GL-PvdA": 6.2,
+        "FvD": 4.8,
+        "BBB": 3.2,
+        "DENK": 1.4,
+        "50+": 1.1,
+        "PvdD": 0.9,
+        "SP": 0.8,
+        "Volt": 0.7,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0268": {
+      "name": "Nijmegen",
+      "shares": {
+        "GL-PvdA": 27.1,
+        "D66": 26.0,
+        "PVV": 10.6,
+        "VVD": 8.7,
+        "CDA": 6.9,
+        "PvdD": 4.5,
+        "JA21": 3.5,
+        "SP": 2.9,
+        "FvD": 2.3,
+        "Volt": 2.3,
+        "DENK": 1.9,
+        "50+": 0.8,
+        "CU": 0.7,
+        "BIJ1": 0.7,
+        "BBB": 0.7,
+        "NSC": 0.3,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "GL-PvdA",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0269": {
+      "name": "Oldebroek",
+      "shares": {
+        "PVV": 20.6,
+        "CDA": 17.7,
+        "SGP": 15.0,
+        "CU": 10.7,
+        "VVD": 8.8,
+        "D66": 5.7,
+        "FvD": 5.6,
+        "JA21": 4.7,
+        "BBB": 4.2,
+        "GL-PvdA": 3.8,
+        "50+": 0.9,
+        "SP": 0.7,
+        "PvdD": 0.5,
+        "NSC": 0.3,
+        "Volt": 0.3,
+        "DENK": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "BBB"
+      }
+    },
+    "G0273": {
+      "name": "Putten",
+      "shares": {
+        "CDA": 18.6,
+        "PVV": 17.6,
+        "VVD": 13.4,
+        "SGP": 13.4,
+        "D66": 7.5,
+        "CU": 6.9,
+        "JA21": 6.0,
+        "FvD": 5.4,
+        "BBB": 4.3,
+        "GL-PvdA": 3.9,
+        "PvdD": 0.7,
+        "50+": 0.7,
+        "SP": 0.6,
+        "Volt": 0.4,
+        "DENK": 0.3,
+        "NSC": 0.3,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0274": {
+      "name": "Renkum",
+      "shares": {
+        "D66": 21.9,
+        "GL-PvdA": 20.1,
+        "VVD": 14.6,
+        "CDA": 12.3,
+        "PVV": 10.9,
+        "JA21": 4.2,
+        "FvD": 3.6,
+        "PvdD": 3.0,
+        "SP": 2.0,
+        "CU": 1.7,
+        "Volt": 1.7,
+        "BBB": 1.4,
+        "50+": 1.2,
+        "SGP": 0.6,
+        "DENK": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0275": {
+      "name": "Rheden",
+      "shares": {
+        "D66": 19.5,
+        "GL-PvdA": 17.0,
+        "PVV": 15.7,
+        "VVD": 13.6,
+        "CDA": 11.4,
+        "JA21": 4.8,
+        "FvD": 4.2,
+        "PvdD": 2.7,
+        "SP": 2.2,
+        "BBB": 1.9,
+        "Volt": 1.6,
+        "50+": 1.5,
+        "CU": 1.5,
+        "DENK": 1.3,
+        "SGP": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0277": {
+      "name": "Rozendaal",
+      "shares": {
+        "D66": 29.2,
+        "VVD": 26.3,
+        "GL-PvdA": 12.5,
+        "CDA": 11.7,
+        "PVV": 5.2,
+        "JA21": 4.0,
+        "PvdD": 2.7,
+        "FvD": 2.7,
+        "Volt": 1.4,
+        "CU": 1.2,
+        "BBB": 1.0,
+        "50+": 0.7,
+        "SP": 0.6,
+        "SGP": 0.4,
+        "NSC": 0.2,
+        "BIJ1": 0.2,
+        "DENK": 0.0
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0279": {
+      "name": "Scherpenzeel",
+      "shares": {
+        "SGP": 21.7,
+        "PVV": 15.7,
+        "CDA": 13.7,
+        "VVD": 13.3,
+        "D66": 7.7,
+        "JA21": 7.1,
+        "FvD": 6.0,
+        "CU": 5.0,
+        "GL-PvdA": 3.3,
+        "BBB": 3.2,
+        "50+": 1.0,
+        "SP": 0.7,
+        "PvdD": 0.6,
+        "Volt": 0.4,
+        "DENK": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "SGP"
+      }
+    },
+    "G0281": {
+      "name": "Tiel",
+      "shares": {
+        "PVV": 23.1,
+        "VVD": 15.9,
+        "D66": 14.8,
+        "GL-PvdA": 10.6,
+        "CDA": 9.0,
+        "JA21": 6.6,
+        "FvD": 5.4,
+        "DENK": 4.3,
+        "50+": 1.9,
+        "BBB": 1.9,
+        "SP": 1.7,
+        "PvdD": 1.6,
+        "CU": 1.1,
+        "SGP": 0.8,
+        "Volt": 0.8,
+        "NSC": 0.4,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0285": {
+      "name": "Voorst",
+      "shares": {
+        "VVD": 17.4,
+        "CDA": 16.4,
+        "D66": 16.1,
+        "PVV": 13.4,
+        "GL-PvdA": 9.4,
+        "BBB": 8.0,
+        "JA21": 6.3,
+        "FvD": 4.6,
+        "SGP": 1.9,
+        "50+": 1.4,
+        "CU": 1.3,
+        "PvdD": 1.1,
+        "SP": 1.1,
+        "Volt": 0.8,
+        "DENK": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0289": {
+      "name": "Wageningen",
+      "shares": {
+        "GL-PvdA": 29.1,
+        "D66": 23.4,
+        "CDA": 8.7,
+        "PVV": 7.9,
+        "VVD": 7.8,
+        "PvdD": 5.5,
+        "Volt": 3.2,
+        "JA21": 3.0,
+        "SP": 2.5,
+        "CU": 2.5,
+        "FvD": 2.1,
+        "BBB": 1.0,
+        "SGP": 0.9,
+        "DENK": 0.8,
+        "BIJ1": 0.7,
+        "50+": 0.6,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "GL-PvdA",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0293": {
+      "name": "Westervoort",
+      "shares": {
+        "PVV": 21.1,
+        "D66": 17.3,
+        "VVD": 14.4,
+        "GL-PvdA": 12.4,
+        "CDA": 11.3,
+        "JA21": 6.4,
+        "FvD": 4.8,
+        "BBB": 2.2,
+        "50+": 2.1,
+        "SP": 1.8,
+        "PvdD": 1.7,
+        "DENK": 1.5,
+        "CU": 1.1,
+        "Volt": 0.8,
+        "SGP": 0.4,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0294": {
+      "name": "Winterswijk",
+      "shares": {
+        "VVD": 16.5,
+        "D66": 15.7,
+        "CDA": 14.4,
+        "PVV": 14.1,
+        "GL-PvdA": 11.5,
+        "BBB": 6.9,
+        "JA21": 6.0,
+        "FvD": 5.2,
+        "SP": 2.2,
+        "50+": 1.7,
+        "NSC": 1.7,
+        "PvdD": 1.1,
+        "DENK": 1.0,
+        "CU": 0.9,
+        "Volt": 0.7,
+        "SGP": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "NSC"
+      }
+    },
+    "G0296": {
+      "name": "Wijchen",
+      "shares": {
+        "PVV": 19.5,
+        "D66": 19.2,
+        "VVD": 18.1,
+        "CDA": 12.8,
+        "GL-PvdA": 10.1,
+        "JA21": 7.2,
+        "FvD": 3.8,
+        "BBB": 2.3,
+        "SP": 1.8,
+        "50+": 1.6,
+        "PvdD": 1.2,
+        "Volt": 0.8,
+        "DENK": 0.6,
+        "CU": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.1,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0297": {
+      "name": "Zaltbommel",
+      "shares": {
+        "PVV": 17.4,
+        "SGP": 15.1,
+        "D66": 12.6,
+        "CDA": 12.4,
+        "VVD": 12.4,
+        "GL-PvdA": 8.2,
+        "JA21": 6.1,
+        "FvD": 4.7,
+        "CU": 3.5,
+        "BBB": 1.9,
+        "DENK": 1.3,
+        "50+": 1.2,
+        "PvdD": 1.2,
+        "SP": 1.1,
+        "Volt": 0.8,
+        "NSC": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "SGP",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0299": {
+      "name": "Zevenaar",
+      "shares": {
+        "PVV": 21.2,
+        "VVD": 16.8,
+        "D66": 16.2,
+        "CDA": 13.3,
+        "GL-PvdA": 9.7,
+        "JA21": 6.7,
+        "FvD": 5.3,
+        "BBB": 3.3,
+        "SP": 1.8,
+        "50+": 1.6,
+        "PvdD": 1.4,
+        "DENK": 0.9,
+        "Volt": 0.6,
+        "CU": 0.6,
+        "NSC": 0.4,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0301": {
+      "name": "Zutphen",
+      "shares": {
+        "GL-PvdA": 20.0,
+        "D66": 19.9,
+        "PVV": 13.7,
+        "VVD": 10.9,
+        "CDA": 9.9,
+        "JA21": 4.8,
+        "FvD": 4.8,
+        "PvdD": 3.2,
+        "SP": 3.1,
+        "BBB": 2.2,
+        "DENK": 1.7,
+        "CU": 1.6,
+        "50+": 1.5,
+        "Volt": 1.4,
+        "SGP": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "GL-PvdA",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0302": {
+      "name": "Nunspeet",
+      "shares": {
+        "SGP": 25.1,
+        "PVV": 14.3,
+        "CDA": 14.3,
+        "VVD": 10.4,
+        "CU": 8.2,
+        "D66": 6.7,
+        "FvD": 5.8,
+        "JA21": 5.4,
+        "GL-PvdA": 4.4,
+        "BBB": 2.5,
+        "SP": 0.7,
+        "50+": 0.6,
+        "PvdD": 0.6,
+        "DENK": 0.3,
+        "Volt": 0.3,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "SGP"
+      }
+    },
+    "G0303": {
+      "name": "Dronten",
+      "shares": {
+        "PVV": 17.6,
+        "VVD": 15.9,
+        "CDA": 15.5,
+        "D66": 13.1,
+        "GL-PvdA": 7.3,
+        "JA21": 6.7,
+        "FvD": 6.5,
+        "BBB": 5.9,
+        "CU": 3.5,
+        "SP": 1.5,
+        "50+": 1.5,
+        "SGP": 1.4,
+        "DENK": 1.2,
+        "PvdD": 1.1,
+        "Volt": 0.7,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0307": {
+      "name": "Amersfoort",
+      "shares": {
+        "D66": 22.1,
+        "GL-PvdA": 17.1,
+        "VVD": 12.6,
+        "CDA": 11.3,
+        "PVV": 10.4,
+        "JA21": 5.1,
+        "DENK": 4.3,
+        "CU": 3.5,
+        "FvD": 3.4,
+        "PvdD": 2.7,
+        "SP": 1.8,
+        "Volt": 1.7,
+        "BBB": 1.2,
+        "50+": 1.1,
+        "SGP": 1.0,
+        "NSC": 0.4,
+        "BIJ1": 0.4
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0308": {
+      "name": "Baarn",
+      "shares": {
+        "D66": 22.3,
+        "VVD": 18.2,
+        "GL-PvdA": 14.0,
+        "CDA": 11.8,
+        "PVV": 11.2,
+        "JA21": 5.3,
+        "FvD": 3.8,
+        "PvdD": 2.2,
+        "CU": 1.8,
+        "BBB": 1.7,
+        "DENK": 1.6,
+        "Volt": 1.5,
+        "SP": 1.5,
+        "50+": 1.4,
+        "SGP": 1.0,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0310": {
+      "name": "De Bilt",
+      "shares": {
+        "D66": 24.0,
+        "GL-PvdA": 17.7,
+        "VVD": 16.7,
+        "CDA": 11.4,
+        "PVV": 8.9,
+        "JA21": 3.9,
+        "SGP": 2.9,
+        "FvD": 2.7,
+        "PvdD": 2.7,
+        "CU": 1.8,
+        "Volt": 1.6,
+        "DENK": 1.5,
+        "BBB": 1.3,
+        "SP": 1.3,
+        "50+": 1.1,
+        "NSC": 0.3,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0312": {
+      "name": "Bunnik",
+      "shares": {
+        "D66": 23.2,
+        "GL-PvdA": 20.0,
+        "CDA": 14.4,
+        "VVD": 14.2,
+        "PVV": 8.5,
+        "JA21": 4.4,
+        "FvD": 2.7,
+        "PvdD": 2.1,
+        "BBB": 2.0,
+        "CU": 1.8,
+        "SGP": 1.6,
+        "Volt": 1.4,
+        "50+": 1.3,
+        "SP": 1.1,
+        "DENK": 0.7,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0313": {
+      "name": "Bunschoten",
+      "shares": {
+        "PVV": 21.5,
+        "CDA": 19.2,
+        "CU": 10.8,
+        "VVD": 10.6,
+        "SGP": 9.4,
+        "JA21": 9.1,
+        "FvD": 7.3,
+        "D66": 4.5,
+        "BBB": 2.7,
+        "GL-PvdA": 2.2,
+        "DENK": 1.0,
+        "SP": 0.6,
+        "50+": 0.4,
+        "PvdD": 0.3,
+        "NSC": 0.2,
+        "Volt": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0317": {
+      "name": "Eemnes",
+      "shares": {
+        "VVD": 21.1,
+        "D66": 17.7,
+        "PVV": 14.6,
+        "CDA": 12.2,
+        "GL-PvdA": 9.7,
+        "JA21": 7.6,
+        "FvD": 5.6,
+        "BBB": 3.8,
+        "PvdD": 1.7,
+        "50+": 1.3,
+        "SP": 1.2,
+        "CU": 1.0,
+        "Volt": 0.8,
+        "SGP": 0.8,
+        "NSC": 0.4,
+        "DENK": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0321": {
+      "name": "Houten",
+      "shares": {
+        "D66": 21.4,
+        "VVD": 15.4,
+        "GL-PvdA": 14.8,
+        "PVV": 12.6,
+        "CDA": 12.6,
+        "JA21": 6.1,
+        "CU": 3.5,
+        "FvD": 3.2,
+        "SGP": 1.9,
+        "PvdD": 1.7,
+        "Volt": 1.5,
+        "BBB": 1.5,
+        "SP": 1.2,
+        "50+": 1.2,
+        "DENK": 1.0,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0327": {
+      "name": "Leusden",
+      "shares": {
+        "D66": 21.4,
+        "VVD": 16.5,
+        "CDA": 15.0,
+        "GL-PvdA": 13.0,
+        "PVV": 9.8,
+        "JA21": 6.1,
+        "CU": 3.6,
+        "FvD": 3.6,
+        "BBB": 2.4,
+        "PvdD": 1.7,
+        "SGP": 1.7,
+        "SP": 1.4,
+        "Volt": 1.4,
+        "50+": 1.1,
+        "DENK": 0.7,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0331": {
+      "name": "Lopik",
+      "shares": {
+        "PVV": 20.9,
+        "CDA": 16.9,
+        "VVD": 13.9,
+        "D66": 8.6,
+        "JA21": 7.9,
+        "SGP": 7.6,
+        "FvD": 6.7,
+        "BBB": 4.6,
+        "GL-PvdA": 4.5,
+        "CU": 3.6,
+        "50+": 1.2,
+        "PvdD": 1.0,
+        "SP": 0.8,
+        "DENK": 0.7,
+        "Volt": 0.4,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0335": {
+      "name": "Montfoort",
+      "shares": {
+        "VVD": 17.8,
+        "CDA": 15.9,
+        "PVV": 15.1,
+        "D66": 14.1,
+        "JA21": 8.1,
+        "GL-PvdA": 6.9,
+        "SGP": 5.9,
+        "FvD": 4.5,
+        "BBB": 4.0,
+        "CU": 3.0,
+        "50+": 1.0,
+        "DENK": 0.9,
+        "PvdD": 0.9,
+        "Volt": 0.8,
+        "SP": 0.7,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0339": {
+      "name": "Renswoude",
+      "shares": {
+        "SGP": 22.3,
+        "PVV": 16.3,
+        "CDA": 14.2,
+        "VVD": 12.2,
+        "JA21": 7.6,
+        "FvD": 6.5,
+        "BBB": 5.9,
+        "D66": 5.1,
+        "CU": 4.8,
+        "GL-PvdA": 2.7,
+        "PvdD": 0.8,
+        "SP": 0.6,
+        "50+": 0.6,
+        "Volt": 0.2,
+        "NSC": 0.1,
+        "DENK": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "SGP"
+      }
+    },
+    "G0340": {
+      "name": "Rhenen",
+      "shares": {
+        "PVV": 17.6,
+        "SGP": 15.7,
+        "VVD": 13.2,
+        "D66": 12.0,
+        "CDA": 10.9,
+        "GL-PvdA": 9.2,
+        "JA21": 5.7,
+        "FvD": 4.3,
+        "CU": 3.7,
+        "BBB": 2.0,
+        "DENK": 1.3,
+        "PvdD": 1.1,
+        "50+": 1.0,
+        "SP": 0.9,
+        "Volt": 0.8,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "VVD"
+      }
+    },
+    "G0342": {
+      "name": "Soest",
+      "shares": {
+        "D66": 20.4,
+        "VVD": 18.2,
+        "PVV": 12.9,
+        "GL-PvdA": 12.1,
+        "CDA": 12.0,
+        "JA21": 5.9,
+        "FvD": 3.7,
+        "DENK": 2.9,
+        "PvdD": 2.4,
+        "CU": 1.9,
+        "SGP": 1.7,
+        "BBB": 1.6,
+        "Volt": 1.3,
+        "50+": 1.3,
+        "SP": 1.2,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0344": {
+      "name": "Utrecht",
+      "shares": {
+        "D66": 26.8,
+        "GL-PvdA": 26.2,
+        "VVD": 8.7,
+        "PVV": 6.8,
+        "CDA": 6.6,
+        "DENK": 6.1,
+        "PvdD": 5.3,
+        "JA21": 2.9,
+        "Volt": 2.8,
+        "SP": 1.9,
+        "FvD": 1.7,
+        "CU": 1.3,
+        "BIJ1": 1.2,
+        "50+": 0.6,
+        "BBB": 0.6,
+        "SGP": 0.3,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0345": {
+      "name": "Veenendaal",
+      "shares": {
+        "PVV": 15.4,
+        "CDA": 15.3,
+        "VVD": 12.8,
+        "SGP": 11.2,
+        "D66": 10.2,
+        "CU": 8.2,
+        "GL-PvdA": 6.8,
+        "JA21": 6.2,
+        "FvD": 4.3,
+        "DENK": 3.6,
+        "BBB": 1.6,
+        "SP": 1.2,
+        "PvdD": 1.1,
+        "50+": 1.1,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0351": {
+      "name": "Woudenberg",
+      "shares": {
+        "SGP": 19.8,
+        "CDA": 15.0,
+        "VVD": 12.8,
+        "PVV": 12.1,
+        "D66": 10.8,
+        "GL-PvdA": 6.3,
+        "CU": 5.7,
+        "JA21": 5.5,
+        "FvD": 5.4,
+        "BBB": 2.6,
+        "PvdD": 1.0,
+        "SP": 0.9,
+        "50+": 0.8,
+        "Volt": 0.6,
+        "DENK": 0.4,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "VVD"
+      }
+    },
+    "G0352": {
+      "name": "Wijk bij Duurstede",
+      "shares": {
+        "PVV": 17.7,
+        "D66": 17.3,
+        "VVD": 16.5,
+        "CDA": 12.9,
+        "GL-PvdA": 10.9,
+        "JA21": 6.6,
+        "FvD": 4.8,
+        "SGP": 2.6,
+        "BBB": 2.5,
+        "PvdD": 1.6,
+        "SP": 1.6,
+        "CU": 1.6,
+        "50+": 1.5,
+        "Volt": 0.9,
+        "DENK": 0.6,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0353": {
+      "name": "IJsselstein",
+      "shares": {
+        "D66": 19.7,
+        "VVD": 19.0,
+        "PVV": 15.9,
+        "CDA": 12.3,
+        "GL-PvdA": 10.2,
+        "JA21": 6.9,
+        "FvD": 4.1,
+        "DENK": 2.6,
+        "50+": 1.7,
+        "BBB": 1.6,
+        "CU": 1.3,
+        "PvdD": 1.3,
+        "SP": 1.3,
+        "Volt": 0.8,
+        "SGP": 0.8,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0355": {
+      "name": "Zeist",
+      "shares": {
+        "D66": 24.1,
+        "GL-PvdA": 17.4,
+        "VVD": 15.5,
+        "CDA": 10.7,
+        "PVV": 10.0,
+        "JA21": 4.1,
+        "PvdD": 3.0,
+        "FvD": 2.8,
+        "DENK": 2.7,
+        "CU": 2.2,
+        "Volt": 1.8,
+        "SP": 1.5,
+        "SGP": 1.4,
+        "50+": 1.1,
+        "BBB": 1.0,
+        "BIJ1": 0.4,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0356": {
+      "name": "Nieuwegein",
+      "shares": {
+        "PVV": 19.6,
+        "D66": 17.3,
+        "VVD": 13.8,
+        "GL-PvdA": 13.6,
+        "CDA": 10.0,
+        "JA21": 6.2,
+        "FvD": 4.5,
+        "DENK": 3.3,
+        "50+": 2.0,
+        "PvdD": 2.0,
+        "SP": 2.0,
+        "CU": 1.5,
+        "BBB": 1.4,
+        "Volt": 1.2,
+        "SGP": 0.6,
+        "BIJ1": 0.4,
+        "NSC": 0.4
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0358": {
+      "name": "Aalsmeer",
+      "shares": {
+        "VVD": 23.1,
+        "PVV": 16.4,
+        "D66": 16.1,
+        "CDA": 12.0,
+        "JA21": 9.2,
+        "GL-PvdA": 7.7,
+        "FvD": 4.7,
+        "BBB": 2.0,
+        "CU": 1.8,
+        "DENK": 1.4,
+        "PvdD": 1.2,
+        "SP": 1.2,
+        "50+": 1.1,
+        "Volt": 0.8,
+        "SGP": 0.7,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0361": {
+      "name": "Alkmaar",
+      "shares": {
+        "D66": 21.0,
+        "GL-PvdA": 16.4,
+        "VVD": 14.5,
+        "PVV": 13.1,
+        "CDA": 9.0,
+        "JA21": 6.1,
+        "FvD": 5.3,
+        "PvdD": 2.7,
+        "BBB": 2.4,
+        "SP": 2.4,
+        "DENK": 2.2,
+        "50+": 1.6,
+        "Volt": 1.3,
+        "CU": 0.8,
+        "NSC": 0.4,
+        "BIJ1": 0.3,
+        "SGP": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0362": {
+      "name": "Amstelveen",
+      "shares": {
+        "D66": 24.0,
+        "VVD": 19.4,
+        "GL-PvdA": 16.7,
+        "PVV": 10.8,
+        "CDA": 8.3,
+        "JA21": 5.1,
+        "FvD": 2.7,
+        "PvdD": 2.5,
+        "DENK": 2.1,
+        "SP": 1.8,
+        "BBB": 1.6,
+        "Volt": 1.5,
+        "50+": 1.3,
+        "CU": 1.1,
+        "BIJ1": 0.6,
+        "NSC": 0.3,
+        "SGP": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0363": {
+      "name": "Amsterdam",
+      "shares": {
+        "GL-PvdA": 27.3,
+        "D66": 24.1,
+        "VVD": 9.8,
+        "DENK": 7.5,
+        "PVV": 6.9,
+        "PvdD": 5.6,
+        "CDA": 3.9,
+        "SP": 2.7,
+        "JA21": 2.6,
+        "BIJ1": 2.4,
+        "Volt": 2.2,
+        "FvD": 2.0,
+        "CU": 1.1,
+        "50+": 0.7,
+        "BBB": 0.7,
+        "NSC": 0.3,
+        "SGP": 0.2
+      },
+      "winners": {
+        "fptp": "GL-PvdA",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0373": {
+      "name": "Bergen (NH)",
+      "shares": {
+        "VVD": 19.9,
+        "D66": 19.8,
+        "GL-PvdA": 14.9,
+        "PVV": 12.6,
+        "CDA": 10.3,
+        "JA21": 6.4,
+        "FvD": 5.2,
+        "PvdD": 2.9,
+        "BBB": 2.7,
+        "SP": 1.4,
+        "Volt": 1.4,
+        "50+": 1.3,
+        "CU": 0.5,
+        "NSC": 0.4,
+        "SGP": 0.2,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0375": {
+      "name": "Beverwijk",
+      "shares": {
+        "PVV": 20.7,
+        "D66": 16.9,
+        "VVD": 15.1,
+        "GL-PvdA": 10.9,
+        "CDA": 8.1,
+        "JA21": 7.2,
+        "FvD": 6.7,
+        "DENK": 3.8,
+        "SP": 2.3,
+        "PvdD": 2.2,
+        "BBB": 2.1,
+        "50+": 2.0,
+        "Volt": 0.7,
+        "CU": 0.6,
+        "NSC": 0.4,
+        "BIJ1": 0.3,
+        "SGP": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0376": {
+      "name": "Blaricum",
+      "shares": {
+        "VVD": 32.1,
+        "D66": 19.6,
+        "PVV": 10.6,
+        "CDA": 10.5,
+        "GL-PvdA": 8.1,
+        "JA21": 6.3,
+        "FvD": 3.9,
+        "BBB": 1.6,
+        "DENK": 1.4,
+        "PvdD": 1.2,
+        "SP": 1.0,
+        "50+": 0.9,
+        "Volt": 0.9,
+        "CU": 0.8,
+        "SGP": 0.3,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0377": {
+      "name": "Bloemendaal",
+      "shares": {
+        "D66": 28.6,
+        "VVD": 26.5,
+        "GL-PvdA": 13.3,
+        "CDA": 11.4,
+        "PVV": 5.8,
+        "JA21": 4.2,
+        "FvD": 2.3,
+        "PvdD": 2.3,
+        "Volt": 1.8,
+        "BBB": 1.0,
+        "SP": 0.9,
+        "50+": 0.6,
+        "CU": 0.5,
+        "DENK": 0.3,
+        "NSC": 0.2,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0383": {
+      "name": "Castricum",
+      "shares": {
+        "D66": 21.6,
+        "VVD": 18.4,
+        "GL-PvdA": 16.3,
+        "CDA": 11.8,
+        "PVV": 10.1,
+        "JA21": 6.7,
+        "FvD": 5.0,
+        "PvdD": 2.5,
+        "BBB": 2.4,
+        "50+": 1.4,
+        "SP": 1.4,
+        "Volt": 1.0,
+        "CU": 0.5,
+        "NSC": 0.3,
+        "DENK": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0384": {
+      "name": "Diemen",
+      "shares": {
+        "GL-PvdA": 23.2,
+        "D66": 20.4,
+        "VVD": 13.1,
+        "PVV": 12.6,
+        "CDA": 5.2,
+        "DENK": 4.3,
+        "JA21": 4.2,
+        "PvdD": 3.9,
+        "FvD": 3.1,
+        "SP": 2.5,
+        "Volt": 1.9,
+        "50+": 1.3,
+        "BIJ1": 1.3,
+        "CU": 1.2,
+        "BBB": 1.2,
+        "NSC": 0.5,
+        "SGP": 0.2
+      },
+      "winners": {
+        "fptp": "GL-PvdA",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "D66"
+      }
+    },
+    "G0385": {
+      "name": "Edam-Volendam",
+      "shares": {
+        "PVV": 28.7,
+        "VVD": 16.7,
+        "BBB": 11.4,
+        "D66": 9.1,
+        "FvD": 7.8,
+        "JA21": 7.6,
+        "GL-PvdA": 7.2,
+        "CDA": 6.7,
+        "PvdD": 1.0,
+        "SP": 0.9,
+        "50+": 0.7,
+        "DENK": 0.6,
+        "Volt": 0.6,
+        "CU": 0.4,
+        "NSC": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "BBB"
+      }
+    },
+    "G0388": {
+      "name": "Enkhuizen",
+      "shares": {
+        "D66": 17.9,
+        "PVV": 17.1,
+        "VVD": 15.0,
+        "GL-PvdA": 11.8,
+        "CDA": 11.1,
+        "JA21": 6.6,
+        "FvD": 6.4,
+        "SP": 2.4,
+        "BBB": 2.3,
+        "PvdD": 2.0,
+        "50+": 2.0,
+        "SGP": 1.6,
+        "DENK": 1.3,
+        "CU": 1.0,
+        "Volt": 0.9,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0392": {
+      "name": "Haarlem",
+      "shares": {
+        "D66": 25.7,
+        "GL-PvdA": 22.4,
+        "VVD": 11.8,
+        "PVV": 10.1,
+        "CDA": 6.9,
+        "JA21": 4.1,
+        "PvdD": 3.9,
+        "DENK": 3.4,
+        "FvD": 3.2,
+        "SP": 2.2,
+        "Volt": 2.1,
+        "50+": 1.2,
+        "BBB": 1.1,
+        "CU": 0.8,
+        "BIJ1": 0.6,
+        "NSC": 0.3,
+        "SGP": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0394": {
+      "name": "Haarlemmermeer",
+      "shares": {
+        "VVD": 20.1,
+        "D66": 17.7,
+        "PVV": 17.3,
+        "CDA": 9.9,
+        "GL-PvdA": 9.7,
+        "JA21": 7.2,
+        "FvD": 4.7,
+        "DENK": 3.2,
+        "BBB": 2.0,
+        "PvdD": 1.6,
+        "50+": 1.5,
+        "SP": 1.4,
+        "CU": 1.3,
+        "Volt": 0.9,
+        "SGP": 0.8,
+        "NSC": 0.3,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0396": {
+      "name": "Heemskerk",
+      "shares": {
+        "D66": 18.5,
+        "PVV": 18.3,
+        "VVD": 15.7,
+        "CDA": 11.0,
+        "GL-PvdA": 10.8,
+        "JA21": 7.3,
+        "FvD": 6.0,
+        "BBB": 2.4,
+        "DENK": 2.3,
+        "50+": 2.1,
+        "SP": 1.7,
+        "PvdD": 1.7,
+        "CU": 0.7,
+        "Volt": 0.6,
+        "NSC": 0.4,
+        "SGP": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0397": {
+      "name": "Heemstede",
+      "shares": {
+        "D66": 29.6,
+        "VVD": 23.5,
+        "GL-PvdA": 14.2,
+        "CDA": 11.1,
+        "PVV": 6.6,
+        "JA21": 4.2,
+        "FvD": 2.4,
+        "PvdD": 2.1,
+        "Volt": 1.7,
+        "BBB": 1.1,
+        "SP": 0.9,
+        "50+": 0.8,
+        "CU": 0.7,
+        "DENK": 0.5,
+        "NSC": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "50+"
+      }
+    },
+    "G0399": {
+      "name": "Heiloo",
+      "shares": {
+        "D66": 24.1,
+        "VVD": 19.4,
+        "GL-PvdA": 15.9,
+        "CDA": 12.0,
+        "PVV": 8.6,
+        "JA21": 5.9,
+        "FvD": 3.9,
+        "PvdD": 2.5,
+        "BBB": 1.9,
+        "SP": 1.5,
+        "Volt": 1.3,
+        "50+": 1.0,
+        "CU": 0.7,
+        "DENK": 0.4,
+        "NSC": 0.3,
+        "SGP": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0400": {
+      "name": "Den Helder",
+      "shares": {
+        "PVV": 24.4,
+        "VVD": 16.6,
+        "D66": 13.4,
+        "CDA": 11.0,
+        "GL-PvdA": 8.0,
+        "FvD": 7.2,
+        "JA21": 6.8,
+        "BBB": 2.9,
+        "50+": 2.0,
+        "CU": 1.8,
+        "SP": 1.7,
+        "PvdD": 1.5,
+        "SGP": 0.9,
+        "DENK": 0.6,
+        "Volt": 0.6,
+        "NSC": 0.5,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0402": {
+      "name": "Hilversum",
+      "shares": {
+        "D66": 24.5,
+        "GL-PvdA": 17.5,
+        "VVD": 14.4,
+        "PVV": 12.0,
+        "CDA": 9.0,
+        "JA21": 4.5,
+        "FvD": 3.7,
+        "PvdD": 2.9,
+        "DENK": 2.6,
+        "SP": 1.9,
+        "Volt": 1.8,
+        "BBB": 1.3,
+        "CU": 1.3,
+        "50+": 1.3,
+        "SGP": 0.4,
+        "BIJ1": 0.4,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0405": {
+      "name": "Hoorn",
+      "shares": {
+        "D66": 19.8,
+        "PVV": 15.9,
+        "VVD": 15.6,
+        "GL-PvdA": 13.7,
+        "CDA": 9.2,
+        "JA21": 6.7,
+        "FvD": 5.5,
+        "SP": 2.3,
+        "PvdD": 2.3,
+        "DENK": 2.2,
+        "BBB": 2.1,
+        "50+": 1.7,
+        "Volt": 1.1,
+        "CU": 0.8,
+        "NSC": 0.5,
+        "BIJ1": 0.4,
+        "SGP": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0406": {
+      "name": "Huizen",
+      "shares": {
+        "VVD": 19.6,
+        "D66": 18.2,
+        "CDA": 13.7,
+        "PVV": 13.5,
+        "GL-PvdA": 9.7,
+        "JA21": 6.4,
+        "FvD": 4.7,
+        "CU": 2.9,
+        "DENK": 2.0,
+        "SGP": 1.9,
+        "BBB": 1.7,
+        "PvdD": 1.6,
+        "50+": 1.4,
+        "SP": 1.3,
+        "Volt": 0.9,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0415": {
+      "name": "Landsmeer",
+      "shares": {
+        "VVD": 18.4,
+        "D66": 18.3,
+        "PVV": 17.3,
+        "GL-PvdA": 16.9,
+        "CDA": 6.3,
+        "JA21": 5.6,
+        "FvD": 5.0,
+        "BBB": 2.4,
+        "PvdD": 2.3,
+        "SP": 1.9,
+        "DENK": 1.5,
+        "50+": 1.4,
+        "Volt": 1.1,
+        "CU": 0.7,
+        "BIJ1": 0.3,
+        "SGP": 0.2,
+        "NSC": 0.2
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0417": {
+      "name": "Laren",
+      "shares": {
+        "VVD": 38.3,
+        "D66": 20.0,
+        "CDA": 10.8,
+        "PVV": 7.8,
+        "GL-PvdA": 7.6,
+        "JA21": 5.2,
+        "FvD": 3.7,
+        "PvdD": 1.7,
+        "BBB": 1.1,
+        "SP": 1.0,
+        "Volt": 0.9,
+        "50+": 0.8,
+        "CU": 0.5,
+        "DENK": 0.3,
+        "NSC": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0420": {
+      "name": "Medemblik",
+      "shares": {
+        "VVD": 17.8,
+        "PVV": 17.8,
+        "CDA": 14.6,
+        "D66": 14.4,
+        "JA21": 8.0,
+        "GL-PvdA": 7.7,
+        "FvD": 6.4,
+        "BBB": 4.6,
+        "50+": 1.8,
+        "PvdD": 1.5,
+        "SP": 1.4,
+        "CU": 1.1,
+        "SGP": 1.1,
+        "DENK": 0.7,
+        "Volt": 0.6,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0431": {
+      "name": "Oostzaan",
+      "shares": {
+        "PVV": 21.3,
+        "VVD": 19.2,
+        "D66": 15.9,
+        "GL-PvdA": 12.2,
+        "JA21": 7.1,
+        "CDA": 6.1,
+        "FvD": 5.9,
+        "BBB": 3.2,
+        "PvdD": 2.2,
+        "SP": 1.7,
+        "50+": 1.4,
+        "DENK": 1.1,
+        "CU": 0.9,
+        "Volt": 0.7,
+        "BIJ1": 0.5,
+        "SGP": 0.4,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0432": {
+      "name": "Opmeer",
+      "shares": {
+        "VVD": 18.1,
+        "PVV": 16.8,
+        "D66": 15.8,
+        "CDA": 15.0,
+        "JA21": 7.4,
+        "GL-PvdA": 7.1,
+        "FvD": 7.1,
+        "BBB": 6.5,
+        "50+": 1.8,
+        "SP": 1.3,
+        "PvdD": 1.1,
+        "Volt": 0.7,
+        "CU": 0.4,
+        "NSC": 0.4,
+        "DENK": 0.2,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0437": {
+      "name": "Ouder-Amstel",
+      "shares": {
+        "D66": 25.0,
+        "GL-PvdA": 17.9,
+        "VVD": 17.7,
+        "PVV": 9.6,
+        "CDA": 8.8,
+        "JA21": 4.7,
+        "FvD": 3.0,
+        "PvdD": 2.8,
+        "BBB": 2.2,
+        "Volt": 1.6,
+        "DENK": 1.5,
+        "SP": 1.3,
+        "50+": 1.2,
+        "CU": 1.1,
+        "BIJ1": 0.8,
+        "SGP": 0.6,
+        "NSC": 0.4
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0439": {
+      "name": "Purmerend",
+      "shares": {
+        "PVV": 23.7,
+        "VVD": 17.1,
+        "D66": 15.4,
+        "GL-PvdA": 11.5,
+        "CDA": 7.0,
+        "JA21": 6.8,
+        "FvD": 5.2,
+        "BBB": 3.2,
+        "DENK": 2.1,
+        "50+": 1.9,
+        "SP": 1.9,
+        "PvdD": 1.9,
+        "Volt": 0.8,
+        "CU": 0.7,
+        "BIJ1": 0.5,
+        "NSC": 0.3,
+        "SGP": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0441": {
+      "name": "Schagen",
+      "shares": {
+        "VVD": 19.2,
+        "D66": 16.9,
+        "PVV": 15.4,
+        "CDA": 12.3,
+        "GL-PvdA": 10.4,
+        "JA21": 7.1,
+        "FvD": 6.6,
+        "BBB": 4.7,
+        "50+": 1.8,
+        "PvdD": 1.7,
+        "SP": 1.6,
+        "Volt": 0.7,
+        "CU": 0.6,
+        "NSC": 0.5,
+        "SGP": 0.2,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0448": {
+      "name": "Texel",
+      "shares": {
+        "VVD": 16.1,
+        "GL-PvdA": 15.5,
+        "D66": 14.6,
+        "PVV": 13.5,
+        "CDA": 11.4,
+        "FvD": 6.8,
+        "BBB": 6.4,
+        "JA21": 6.2,
+        "PvdD": 2.3,
+        "SP": 2.1,
+        "CU": 1.2,
+        "50+": 1.2,
+        "Volt": 1.1,
+        "SGP": 0.9,
+        "NSC": 0.4,
+        "BIJ1": 0.2,
+        "DENK": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "NSC"
+      }
+    },
+    "G0450": {
+      "name": "Uitgeest",
+      "shares": {
+        "D66": 20.6,
+        "VVD": 19.3,
+        "PVV": 14.6,
+        "GL-PvdA": 11.3,
+        "CDA": 11.2,
+        "JA21": 7.1,
+        "FvD": 5.1,
+        "BBB": 3.1,
+        "PvdD": 1.7,
+        "SP": 1.6,
+        "50+": 1.5,
+        "Volt": 0.8,
+        "CU": 0.6,
+        "DENK": 0.4,
+        "NSC": 0.4,
+        "SGP": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "NSC"
+      }
+    },
+    "G0451": {
+      "name": "Uithoorn",
+      "shares": {
+        "VVD": 18.7,
+        "D66": 18.4,
+        "PVV": 17.9,
+        "GL-PvdA": 10.1,
+        "CDA": 9.6,
+        "JA21": 8.3,
+        "FvD": 5.3,
+        "BBB": 2.2,
+        "PvdD": 1.9,
+        "DENK": 1.8,
+        "50+": 1.6,
+        "SP": 1.4,
+        "Volt": 0.9,
+        "CU": 0.8,
+        "NSC": 0.4,
+        "SGP": 0.3,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0453": {
+      "name": "Velsen",
+      "shares": {
+        "PVV": 21.3,
+        "D66": 17.7,
+        "VVD": 16.0,
+        "GL-PvdA": 11.2,
+        "CDA": 8.7,
+        "JA21": 6.8,
+        "FvD": 6.0,
+        "DENK": 2.0,
+        "50+": 2.0,
+        "PvdD": 1.9,
+        "BBB": 1.8,
+        "SP": 1.6,
+        "CU": 1.2,
+        "Volt": 0.9,
+        "SGP": 0.4,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0473": {
+      "name": "Zandvoort",
+      "shares": {
+        "VVD": 23.3,
+        "PVV": 20.5,
+        "D66": 16.9,
+        "GL-PvdA": 9.8,
+        "JA21": 7.6,
+        "CDA": 6.4,
+        "FvD": 5.5,
+        "BBB": 2.6,
+        "PvdD": 2.1,
+        "50+": 1.5,
+        "SP": 1.4,
+        "Volt": 1.0,
+        "DENK": 0.5,
+        "CU": 0.3,
+        "NSC": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0479": {
+      "name": "Zaanstad",
+      "shares": {
+        "PVV": 18.3,
+        "D66": 17.0,
+        "GL-PvdA": 15.3,
+        "VVD": 13.4,
+        "CDA": 7.0,
+        "JA21": 5.8,
+        "DENK": 5.6,
+        "FvD": 4.9,
+        "PvdD": 2.8,
+        "SP": 2.6,
+        "BBB": 2.0,
+        "50+": 1.9,
+        "CU": 1.0,
+        "Volt": 0.9,
+        "BIJ1": 0.7,
+        "SGP": 0.4,
+        "NSC": 0.4
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0482": {
+      "name": "Alblasserdam",
+      "shares": {
+        "SGP": 18.1,
+        "PVV": 17.9,
+        "CDA": 12.8,
+        "VVD": 10.3,
+        "D66": 9.0,
+        "JA21": 6.8,
+        "GL-PvdA": 6.8,
+        "FvD": 5.6,
+        "CU": 5.2,
+        "DENK": 1.6,
+        "BBB": 1.5,
+        "50+": 1.4,
+        "PvdD": 1.3,
+        "SP": 1.2,
+        "Volt": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "VVD"
+      }
+    },
+    "G0484": {
+      "name": "Alphen aan den Rijn",
+      "shares": {
+        "D66": 17.5,
+        "VVD": 16.0,
+        "PVV": 15.4,
+        "CDA": 13.8,
+        "GL-PvdA": 10.0,
+        "JA21": 7.2,
+        "FvD": 4.8,
+        "SGP": 2.7,
+        "CU": 2.2,
+        "BBB": 2.2,
+        "DENK": 2.2,
+        "PvdD": 1.6,
+        "50+": 1.5,
+        "SP": 1.4,
+        "Volt": 0.9,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0489": {
+      "name": "Barendrecht",
+      "shares": {
+        "PVV": 17.5,
+        "VVD": 16.0,
+        "D66": 14.8,
+        "CDA": 13.3,
+        "JA21": 8.9,
+        "GL-PvdA": 8.2,
+        "DENK": 4.2,
+        "FvD": 4.2,
+        "SGP": 4.1,
+        "CU": 1.9,
+        "50+": 1.7,
+        "SP": 1.4,
+        "PvdD": 1.3,
+        "BBB": 1.1,
+        "Volt": 0.6,
+        "BIJ1": 0.4,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0498": {
+      "name": "Drechterland",
+      "shares": {
+        "VVD": 19.0,
+        "D66": 15.8,
+        "PVV": 15.0,
+        "CDA": 13.4,
+        "JA21": 9.3,
+        "GL-PvdA": 8.1,
+        "FvD": 6.6,
+        "BBB": 5.9,
+        "50+": 1.7,
+        "SP": 1.4,
+        "PvdD": 1.3,
+        "Volt": 0.8,
+        "NSC": 0.5,
+        "CU": 0.5,
+        "SGP": 0.2,
+        "DENK": 0.2,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0502": {
+      "name": "Capelle aan den IJssel",
+      "shares": {
+        "PVV": 17.8,
+        "D66": 15.6,
+        "VVD": 12.5,
+        "GL-PvdA": 11.5,
+        "CDA": 10.0,
+        "JA21": 8.5,
+        "SGP": 5.0,
+        "FvD": 4.7,
+        "DENK": 2.8,
+        "CU": 2.7,
+        "SP": 2.1,
+        "50+": 1.9,
+        "PvdD": 1.9,
+        "BBB": 1.2,
+        "Volt": 0.8,
+        "BIJ1": 0.7,
+        "NSC": 0.4
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "NSC"
+      }
+    },
+    "G0503": {
+      "name": "Delft",
+      "shares": {
+        "D66": 25.5,
+        "GL-PvdA": 20.3,
+        "PVV": 12.0,
+        "VVD": 9.7,
+        "CDA": 9.0,
+        "JA21": 4.4,
+        "PvdD": 3.4,
+        "FvD": 2.9,
+        "DENK": 2.7,
+        "Volt": 2.5,
+        "SP": 2.3,
+        "CU": 1.7,
+        "50+": 1.1,
+        "BBB": 0.9,
+        "BIJ1": 0.5,
+        "SGP": 0.5,
+        "NSC": 0.4
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0505": {
+      "name": "Dordrecht",
+      "shares": {
+        "PVV": 17.9,
+        "D66": 15.9,
+        "GL-PvdA": 13.1,
+        "VVD": 12.4,
+        "CDA": 10.2,
+        "JA21": 6.0,
+        "FvD": 4.5,
+        "DENK": 4.4,
+        "SGP": 3.3,
+        "CU": 3.2,
+        "PvdD": 2.5,
+        "SP": 2.1,
+        "50+": 1.8,
+        "BBB": 1.1,
+        "Volt": 1.0,
+        "BIJ1": 0.4,
+        "NSC": 0.4
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0512": {
+      "name": "Gorinchem",
+      "shares": {
+        "D66": 16.7,
+        "PVV": 16.1,
+        "VVD": 15.0,
+        "GL-PvdA": 11.3,
+        "CDA": 11.2,
+        "JA21": 6.5,
+        "DENK": 5.1,
+        "FvD": 4.5,
+        "CU": 3.2,
+        "SGP": 2.6,
+        "SP": 2.0,
+        "PvdD": 1.7,
+        "BBB": 1.4,
+        "50+": 1.2,
+        "Volt": 1.0,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0513": {
+      "name": "Gouda",
+      "shares": {
+        "D66": 18.2,
+        "GL-PvdA": 16.2,
+        "PVV": 13.1,
+        "CDA": 11.1,
+        "VVD": 10.0,
+        "JA21": 5.5,
+        "CU": 5.0,
+        "SGP": 4.6,
+        "DENK": 3.9,
+        "FvD": 3.5,
+        "PvdD": 2.6,
+        "SP": 1.8,
+        "50+": 1.5,
+        "Volt": 1.4,
+        "BBB": 1.1,
+        "BIJ1": 0.3,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "50+"
+      }
+    },
+    "G0518": {
+      "name": "'s-Gravenhage",
+      "shares": {
+        "D66": 20.1,
+        "GL-PvdA": 16.6,
+        "PVV": 15.9,
+        "VVD": 12.3,
+        "DENK": 8.9,
+        "CDA": 6.9,
+        "JA21": 4.3,
+        "PvdD": 3.5,
+        "FvD": 3.4,
+        "SP": 2.0,
+        "Volt": 1.5,
+        "CU": 1.1,
+        "50+": 1.0,
+        "BBB": 0.9,
+        "BIJ1": 0.8,
+        "SGP": 0.5,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0523": {
+      "name": "Hardinxveld-Giessendam",
+      "shares": {
+        "SGP": 21.7,
+        "CDA": 15.8,
+        "PVV": 14.9,
+        "VVD": 10.4,
+        "CU": 9.7,
+        "JA21": 6.5,
+        "D66": 6.1,
+        "FvD": 5.7,
+        "GL-PvdA": 4.2,
+        "BBB": 1.5,
+        "SP": 0.9,
+        "50+": 0.9,
+        "PvdD": 0.7,
+        "DENK": 0.5,
+        "Volt": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "BBB"
+      }
+    },
+    "G0531": {
+      "name": "Hendrik-Ido-Ambacht",
+      "shares": {
+        "PVV": 18.3,
+        "VVD": 15.0,
+        "CDA": 13.0,
+        "SGP": 11.9,
+        "D66": 11.7,
+        "JA21": 8.3,
+        "GL-PvdA": 5.9,
+        "FvD": 5.0,
+        "CU": 4.3,
+        "DENK": 1.7,
+        "50+": 1.6,
+        "BBB": 1.0,
+        "SP": 0.9,
+        "PvdD": 0.8,
+        "Volt": 0.3,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0532": {
+      "name": "Stede Broec",
+      "shares": {
+        "PVV": 20.9,
+        "VVD": 17.1,
+        "D66": 14.6,
+        "CDA": 12.7,
+        "JA21": 8.7,
+        "GL-PvdA": 7.8,
+        "FvD": 7.0,
+        "BBB": 3.7,
+        "50+": 1.8,
+        "SP": 1.7,
+        "PvdD": 1.2,
+        "CU": 0.6,
+        "Volt": 0.6,
+        "SGP": 0.5,
+        "NSC": 0.5,
+        "DENK": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0534": {
+      "name": "Hillegom",
+      "shares": {
+        "VVD": 18.6,
+        "D66": 18.3,
+        "PVV": 16.7,
+        "CDA": 11.5,
+        "GL-PvdA": 9.7,
+        "JA21": 8.3,
+        "FvD": 6.0,
+        "BBB": 2.3,
+        "PvdD": 1.8,
+        "50+": 1.7,
+        "SP": 1.4,
+        "CU": 0.8,
+        "DENK": 0.8,
+        "Volt": 0.8,
+        "SGP": 0.7,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0537": {
+      "name": "Katwijk",
+      "shares": {
+        "PVV": 22.1,
+        "CDA": 16.7,
+        "VVD": 13.3,
+        "SGP": 9.5,
+        "D66": 8.7,
+        "JA21": 7.9,
+        "FvD": 6.2,
+        "GL-PvdA": 4.9,
+        "CU": 4.4,
+        "BBB": 1.9,
+        "PvdD": 1.1,
+        "50+": 0.9,
+        "SP": 0.9,
+        "DENK": 0.8,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0542": {
+      "name": "Krimpen aan den IJssel",
+      "shares": {
+        "PVV": 17.3,
+        "SGP": 13.9,
+        "VVD": 12.4,
+        "CDA": 11.6,
+        "D66": 11.2,
+        "JA21": 8.2,
+        "GL-PvdA": 8.2,
+        "FvD": 5.3,
+        "CU": 4.2,
+        "50+": 1.4,
+        "BBB": 1.4,
+        "SP": 1.4,
+        "DENK": 1.3,
+        "PvdD": 1.2,
+        "Volt": 0.4,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "SGP",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0546": {
+      "name": "Leiden",
+      "shares": {
+        "D66": 25.0,
+        "GL-PvdA": 24.5,
+        "PVV": 11.0,
+        "VVD": 9.5,
+        "CDA": 7.4,
+        "PvdD": 4.5,
+        "JA21": 3.8,
+        "DENK": 3.0,
+        "Volt": 2.5,
+        "FvD": 2.5,
+        "SP": 2.3,
+        "CU": 1.3,
+        "50+": 0.8,
+        "BBB": 0.8,
+        "BIJ1": 0.7,
+        "SGP": 0.3,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0547": {
+      "name": "Leiderdorp",
+      "shares": {
+        "D66": 21.8,
+        "VVD": 15.4,
+        "GL-PvdA": 15.4,
+        "PVV": 13.6,
+        "CDA": 11.7,
+        "JA21": 6.1,
+        "FvD": 3.2,
+        "PvdD": 2.1,
+        "DENK": 2.0,
+        "50+": 1.6,
+        "SP": 1.5,
+        "BBB": 1.5,
+        "Volt": 1.4,
+        "CU": 1.4,
+        "SGP": 0.6,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0553": {
+      "name": "Lisse",
+      "shares": {
+        "VVD": 18.8,
+        "D66": 16.8,
+        "PVV": 15.9,
+        "CDA": 14.3,
+        "GL-PvdA": 7.8,
+        "JA21": 7.6,
+        "FvD": 5.1,
+        "SGP": 4.1,
+        "BBB": 2.4,
+        "50+": 1.6,
+        "CU": 1.6,
+        "PvdD": 1.3,
+        "SP": 1.2,
+        "Volt": 0.7,
+        "NSC": 0.4,
+        "DENK": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0556": {
+      "name": "Maassluis",
+      "shares": {
+        "PVV": 18.6,
+        "VVD": 15.2,
+        "D66": 14.2,
+        "CDA": 13.9,
+        "GL-PvdA": 8.8,
+        "JA21": 7.9,
+        "DENK": 6.1,
+        "FvD": 4.9,
+        "CU": 2.0,
+        "50+": 2.0,
+        "BBB": 1.5,
+        "PvdD": 1.3,
+        "SP": 1.2,
+        "SGP": 1.1,
+        "Volt": 0.6,
+        "NSC": 0.3,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0569": {
+      "name": "Nieuwkoop",
+      "shares": {
+        "VVD": 19.1,
+        "PVV": 17.6,
+        "CDA": 16.3,
+        "D66": 14.1,
+        "JA21": 8.5,
+        "GL-PvdA": 6.6,
+        "FvD": 5.1,
+        "BBB": 4.4,
+        "SGP": 1.7,
+        "50+": 1.4,
+        "CU": 1.3,
+        "PvdD": 1.1,
+        "SP": 1.0,
+        "Volt": 0.7,
+        "DENK": 0.6,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0575": {
+      "name": "Noordwijk",
+      "shares": {
+        "VVD": 22.9,
+        "D66": 17.0,
+        "PVV": 16.3,
+        "CDA": 12.1,
+        "JA21": 8.6,
+        "GL-PvdA": 8.5,
+        "FvD": 5.2,
+        "BBB": 2.3,
+        "PvdD": 1.4,
+        "50+": 1.4,
+        "SP": 1.2,
+        "Volt": 0.8,
+        "DENK": 0.7,
+        "CU": 0.6,
+        "SGP": 0.4,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0579": {
+      "name": "Oegstgeest",
+      "shares": {
+        "D66": 27.2,
+        "VVD": 18.1,
+        "GL-PvdA": 17.5,
+        "CDA": 12.7,
+        "PVV": 7.4,
+        "JA21": 4.4,
+        "FvD": 2.5,
+        "PvdD": 2.4,
+        "Volt": 1.7,
+        "CU": 1.7,
+        "BBB": 1.0,
+        "SP": 0.9,
+        "DENK": 0.7,
+        "50+": 0.7,
+        "SGP": 0.4,
+        "BIJ1": 0.3,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0589": {
+      "name": "Oudewater",
+      "shares": {
+        "VVD": 17.8,
+        "CDA": 17.4,
+        "PVV": 15.3,
+        "D66": 12.0,
+        "JA21": 9.4,
+        "GL-PvdA": 6.9,
+        "FvD": 5.7,
+        "BBB": 4.7,
+        "SGP": 3.9,
+        "CU": 2.8,
+        "50+": 1.1,
+        "PvdD": 0.9,
+        "SP": 0.6,
+        "Volt": 0.5,
+        "DENK": 0.4,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0590": {
+      "name": "Papendrecht",
+      "shares": {
+        "PVV": 19.3,
+        "VVD": 14.8,
+        "CDA": 13.7,
+        "D66": 13.5,
+        "JA21": 8.1,
+        "GL-PvdA": 7.3,
+        "FvD": 5.3,
+        "SGP": 5.1,
+        "CU": 3.8,
+        "50+": 2.2,
+        "DENK": 1.9,
+        "BBB": 1.5,
+        "PvdD": 1.3,
+        "SP": 1.3,
+        "Volt": 0.4,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0597": {
+      "name": "Ridderkerk",
+      "shares": {
+        "PVV": 22.5,
+        "CDA": 12.6,
+        "VVD": 11.7,
+        "D66": 10.8,
+        "SGP": 8.7,
+        "JA21": 8.3,
+        "GL-PvdA": 7.1,
+        "FvD": 5.2,
+        "CU": 3.7,
+        "DENK": 2.6,
+        "50+": 2.0,
+        "SP": 1.4,
+        "BBB": 1.1,
+        "PvdD": 1.1,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0599": {
+      "name": "Rotterdam",
+      "shares": {
+        "D66": 18.1,
+        "GL-PvdA": 17.2,
+        "PVV": 15.0,
+        "VVD": 10.1,
+        "DENK": 9.5,
+        "CDA": 7.1,
+        "JA21": 5.8,
+        "PvdD": 3.6,
+        "FvD": 3.4,
+        "SP": 2.4,
+        "Volt": 1.6,
+        "CU": 1.5,
+        "BIJ1": 1.5,
+        "50+": 1.4,
+        "BBB": 0.7,
+        "SGP": 0.7,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0603": {
+      "name": "Rijswijk",
+      "shares": {
+        "D66": 19.6,
+        "PVV": 18.0,
+        "GL-PvdA": 14.4,
+        "VVD": 14.2,
+        "CDA": 9.0,
+        "JA21": 6.1,
+        "DENK": 4.6,
+        "FvD": 4.0,
+        "PvdD": 2.0,
+        "50+": 1.9,
+        "SP": 1.5,
+        "Volt": 1.3,
+        "BBB": 1.2,
+        "CU": 1.1,
+        "BIJ1": 0.4,
+        "SGP": 0.4,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0606": {
+      "name": "Schiedam",
+      "shares": {
+        "PVV": 20.5,
+        "D66": 14.7,
+        "GL-PvdA": 13.3,
+        "VVD": 11.2,
+        "DENK": 10.0,
+        "CDA": 7.7,
+        "JA21": 7.0,
+        "FvD": 4.7,
+        "PvdD": 2.4,
+        "SP": 2.1,
+        "50+": 2.1,
+        "Volt": 1.1,
+        "BBB": 1.0,
+        "CU": 0.9,
+        "BIJ1": 0.7,
+        "SGP": 0.4,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0610": {
+      "name": "Sliedrecht",
+      "shares": {
+        "PVV": 18.0,
+        "SGP": 16.0,
+        "CDA": 12.8,
+        "VVD": 11.2,
+        "D66": 9.0,
+        "CU": 7.3,
+        "JA21": 6.9,
+        "GL-PvdA": 6.3,
+        "FvD": 4.9,
+        "DENK": 1.5,
+        "50+": 1.5,
+        "SP": 1.4,
+        "BBB": 1.3,
+        "PvdD": 1.1,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "VVD"
+      }
+    },
+    "G0613": {
+      "name": "Albrandswaard",
+      "shares": {
+        "VVD": 18.6,
+        "PVV": 18.6,
+        "D66": 15.6,
+        "CDA": 12.3,
+        "JA21": 10.2,
+        "GL-PvdA": 7.7,
+        "FvD": 4.9,
+        "DENK": 2.1,
+        "50+": 1.9,
+        "PvdD": 1.6,
+        "CU": 1.4,
+        "BBB": 1.2,
+        "SP": 1.2,
+        "SGP": 1.2,
+        "Volt": 0.8,
+        "BIJ1": 0.3,
+        "NSC": 0.3
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0622": {
+      "name": "Vlaardingen",
+      "shares": {
+        "PVV": 21.0,
+        "D66": 14.9,
+        "VVD": 12.4,
+        "GL-PvdA": 10.8,
+        "CDA": 10.5,
+        "JA21": 7.5,
+        "DENK": 6.7,
+        "FvD": 4.5,
+        "50+": 2.6,
+        "SP": 2.1,
+        "PvdD": 1.6,
+        "CU": 1.5,
+        "SGP": 1.3,
+        "BBB": 1.2,
+        "Volt": 0.7,
+        "NSC": 0.4,
+        "BIJ1": 0.4
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0626": {
+      "name": "Voorschoten",
+      "shares": {
+        "D66": 23.6,
+        "VVD": 18.7,
+        "GL-PvdA": 14.7,
+        "CDA": 12.6,
+        "PVV": 11.6,
+        "JA21": 5.6,
+        "FvD": 2.8,
+        "PvdD": 1.9,
+        "BBB": 1.5,
+        "SP": 1.5,
+        "Volt": 1.4,
+        "DENK": 1.2,
+        "50+": 1.1,
+        "CU": 0.9,
+        "SGP": 0.3,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0627": {
+      "name": "Waddinxveen",
+      "shares": {
+        "PVV": 16.8,
+        "VVD": 14.7,
+        "D66": 13.8,
+        "CDA": 12.6,
+        "SGP": 8.7,
+        "GL-PvdA": 7.4,
+        "JA21": 7.0,
+        "CU": 5.6,
+        "FvD": 4.8,
+        "DENK": 2.4,
+        "BBB": 1.6,
+        "50+": 1.4,
+        "PvdD": 1.1,
+        "SP": 1.1,
+        "Volt": 0.7,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0629": {
+      "name": "Wassenaar",
+      "shares": {
+        "VVD": 29.0,
+        "D66": 18.9,
+        "PVV": 13.4,
+        "CDA": 12.1,
+        "GL-PvdA": 8.3,
+        "JA21": 6.3,
+        "FvD": 3.9,
+        "BBB": 1.4,
+        "PvdD": 1.4,
+        "Volt": 1.2,
+        "50+": 1.0,
+        "SP": 0.8,
+        "CU": 0.7,
+        "DENK": 0.7,
+        "SGP": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0632": {
+      "name": "Woerden",
+      "shares": {
+        "D66": 18.4,
+        "CDA": 16.3,
+        "VVD": 15.7,
+        "PVV": 12.1,
+        "GL-PvdA": 10.9,
+        "JA21": 6.5,
+        "SGP": 3.6,
+        "FvD": 3.4,
+        "CU": 3.1,
+        "BBB": 2.8,
+        "DENK": 1.9,
+        "PvdD": 1.6,
+        "SP": 1.2,
+        "Volt": 1.1,
+        "50+": 1.0,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "CDA",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0637": {
+      "name": "Zoetermeer",
+      "shares": {
+        "PVV": 19.9,
+        "D66": 17.2,
+        "VVD": 14.9,
+        "GL-PvdA": 11.7,
+        "CDA": 10.0,
+        "JA21": 7.0,
+        "FvD": 5.0,
+        "DENK": 3.0,
+        "50+": 2.0,
+        "PvdD": 1.9,
+        "SP": 1.9,
+        "CU": 1.6,
+        "BBB": 1.5,
+        "SGP": 1.1,
+        "Volt": 0.8,
+        "NSC": 0.4,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0638": {
+      "name": "Zoeterwoude",
+      "shares": {
+        "D66": 20.2,
+        "PVV": 14.8,
+        "VVD": 14.6,
+        "CDA": 14.4,
+        "GL-PvdA": 11.8,
+        "JA21": 7.4,
+        "BBB": 4.1,
+        "FvD": 4.1,
+        "PvdD": 2.1,
+        "SP": 1.6,
+        "50+": 1.1,
+        "Volt": 1.1,
+        "DENK": 1.1,
+        "CU": 0.9,
+        "SGP": 0.6,
+        "NSC": 0.2,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0642": {
+      "name": "Zwijndrecht",
+      "shares": {
+        "PVV": 21.3,
+        "VVD": 13.5,
+        "CDA": 12.9,
+        "D66": 12.4,
+        "GL-PvdA": 8.0,
+        "JA21": 7.9,
+        "FvD": 5.3,
+        "SGP": 4.5,
+        "CU": 3.5,
+        "DENK": 3.3,
+        "50+": 2.2,
+        "SP": 1.5,
+        "BBB": 1.3,
+        "PvdD": 1.3,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0654": {
+      "name": "Borsele",
+      "shares": {
+        "SGP": 17.0,
+        "PVV": 16.7,
+        "CDA": 14.1,
+        "VVD": 12.7,
+        "D66": 9.2,
+        "JA21": 6.9,
+        "GL-PvdA": 6.8,
+        "FvD": 5.5,
+        "BBB": 4.2,
+        "CU": 2.1,
+        "50+": 1.5,
+        "SP": 1.2,
+        "PvdD": 1.0,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "DENK": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "BBB"
+      }
+    },
+    "G0664": {
+      "name": "Goes",
+      "shares": {
+        "PVV": 14.9,
+        "D66": 14.7,
+        "VVD": 14.4,
+        "CDA": 14.3,
+        "GL-PvdA": 10.8,
+        "SGP": 6.8,
+        "JA21": 6.4,
+        "FvD": 5.1,
+        "CU": 3.2,
+        "BBB": 2.2,
+        "SP": 1.8,
+        "50+": 1.7,
+        "PvdD": 1.6,
+        "DENK": 0.8,
+        "Volt": 0.7,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "NSC"
+      }
+    },
+    "G0668": {
+      "name": "West Maas en Waal",
+      "shares": {
+        "PVV": 23.7,
+        "VVD": 19.1,
+        "CDA": 13.7,
+        "D66": 13.3,
+        "JA21": 7.6,
+        "GL-PvdA": 7.1,
+        "FvD": 5.0,
+        "BBB": 4.4,
+        "50+": 1.6,
+        "SP": 1.6,
+        "PvdD": 1.2,
+        "Volt": 0.6,
+        "CU": 0.4,
+        "DENK": 0.3,
+        "SGP": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0677": {
+      "name": "Hulst",
+      "shares": {
+        "PVV": 24.2,
+        "CDA": 15.8,
+        "VVD": 15.5,
+        "D66": 12.7,
+        "GL-PvdA": 7.9,
+        "JA21": 6.5,
+        "FvD": 5.5,
+        "BBB": 5.3,
+        "SP": 1.9,
+        "50+": 1.9,
+        "PvdD": 1.1,
+        "CU": 0.4,
+        "DENK": 0.4,
+        "Volt": 0.4,
+        "NSC": 0.3,
+        "SGP": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0678": {
+      "name": "Kapelle",
+      "shares": {
+        "CDA": 16.5,
+        "PVV": 14.1,
+        "VVD": 14.0,
+        "SGP": 13.8,
+        "D66": 10.2,
+        "JA21": 7.1,
+        "GL-PvdA": 6.8,
+        "CU": 4.9,
+        "FvD": 4.7,
+        "BBB": 3.1,
+        "50+": 1.4,
+        "SP": 1.3,
+        "PvdD": 1.1,
+        "Volt": 0.5,
+        "DENK": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0687": {
+      "name": "Middelburg",
+      "shares": {
+        "D66": 16.5,
+        "GL-PvdA": 14.8,
+        "PVV": 12.8,
+        "CDA": 12.7,
+        "VVD": 11.3,
+        "SGP": 8.6,
+        "JA21": 5.4,
+        "FvD": 4.3,
+        "CU": 3.9,
+        "PvdD": 2.1,
+        "SP": 1.7,
+        "BBB": 1.6,
+        "DENK": 1.4,
+        "50+": 1.3,
+        "Volt": 1.0,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0703": {
+      "name": "Reimerswaal",
+      "shares": {
+        "SGP": 36.4,
+        "PVV": 17.3,
+        "CDA": 9.9,
+        "VVD": 8.8,
+        "FvD": 5.5,
+        "D66": 5.2,
+        "JA21": 4.9,
+        "GL-PvdA": 3.9,
+        "CU": 2.8,
+        "BBB": 2.1,
+        "50+": 1.0,
+        "SP": 0.8,
+        "DENK": 0.5,
+        "PvdD": 0.5,
+        "Volt": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "SGP"
+      }
+    },
+    "G0715": {
+      "name": "Terneuzen",
+      "shares": {
+        "PVV": 23.1,
+        "CDA": 13.2,
+        "VVD": 13.1,
+        "D66": 11.5,
+        "GL-PvdA": 8.5,
+        "JA21": 6.2,
+        "FvD": 5.8,
+        "SGP": 4.4,
+        "BBB": 3.6,
+        "CU": 2.8,
+        "SP": 2.1,
+        "50+": 2.1,
+        "DENK": 1.5,
+        "PvdD": 1.1,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0716": {
+      "name": "Tholen",
+      "shares": {
+        "SGP": 24.9,
+        "PVV": 20.4,
+        "VVD": 11.1,
+        "CDA": 10.3,
+        "D66": 6.1,
+        "FvD": 5.8,
+        "JA21": 5.5,
+        "GL-PvdA": 4.4,
+        "CU": 3.8,
+        "BBB": 3.3,
+        "50+": 1.3,
+        "SP": 1.2,
+        "PvdD": 0.8,
+        "DENK": 0.5,
+        "Volt": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "SGP"
+      }
+    },
+    "G0717": {
+      "name": "Veere",
+      "shares": {
+        "CDA": 17.7,
+        "VVD": 15.6,
+        "SGP": 15.2,
+        "D66": 12.2,
+        "PVV": 9.9,
+        "GL-PvdA": 9.2,
+        "JA21": 5.4,
+        "FvD": 4.0,
+        "CU": 3.2,
+        "BBB": 3.1,
+        "PvdD": 1.4,
+        "50+": 1.3,
+        "SP": 0.9,
+        "Volt": 0.6,
+        "NSC": 0.2,
+        "DENK": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "VVD",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G0718": {
+      "name": "Vlissingen",
+      "shares": {
+        "PVV": 20.0,
+        "D66": 15.0,
+        "VVD": 13.7,
+        "GL-PvdA": 11.7,
+        "CDA": 11.3,
+        "JA21": 6.1,
+        "FvD": 5.7,
+        "SP": 2.6,
+        "SGP": 2.4,
+        "50+": 2.3,
+        "CU": 2.2,
+        "BBB": 2.1,
+        "DENK": 1.9,
+        "PvdD": 1.7,
+        "Volt": 0.8,
+        "NSC": 0.5,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "NSC"
+      }
+    },
+    "G0736": {
+      "name": "De Ronde Venen",
+      "shares": {
+        "VVD": 21.9,
+        "D66": 17.5,
+        "PVV": 15.6,
+        "CDA": 11.8,
+        "GL-PvdA": 9.0,
+        "JA21": 6.8,
+        "FvD": 4.7,
+        "BBB": 3.5,
+        "CU": 1.6,
+        "SGP": 1.5,
+        "PvdD": 1.4,
+        "50+": 1.3,
+        "DENK": 1.1,
+        "SP": 0.9,
+        "Volt": 0.9,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0737": {
+      "name": "Tytsjerksteradiel",
+      "shares": {
+        "CDA": 20.2,
+        "PVV": 17.6,
+        "D66": 11.8,
+        "GL-PvdA": 11.3,
+        "VVD": 10.9,
+        "FvD": 7.3,
+        "JA21": 5.7,
+        "BBB": 4.6,
+        "CU": 2.8,
+        "SP": 1.9,
+        "SGP": 1.9,
+        "PvdD": 1.4,
+        "50+": 1.3,
+        "NSC": 0.6,
+        "Volt": 0.6,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "CDA"
+      }
+    },
+    "G0743": {
+      "name": "Asten",
+      "shares": {
+        "VVD": 19.6,
+        "PVV": 17.9,
+        "CDA": 17.4,
+        "D66": 14.2,
+        "JA21": 8.3,
+        "GL-PvdA": 7.0,
+        "BBB": 5.0,
+        "FvD": 3.9,
+        "50+": 2.1,
+        "SP": 1.6,
+        "PvdD": 1.0,
+        "Volt": 0.8,
+        "DENK": 0.4,
+        "NSC": 0.3,
+        "CU": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0744": {
+      "name": "Baarle-Nassau",
+      "shares": {
+        "PVV": 22.7,
+        "VVD": 17.1,
+        "CDA": 13.7,
+        "D66": 11.4,
+        "BBB": 8.8,
+        "JA21": 7.8,
+        "FvD": 6.7,
+        "GL-PvdA": 6.1,
+        "50+": 1.5,
+        "SP": 1.2,
+        "PvdD": 1.2,
+        "Volt": 0.6,
+        "CU": 0.4,
+        "NSC": 0.2,
+        "DENK": 0.2,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0748": {
+      "name": "Bergen op Zoom",
+      "shares": {
+        "PVV": 21.3,
+        "VVD": 16.8,
+        "D66": 16.6,
+        "CDA": 11.0,
+        "GL-PvdA": 9.1,
+        "JA21": 6.9,
+        "DENK": 5.3,
+        "FvD": 4.2,
+        "50+": 1.9,
+        "SP": 1.8,
+        "BBB": 1.6,
+        "PvdD": 1.4,
+        "Volt": 0.8,
+        "CU": 0.6,
+        "NSC": 0.4,
+        "SGP": 0.2,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0753": {
+      "name": "Best",
+      "shares": {
+        "D66": 19.6,
+        "VVD": 18.2,
+        "PVV": 17.7,
+        "CDA": 14.2,
+        "GL-PvdA": 8.2,
+        "JA21": 7.4,
+        "FvD": 3.6,
+        "BBB": 2.0,
+        "50+": 1.8,
+        "SP": 1.6,
+        "DENK": 1.5,
+        "CU": 1.3,
+        "PvdD": 1.1,
+        "Volt": 1.0,
+        "NSC": 0.3,
+        "SGP": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0755": {
+      "name": "Boekel",
+      "shares": {
+        "PVV": 22.0,
+        "CDA": 19.3,
+        "VVD": 16.9,
+        "D66": 13.5,
+        "JA21": 8.4,
+        "BBB": 5.8,
+        "GL-PvdA": 4.8,
+        "FvD": 4.5,
+        "SP": 1.6,
+        "50+": 1.1,
+        "PvdD": 0.9,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "DENK": 0.3,
+        "CU": 0.2,
+        "BIJ1": 0.0,
+        "SGP": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0757": {
+      "name": "Boxtel",
+      "shares": {
+        "D66": 19.3,
+        "PVV": 18.8,
+        "VVD": 15.1,
+        "CDA": 14.1,
+        "GL-PvdA": 11.1,
+        "JA21": 6.4,
+        "FvD": 3.7,
+        "BBB": 2.5,
+        "SP": 2.0,
+        "DENK": 1.9,
+        "50+": 1.6,
+        "PvdD": 1.4,
+        "Volt": 1.1,
+        "NSC": 0.4,
+        "CU": 0.3,
+        "BIJ1": 0.2,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0758": {
+      "name": "Breda",
+      "shares": {
+        "D66": 24.0,
+        "VVD": 18.4,
+        "GL-PvdA": 13.3,
+        "PVV": 13.2,
+        "CDA": 10.6,
+        "JA21": 6.0,
+        "FvD": 3.2,
+        "PvdD": 2.3,
+        "DENK": 2.0,
+        "SP": 1.9,
+        "Volt": 1.4,
+        "50+": 1.3,
+        "BBB": 1.2,
+        "CU": 0.4,
+        "NSC": 0.3,
+        "BIJ1": 0.3,
+        "SGP": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0762": {
+      "name": "Deurne",
+      "shares": {
+        "PVV": 22.0,
+        "VVD": 17.1,
+        "CDA": 15.8,
+        "D66": 13.3,
+        "JA21": 8.5,
+        "GL-PvdA": 6.8,
+        "BBB": 5.2,
+        "FvD": 4.4,
+        "50+": 2.3,
+        "SP": 1.7,
+        "PvdD": 0.9,
+        "Volt": 0.6,
+        "DENK": 0.5,
+        "NSC": 0.4,
+        "CU": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0765": {
+      "name": "Pekela",
+      "shares": {
+        "PVV": 36.3,
+        "CDA": 9.7,
+        "VVD": 9.4,
+        "GL-PvdA": 8.7,
+        "FvD": 8.0,
+        "D66": 7.6,
+        "SP": 5.1,
+        "BBB": 4.9,
+        "JA21": 4.1,
+        "50+": 1.7,
+        "CU": 1.4,
+        "SGP": 1.3,
+        "PvdD": 1.0,
+        "Volt": 0.3,
+        "NSC": 0.3,
+        "DENK": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "BBB"
+      }
+    },
+    "G0766": {
+      "name": "Dongen",
+      "shares": {
+        "PVV": 19.9,
+        "D66": 17.9,
+        "VVD": 17.7,
+        "CDA": 14.5,
+        "GL-PvdA": 8.4,
+        "JA21": 7.0,
+        "FvD": 3.7,
+        "BBB": 2.6,
+        "50+": 1.7,
+        "SP": 1.7,
+        "DENK": 1.6,
+        "PvdD": 1.3,
+        "Volt": 0.7,
+        "CU": 0.7,
+        "SGP": 0.3,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0770": {
+      "name": "Eersel",
+      "shares": {
+        "CDA": 19.3,
+        "VVD": 18.7,
+        "D66": 17.2,
+        "PVV": 15.0,
+        "GL-PvdA": 8.2,
+        "JA21": 7.7,
+        "BBB": 3.8,
+        "FvD": 3.4,
+        "50+": 1.8,
+        "SP": 1.4,
+        "Volt": 1.3,
+        "PvdD": 1.1,
+        "NSC": 0.3,
+        "DENK": 0.3,
+        "CU": 0.2,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0772": {
+      "name": "Eindhoven",
+      "shares": {
+        "D66": 22.4,
+        "GL-PvdA": 17.5,
+        "PVV": 14.4,
+        "VVD": 12.3,
+        "CDA": 9.4,
+        "JA21": 4.9,
+        "DENK": 4.0,
+        "FvD": 3.4,
+        "PvdD": 2.7,
+        "SP": 2.4,
+        "Volt": 2.2,
+        "50+": 1.7,
+        "BBB": 0.9,
+        "CU": 0.9,
+        "BIJ1": 0.4,
+        "NSC": 0.4,
+        "SGP": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "D66"
+      }
+    },
+    "G0777": {
+      "name": "Etten-Leur",
+      "shares": {
+        "PVV": 20.7,
+        "VVD": 19.0,
+        "D66": 16.2,
+        "CDA": 12.6,
+        "GL-PvdA": 8.6,
+        "JA21": 7.4,
+        "FvD": 4.3,
+        "BBB": 2.4,
+        "50+": 2.1,
+        "DENK": 1.9,
+        "SP": 1.6,
+        "PvdD": 1.1,
+        "Volt": 0.8,
+        "CU": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.2,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0779": {
+      "name": "Geertruidenberg",
+      "shares": {
+        "PVV": 27.5,
+        "VVD": 17.1,
+        "D66": 13.6,
+        "CDA": 11.8,
+        "JA21": 8.2,
+        "GL-PvdA": 6.8,
+        "FvD": 5.1,
+        "BBB": 2.6,
+        "50+": 2.5,
+        "SP": 1.7,
+        "PvdD": 1.1,
+        "Volt": 0.6,
+        "DENK": 0.4,
+        "CU": 0.4,
+        "NSC": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0784": {
+      "name": "Gilze en Rijen",
+      "shares": {
+        "PVV": 19.9,
+        "D66": 17.3,
+        "VVD": 16.0,
+        "CDA": 13.3,
+        "GL-PvdA": 9.1,
+        "JA21": 7.7,
+        "FvD": 4.5,
+        "BBB": 3.1,
+        "50+": 2.1,
+        "DENK": 2.0,
+        "SP": 1.6,
+        "PvdD": 1.5,
+        "Volt": 0.9,
+        "NSC": 0.3,
+        "CU": 0.3,
+        "BIJ1": 0.2,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0785": {
+      "name": "Goirle",
+      "shares": {
+        "D66": 20.5,
+        "VVD": 17.8,
+        "PVV": 17.2,
+        "CDA": 13.3,
+        "GL-PvdA": 12.0,
+        "JA21": 6.5,
+        "FvD": 3.2,
+        "BBB": 2.0,
+        "50+": 2.0,
+        "SP": 1.7,
+        "PvdD": 1.5,
+        "Volt": 1.0,
+        "DENK": 0.6,
+        "NSC": 0.3,
+        "CU": 0.2,
+        "BIJ1": 0.1,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0794": {
+      "name": "Helmond",
+      "shares": {
+        "PVV": 25.0,
+        "VVD": 15.8,
+        "D66": 15.5,
+        "CDA": 10.1,
+        "GL-PvdA": 9.5,
+        "JA21": 6.8,
+        "FvD": 4.8,
+        "DENK": 3.7,
+        "50+": 2.3,
+        "SP": 2.1,
+        "BBB": 1.4,
+        "PvdD": 1.2,
+        "Volt": 0.9,
+        "CU": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.2,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0796": {
+      "name": "'s-Hertogenbosch",
+      "shares": {
+        "D66": 22.5,
+        "PVV": 16.9,
+        "VVD": 15.5,
+        "GL-PvdA": 14.0,
+        "CDA": 10.0,
+        "JA21": 5.5,
+        "FvD": 3.4,
+        "DENK": 2.4,
+        "PvdD": 2.3,
+        "SP": 2.2,
+        "Volt": 1.5,
+        "50+": 1.4,
+        "BBB": 1.2,
+        "CU": 0.5,
+        "BIJ1": 0.3,
+        "NSC": 0.3,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0797": {
+      "name": "Heusden",
+      "shares": {
+        "PVV": 21.1,
+        "VVD": 18.6,
+        "D66": 17.0,
+        "CDA": 14.0,
+        "GL-PvdA": 7.2,
+        "JA21": 7.1,
+        "FvD": 4.4,
+        "BBB": 2.7,
+        "50+": 1.8,
+        "SP": 1.5,
+        "DENK": 1.5,
+        "PvdD": 1.2,
+        "Volt": 0.7,
+        "CU": 0.6,
+        "NSC": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0798": {
+      "name": "Hilvarenbeek",
+      "shares": {
+        "VVD": 20.0,
+        "D66": 17.8,
+        "CDA": 17.7,
+        "PVV": 13.7,
+        "GL-PvdA": 9.2,
+        "JA21": 7.9,
+        "BBB": 4.5,
+        "FvD": 3.4,
+        "50+": 1.8,
+        "SP": 1.2,
+        "PvdD": 1.1,
+        "Volt": 0.8,
+        "CU": 0.3,
+        "NSC": 0.2,
+        "DENK": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0809": {
+      "name": "Loon op Zand",
+      "shares": {
+        "PVV": 23.6,
+        "VVD": 19.8,
+        "D66": 14.6,
+        "CDA": 13.9,
+        "GL-PvdA": 7.5,
+        "JA21": 7.3,
+        "FvD": 4.1,
+        "BBB": 2.2,
+        "50+": 2.1,
+        "SP": 1.5,
+        "PvdD": 1.0,
+        "Volt": 0.7,
+        "DENK": 0.5,
+        "CU": 0.5,
+        "SGP": 0.4,
+        "NSC": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0820": {
+      "name": "Nuenen, Gerwen en Nederwetten",
+      "shares": {
+        "D66": 22.5,
+        "VVD": 19.0,
+        "CDA": 15.7,
+        "PVV": 12.4,
+        "GL-PvdA": 12.3,
+        "JA21": 5.9,
+        "FvD": 3.2,
+        "50+": 1.7,
+        "BBB": 1.6,
+        "PvdD": 1.4,
+        "SP": 1.3,
+        "Volt": 1.3,
+        "CU": 0.5,
+        "DENK": 0.5,
+        "NSC": 0.4,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0823": {
+      "name": "Oirschot",
+      "shares": {
+        "PVV": 19.2,
+        "CDA": 18.4,
+        "VVD": 17.8,
+        "D66": 15.5,
+        "JA21": 7.6,
+        "GL-PvdA": 6.6,
+        "BBB": 5.3,
+        "FvD": 4.0,
+        "50+": 1.6,
+        "PvdD": 1.2,
+        "SP": 1.2,
+        "Volt": 0.8,
+        "CU": 0.3,
+        "NSC": 0.2,
+        "DENK": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0824": {
+      "name": "Oisterwijk",
+      "shares": {
+        "VVD": 23.1,
+        "D66": 19.2,
+        "CDA": 15.1,
+        "PVV": 13.9,
+        "GL-PvdA": 9.3,
+        "JA21": 6.6,
+        "FvD": 3.4,
+        "BBB": 2.9,
+        "50+": 1.6,
+        "SP": 1.5,
+        "PvdD": 1.2,
+        "Volt": 0.8,
+        "DENK": 0.6,
+        "CU": 0.4,
+        "NSC": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "NSC"
+      }
+    },
+    "G0826": {
+      "name": "Oosterhout",
+      "shares": {
+        "PVV": 20.6,
+        "VVD": 18.8,
+        "D66": 17.7,
+        "CDA": 11.4,
+        "GL-PvdA": 9.6,
+        "JA21": 6.6,
+        "FvD": 4.0,
+        "DENK": 2.8,
+        "BBB": 1.9,
+        "SP": 1.7,
+        "50+": 1.6,
+        "PvdD": 1.4,
+        "Volt": 0.7,
+        "CU": 0.5,
+        "NSC": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0828": {
+      "name": "Oss",
+      "shares": {
+        "PVV": 24.0,
+        "D66": 15.5,
+        "VVD": 15.3,
+        "CDA": 11.7,
+        "GL-PvdA": 9.1,
+        "JA21": 6.7,
+        "FvD": 4.7,
+        "SP": 3.5,
+        "BBB": 2.6,
+        "DENK": 2.5,
+        "50+": 1.6,
+        "PvdD": 1.1,
+        "Volt": 0.8,
+        "CU": 0.3,
+        "NSC": 0.3,
+        "BIJ1": 0.1,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0840": {
+      "name": "Rucphen",
+      "shares": {
+        "PVV": 46.4,
+        "VVD": 14.5,
+        "CDA": 8.9,
+        "D66": 6.9,
+        "JA21": 6.7,
+        "FvD": 5.1,
+        "GL-PvdA": 3.5,
+        "BBB": 3.3,
+        "50+": 1.7,
+        "SP": 0.9,
+        "PvdD": 0.7,
+        "DENK": 0.4,
+        "Volt": 0.3,
+        "NSC": 0.2,
+        "CU": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "PVV"
+      }
+    },
+    "G0845": {
+      "name": "Sint-Michielsgestel",
+      "shares": {
+        "D66": 20.6,
+        "PVV": 18.3,
+        "VVD": 17.0,
+        "CDA": 15.1,
+        "GL-PvdA": 9.2,
+        "JA21": 6.9,
+        "FvD": 3.9,
+        "BBB": 2.2,
+        "SP": 1.7,
+        "50+": 1.5,
+        "PvdD": 1.5,
+        "Volt": 1.0,
+        "CU": 0.3,
+        "NSC": 0.3,
+        "DENK": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0847": {
+      "name": "Someren",
+      "shares": {
+        "PVV": 21.5,
+        "VVD": 19.8,
+        "CDA": 16.8,
+        "D66": 13.1,
+        "JA21": 8.6,
+        "BBB": 5.4,
+        "GL-PvdA": 5.0,
+        "FvD": 4.7,
+        "50+": 1.8,
+        "SP": 1.2,
+        "PvdD": 0.9,
+        "Volt": 0.5,
+        "DENK": 0.3,
+        "NSC": 0.2,
+        "CU": 0.1,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0848": {
+      "name": "Son en Breugel",
+      "shares": {
+        "D66": 20.5,
+        "VVD": 20.0,
+        "CDA": 15.4,
+        "PVV": 14.1,
+        "GL-PvdA": 10.1,
+        "JA21": 7.1,
+        "FvD": 3.7,
+        "BBB": 1.7,
+        "50+": 1.6,
+        "PvdD": 1.5,
+        "SP": 1.4,
+        "Volt": 1.1,
+        "CU": 0.7,
+        "DENK": 0.6,
+        "NSC": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0851": {
+      "name": "Steenbergen",
+      "shares": {
+        "PVV": 28.8,
+        "VVD": 17.0,
+        "D66": 11.5,
+        "CDA": 11.4,
+        "JA21": 8.4,
+        "FvD": 6.2,
+        "GL-PvdA": 5.1,
+        "BBB": 3.5,
+        "50+": 2.1,
+        "SP": 1.4,
+        "SGP": 1.2,
+        "PvdD": 1.0,
+        "CU": 0.9,
+        "Volt": 0.5,
+        "DENK": 0.4,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0852": {
+      "name": "Waterland",
+      "shares": {
+        "D66": 17.9,
+        "VVD": 16.9,
+        "GL-PvdA": 16.4,
+        "PVV": 14.4,
+        "CDA": 10.4,
+        "JA21": 6.3,
+        "BBB": 5.3,
+        "FvD": 4.3,
+        "PvdD": 2.3,
+        "SP": 1.7,
+        "50+": 1.2,
+        "Volt": 1.2,
+        "CU": 0.8,
+        "NSC": 0.4,
+        "DENK": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0855": {
+      "name": "Tilburg",
+      "shares": {
+        "D66": 20.8,
+        "PVV": 16.6,
+        "GL-PvdA": 15.5,
+        "VVD": 13.7,
+        "CDA": 9.7,
+        "JA21": 5.6,
+        "DENK": 3.7,
+        "FvD": 3.3,
+        "PvdD": 2.6,
+        "SP": 2.4,
+        "50+": 2.1,
+        "Volt": 1.3,
+        "BBB": 1.2,
+        "BIJ1": 0.5,
+        "CU": 0.4,
+        "NSC": 0.3,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0858": {
+      "name": "Valkenswaard",
+      "shares": {
+        "PVV": 21.4,
+        "VVD": 17.9,
+        "D66": 16.7,
+        "CDA": 14.2,
+        "GL-PvdA": 8.6,
+        "JA21": 7.0,
+        "FvD": 4.2,
+        "BBB": 2.5,
+        "50+": 2.4,
+        "SP": 1.8,
+        "PvdD": 1.1,
+        "Volt": 0.9,
+        "NSC": 0.5,
+        "DENK": 0.4,
+        "CU": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0861": {
+      "name": "Veldhoven",
+      "shares": {
+        "VVD": 18.9,
+        "PVV": 18.6,
+        "D66": 18.4,
+        "CDA": 14.2,
+        "GL-PvdA": 9.3,
+        "JA21": 6.8,
+        "FvD": 3.8,
+        "50+": 2.4,
+        "SP": 1.7,
+        "BBB": 1.5,
+        "Volt": 1.3,
+        "PvdD": 1.2,
+        "DENK": 0.6,
+        "CU": 0.6,
+        "NSC": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "NSC"
+      }
+    },
+    "G0865": {
+      "name": "Vught",
+      "shares": {
+        "D66": 24.9,
+        "VVD": 20.2,
+        "CDA": 13.3,
+        "GL-PvdA": 12.4,
+        "PVV": 11.9,
+        "JA21": 5.4,
+        "FvD": 2.9,
+        "SP": 1.8,
+        "BBB": 1.8,
+        "PvdD": 1.4,
+        "Volt": 1.3,
+        "50+": 1.1,
+        "CU": 0.6,
+        "DENK": 0.3,
+        "NSC": 0.3,
+        "BIJ1": 0.2,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0866": {
+      "name": "Waalre",
+      "shares": {
+        "D66": 24.0,
+        "VVD": 20.1,
+        "CDA": 14.7,
+        "GL-PvdA": 12.0,
+        "PVV": 11.6,
+        "JA21": 5.4,
+        "FvD": 3.1,
+        "50+": 1.8,
+        "PvdD": 1.8,
+        "Volt": 1.6,
+        "SP": 1.4,
+        "BBB": 1.3,
+        "CU": 0.4,
+        "NSC": 0.3,
+        "DENK": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0867": {
+      "name": "Waalwijk",
+      "shares": {
+        "PVV": 23.0,
+        "VVD": 17.7,
+        "D66": 14.4,
+        "CDA": 13.0,
+        "GL-PvdA": 7.3,
+        "JA21": 7.2,
+        "FvD": 4.5,
+        "DENK": 2.2,
+        "50+": 2.0,
+        "SGP": 2.0,
+        "BBB": 2.0,
+        "SP": 1.5,
+        "CU": 1.1,
+        "PvdD": 1.1,
+        "Volt": 0.6,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0873": {
+      "name": "Woensdrecht",
+      "shares": {
+        "PVV": 26.9,
+        "VVD": 18.8,
+        "D66": 13.2,
+        "CDA": 12.2,
+        "JA21": 8.2,
+        "GL-PvdA": 5.8,
+        "FvD": 5.5,
+        "BBB": 3.1,
+        "50+": 2.1,
+        "SP": 1.5,
+        "PvdD": 1.1,
+        "Volt": 0.5,
+        "CU": 0.4,
+        "DENK": 0.4,
+        "NSC": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0879": {
+      "name": "Zundert",
+      "shares": {
+        "PVV": 21.1,
+        "VVD": 19.8,
+        "CDA": 15.3,
+        "D66": 13.1,
+        "JA21": 8.1,
+        "BBB": 5.8,
+        "GL-PvdA": 5.5,
+        "FvD": 5.1,
+        "50+": 1.8,
+        "SP": 1.4,
+        "PvdD": 1.1,
+        "Volt": 0.5,
+        "DENK": 0.4,
+        "CU": 0.4,
+        "NSC": 0.4,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0880": {
+      "name": "Wormerland",
+      "shares": {
+        "D66": 18.6,
+        "VVD": 17.3,
+        "PVV": 16.3,
+        "GL-PvdA": 13.0,
+        "CDA": 9.7,
+        "JA21": 6.6,
+        "FvD": 5.0,
+        "BBB": 3.5,
+        "SP": 2.3,
+        "PvdD": 2.1,
+        "50+": 1.8,
+        "CU": 1.0,
+        "DENK": 0.9,
+        "Volt": 0.7,
+        "SGP": 0.6,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G0882": {
+      "name": "Landgraaf",
+      "shares": {
+        "PVV": 35.0,
+        "VVD": 12.0,
+        "D66": 10.8,
+        "CDA": 10.5,
+        "GL-PvdA": 10.0,
+        "FvD": 6.2,
+        "JA21": 5.5,
+        "SP": 2.5,
+        "50+": 2.2,
+        "BBB": 2.0,
+        "PvdD": 1.3,
+        "DENK": 0.7,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "CU": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0888": {
+      "name": "Beek",
+      "shares": {
+        "PVV": 24.7,
+        "CDA": 16.4,
+        "VVD": 15.2,
+        "D66": 15.2,
+        "GL-PvdA": 8.9,
+        "JA21": 6.1,
+        "FvD": 4.5,
+        "50+": 2.1,
+        "BBB": 1.9,
+        "SP": 1.4,
+        "PvdD": 1.2,
+        "Volt": 0.7,
+        "DENK": 0.6,
+        "NSC": 0.5,
+        "CU": 0.4,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0889": {
+      "name": "Beesel",
+      "shares": {
+        "PVV": 29.2,
+        "CDA": 14.9,
+        "VVD": 13.5,
+        "D66": 13.0,
+        "GL-PvdA": 8.1,
+        "JA21": 7.1,
+        "FvD": 4.3,
+        "BBB": 2.6,
+        "50+": 2.2,
+        "SP": 1.5,
+        "DENK": 1.5,
+        "PvdD": 1.1,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "CU": 0.2,
+        "BIJ1": 0.0,
+        "SGP": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0893": {
+      "name": "Bergen (L)",
+      "shares": {
+        "PVV": 29.1,
+        "VVD": 14.9,
+        "CDA": 14.4,
+        "D66": 10.5,
+        "GL-PvdA": 7.7,
+        "JA21": 7.3,
+        "FvD": 5.7,
+        "BBB": 4.9,
+        "SP": 1.7,
+        "50+": 1.5,
+        "PvdD": 1.1,
+        "Volt": 0.5,
+        "CU": 0.3,
+        "DENK": 0.3,
+        "NSC": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0899": {
+      "name": "Brunssum",
+      "shares": {
+        "PVV": 34.3,
+        "VVD": 11.4,
+        "D66": 10.0,
+        "CDA": 10.0,
+        "GL-PvdA": 9.0,
+        "FvD": 7.3,
+        "JA21": 6.1,
+        "50+": 2.7,
+        "SP": 2.7,
+        "BBB": 2.1,
+        "PvdD": 1.4,
+        "CU": 0.8,
+        "DENK": 0.7,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "SGP": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "BBB"
+      }
+    },
+    "G0907": {
+      "name": "Gennep",
+      "shares": {
+        "PVV": 20.9,
+        "D66": 16.4,
+        "VVD": 15.4,
+        "CDA": 14.5,
+        "GL-PvdA": 10.6,
+        "JA21": 6.2,
+        "FvD": 4.9,
+        "SP": 2.6,
+        "BBB": 2.6,
+        "PvdD": 1.5,
+        "50+": 1.5,
+        "Volt": 1.1,
+        "DENK": 0.7,
+        "CU": 0.4,
+        "NSC": 0.4,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0917": {
+      "name": "Heerlen",
+      "shares": {
+        "PVV": 30.2,
+        "GL-PvdA": 13.2,
+        "D66": 11.9,
+        "VVD": 10.5,
+        "CDA": 9.5,
+        "FvD": 6.4,
+        "JA21": 4.9,
+        "SP": 3.9,
+        "50+": 2.2,
+        "PvdD": 2.0,
+        "DENK": 1.7,
+        "BBB": 1.5,
+        "Volt": 0.8,
+        "CU": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.2,
+        "SGP": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0928": {
+      "name": "Kerkrade",
+      "shares": {
+        "PVV": 37.7,
+        "VVD": 10.7,
+        "GL-PvdA": 9.9,
+        "CDA": 9.6,
+        "D66": 9.1,
+        "FvD": 7.3,
+        "JA21": 4.8,
+        "50+": 2.8,
+        "SP": 2.4,
+        "BBB": 1.8,
+        "PvdD": 1.4,
+        "DENK": 1.0,
+        "Volt": 0.5,
+        "CU": 0.3,
+        "NSC": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "BBB"
+      }
+    },
+    "G0935": {
+      "name": "Maastricht",
+      "shares": {
+        "PVV": 20.9,
+        "D66": 19.3,
+        "GL-PvdA": 17.1,
+        "VVD": 12.7,
+        "CDA": 9.8,
+        "JA21": 4.6,
+        "FvD": 3.6,
+        "PvdD": 2.8,
+        "SP": 2.3,
+        "50+": 1.7,
+        "Volt": 1.5,
+        "DENK": 1.3,
+        "BBB": 1.1,
+        "CU": 0.4,
+        "NSC": 0.4,
+        "BIJ1": 0.4,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0938": {
+      "name": "Meerssen",
+      "shares": {
+        "PVV": 22.3,
+        "VVD": 16.5,
+        "D66": 15.9,
+        "CDA": 15.0,
+        "GL-PvdA": 11.0,
+        "JA21": 6.5,
+        "FvD": 4.1,
+        "BBB": 2.0,
+        "50+": 1.7,
+        "SP": 1.5,
+        "PvdD": 1.3,
+        "Volt": 0.6,
+        "CU": 0.5,
+        "NSC": 0.4,
+        "DENK": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0944": {
+      "name": "Mook en Middelaar",
+      "shares": {
+        "D66": 22.8,
+        "GL-PvdA": 19.4,
+        "VVD": 17.2,
+        "PVV": 12.3,
+        "CDA": 11.2,
+        "JA21": 4.9,
+        "FvD": 2.9,
+        "PvdD": 2.2,
+        "SP": 1.7,
+        "BBB": 1.6,
+        "Volt": 1.4,
+        "50+": 1.1,
+        "CU": 0.5,
+        "NSC": 0.4,
+        "DENK": 0.3,
+        "BIJ1": 0.2,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G0946": {
+      "name": "Nederweert",
+      "shares": {
+        "PVV": 24.6,
+        "CDA": 17.3,
+        "VVD": 16.2,
+        "D66": 11.6,
+        "JA21": 7.3,
+        "GL-PvdA": 7.1,
+        "BBB": 5.0,
+        "FvD": 4.7,
+        "50+": 1.9,
+        "SP": 1.5,
+        "PvdD": 0.9,
+        "Volt": 0.6,
+        "DENK": 0.4,
+        "NSC": 0.3,
+        "CU": 0.2,
+        "BIJ1": 0.1,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G0957": {
+      "name": "Roermond",
+      "shares": {
+        "PVV": 24.1,
+        "D66": 15.7,
+        "VVD": 14.7,
+        "GL-PvdA": 11.0,
+        "CDA": 10.9,
+        "JA21": 5.9,
+        "FvD": 4.8,
+        "DENK": 3.8,
+        "SP": 2.1,
+        "PvdD": 1.7,
+        "50+": 1.6,
+        "BBB": 1.6,
+        "Volt": 0.8,
+        "NSC": 0.4,
+        "CU": 0.4,
+        "BIJ1": 0.3,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0965": {
+      "name": "Simpelveld",
+      "shares": {
+        "PVV": 30.9,
+        "CDA": 14.6,
+        "VVD": 12.4,
+        "D66": 11.1,
+        "GL-PvdA": 9.3,
+        "JA21": 6.2,
+        "FvD": 5.4,
+        "BBB": 3.9,
+        "50+": 2.0,
+        "SP": 1.8,
+        "PvdD": 0.9,
+        "NSC": 0.4,
+        "Volt": 0.4,
+        "CU": 0.3,
+        "DENK": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0971": {
+      "name": "Stein",
+      "shares": {
+        "PVV": 29.8,
+        "VVD": 13.2,
+        "CDA": 13.2,
+        "D66": 12.7,
+        "GL-PvdA": 8.3,
+        "FvD": 6.2,
+        "JA21": 6.2,
+        "50+": 2.5,
+        "BBB": 2.3,
+        "SP": 1.9,
+        "PvdD": 1.4,
+        "NSC": 1.1,
+        "Volt": 0.6,
+        "DENK": 0.4,
+        "CU": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0981": {
+      "name": "Vaals",
+      "shares": {
+        "PVV": 25.0,
+        "GL-PvdA": 14.0,
+        "D66": 13.3,
+        "CDA": 12.7,
+        "VVD": 11.7,
+        "JA21": 5.2,
+        "FvD": 4.9,
+        "BBB": 3.9,
+        "SP": 2.3,
+        "PvdD": 2.2,
+        "50+": 2.1,
+        "Volt": 0.8,
+        "DENK": 0.6,
+        "CU": 0.6,
+        "SGP": 0.2,
+        "NSC": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0983": {
+      "name": "Venlo",
+      "shares": {
+        "PVV": 27.7,
+        "D66": 14.5,
+        "VVD": 14.2,
+        "CDA": 12.3,
+        "GL-PvdA": 9.7,
+        "JA21": 6.3,
+        "FvD": 4.0,
+        "DENK": 3.6,
+        "50+": 1.7,
+        "SP": 1.6,
+        "BBB": 1.6,
+        "PvdD": 1.3,
+        "Volt": 0.6,
+        "NSC": 0.3,
+        "CU": 0.3,
+        "BIJ1": 0.1,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G0984": {
+      "name": "Venray",
+      "shares": {
+        "PVV": 20.2,
+        "VVD": 16.2,
+        "D66": 15.7,
+        "CDA": 15.5,
+        "GL-PvdA": 8.6,
+        "JA21": 6.5,
+        "BBB": 4.7,
+        "FvD": 4.3,
+        "SP": 2.1,
+        "DENK": 1.8,
+        "50+": 1.8,
+        "PvdD": 1.0,
+        "Volt": 0.7,
+        "CU": 0.4,
+        "NSC": 0.4,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0986": {
+      "name": "Voerendaal",
+      "shares": {
+        "PVV": 21.4,
+        "D66": 15.7,
+        "CDA": 15.4,
+        "VVD": 15.3,
+        "GL-PvdA": 11.4,
+        "JA21": 5.6,
+        "FvD": 4.4,
+        "BBB": 3.2,
+        "50+": 1.8,
+        "SP": 1.8,
+        "PvdD": 1.7,
+        "Volt": 1.0,
+        "NSC": 0.4,
+        "DENK": 0.4,
+        "CU": 0.3,
+        "BIJ1": 0.1,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "NSC"
+      }
+    },
+    "G0988": {
+      "name": "Weert",
+      "shares": {
+        "PVV": 22.3,
+        "VVD": 17.3,
+        "D66": 14.1,
+        "CDA": 13.2,
+        "GL-PvdA": 10.9,
+        "JA21": 7.2,
+        "FvD": 4.2,
+        "BBB": 2.5,
+        "DENK": 2.2,
+        "50+": 1.7,
+        "SP": 1.6,
+        "PvdD": 1.2,
+        "Volt": 0.7,
+        "NSC": 0.4,
+        "CU": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0994": {
+      "name": "Valkenburg aan de Geul",
+      "shares": {
+        "PVV": 22.4,
+        "VVD": 16.4,
+        "CDA": 14.7,
+        "D66": 14.4,
+        "GL-PvdA": 11.3,
+        "JA21": 6.3,
+        "FvD": 4.4,
+        "BBB": 2.9,
+        "50+": 1.8,
+        "PvdD": 1.6,
+        "SP": 1.6,
+        "Volt": 0.9,
+        "CU": 0.5,
+        "DENK": 0.3,
+        "NSC": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G0995": {
+      "name": "Lelystad",
+      "shares": {
+        "PVV": 22.6,
+        "D66": 14.2,
+        "VVD": 13.8,
+        "GL-PvdA": 11.8,
+        "CDA": 7.9,
+        "JA21": 6.3,
+        "FvD": 6.2,
+        "DENK": 4.4,
+        "BBB": 2.3,
+        "SP": 2.3,
+        "CU": 2.1,
+        "PvdD": 1.9,
+        "50+": 1.6,
+        "SGP": 0.9,
+        "Volt": 0.8,
+        "BIJ1": 0.5,
+        "NSC": 0.5
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G1507": {
+      "name": "Horst aan de Maas",
+      "shares": {
+        "PVV": 20.5,
+        "CDA": 17.9,
+        "VVD": 16.5,
+        "D66": 14.7,
+        "GL-PvdA": 7.6,
+        "JA21": 7.4,
+        "FvD": 4.5,
+        "BBB": 4.1,
+        "SP": 2.0,
+        "50+": 1.9,
+        "PvdD": 1.2,
+        "Volt": 0.7,
+        "NSC": 0.4,
+        "CU": 0.3,
+        "DENK": 0.2,
+        "BIJ1": 0.1,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1509": {
+      "name": "Oude IJsselstreek",
+      "shares": {
+        "PVV": 18.4,
+        "CDA": 16.6,
+        "VVD": 15.6,
+        "D66": 13.4,
+        "GL-PvdA": 9.0,
+        "JA21": 7.1,
+        "BBB": 6.2,
+        "FvD": 5.3,
+        "DENK": 1.9,
+        "SP": 1.8,
+        "50+": 1.5,
+        "PvdD": 1.1,
+        "CU": 0.7,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "SGP": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1525": {
+      "name": "Teylingen",
+      "shares": {
+        "D66": 21.2,
+        "VVD": 19.8,
+        "CDA": 14.0,
+        "PVV": 13.2,
+        "GL-PvdA": 10.3,
+        "JA21": 7.6,
+        "FvD": 4.2,
+        "BBB": 1.8,
+        "PvdD": 1.6,
+        "50+": 1.4,
+        "SP": 1.2,
+        "Volt": 1.1,
+        "CU": 1.0,
+        "DENK": 0.7,
+        "NSC": 0.3,
+        "SGP": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G1581": {
+      "name": "Utrechtse Heuvelrug",
+      "shares": {
+        "D66": 22.0,
+        "GL-PvdA": 15.7,
+        "VVD": 15.5,
+        "CDA": 13.1,
+        "PVV": 9.8,
+        "JA21": 4.8,
+        "SGP": 3.5,
+        "FvD": 3.3,
+        "PvdD": 2.7,
+        "CU": 2.3,
+        "Volt": 1.8,
+        "BBB": 1.7,
+        "SP": 1.2,
+        "50+": 1.1,
+        "DENK": 1.0,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G1586": {
+      "name": "Oost Gelre",
+      "shares": {
+        "CDA": 20.4,
+        "VVD": 17.2,
+        "D66": 14.7,
+        "PVV": 14.4,
+        "JA21": 8.0,
+        "BBB": 7.9,
+        "GL-PvdA": 6.5,
+        "FvD": 5.0,
+        "50+": 1.6,
+        "SP": 1.4,
+        "PvdD": 0.7,
+        "Volt": 0.7,
+        "NSC": 0.6,
+        "DENK": 0.5,
+        "CU": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1598": {
+      "name": "Koggenland",
+      "shares": {
+        "VVD": 19.8,
+        "CDA": 14.9,
+        "PVV": 14.9,
+        "D66": 14.9,
+        "JA21": 8.2,
+        "GL-PvdA": 7.7,
+        "BBB": 6.4,
+        "FvD": 6.3,
+        "50+": 1.9,
+        "PvdD": 1.5,
+        "SP": 1.3,
+        "Volt": 0.7,
+        "CU": 0.4,
+        "NSC": 0.4,
+        "DENK": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1621": {
+      "name": "Lansingerland",
+      "shares": {
+        "VVD": 18.9,
+        "D66": 18.1,
+        "CDA": 15.4,
+        "PVV": 14.7,
+        "JA21": 8.9,
+        "GL-PvdA": 8.1,
+        "FvD": 4.2,
+        "CU": 2.8,
+        "DENK": 1.8,
+        "BBB": 1.4,
+        "PvdD": 1.3,
+        "50+": 1.3,
+        "SGP": 1.0,
+        "Volt": 0.9,
+        "SP": 0.8,
+        "NSC": 0.2,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G1640": {
+      "name": "Leudal",
+      "shares": {
+        "PVV": 24.3,
+        "CDA": 16.2,
+        "VVD": 15.6,
+        "D66": 13.0,
+        "GL-PvdA": 7.7,
+        "JA21": 7.6,
+        "BBB": 5.0,
+        "FvD": 4.5,
+        "50+": 1.7,
+        "SP": 1.5,
+        "PvdD": 1.1,
+        "Volt": 0.6,
+        "NSC": 0.4,
+        "CU": 0.3,
+        "DENK": 0.2,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1641": {
+      "name": "Maasgouw",
+      "shares": {
+        "PVV": 26.8,
+        "VVD": 16.3,
+        "CDA": 14.8,
+        "D66": 13.5,
+        "GL-PvdA": 7.8,
+        "JA21": 6.9,
+        "FvD": 5.2,
+        "BBB": 2.4,
+        "50+": 2.0,
+        "SP": 1.4,
+        "PvdD": 1.2,
+        "Volt": 0.7,
+        "CU": 0.4,
+        "DENK": 0.3,
+        "NSC": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1652": {
+      "name": "Gemert-Bakel",
+      "shares": {
+        "PVV": 22.0,
+        "CDA": 19.1,
+        "VVD": 15.3,
+        "D66": 13.1,
+        "JA21": 8.1,
+        "GL-PvdA": 7.3,
+        "FvD": 4.5,
+        "BBB": 4.3,
+        "SP": 1.8,
+        "50+": 1.8,
+        "PvdD": 1.1,
+        "Volt": 0.6,
+        "NSC": 0.3,
+        "DENK": 0.3,
+        "CU": 0.3,
+        "BIJ1": 0.1,
+        "SGP": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1655": {
+      "name": "Halderberge",
+      "shares": {
+        "PVV": 25.2,
+        "VVD": 20.5,
+        "CDA": 12.8,
+        "D66": 12.7,
+        "JA21": 7.4,
+        "GL-PvdA": 6.2,
+        "FvD": 5.1,
+        "BBB": 2.8,
+        "50+": 2.0,
+        "SP": 1.5,
+        "DENK": 1.5,
+        "PvdD": 0.9,
+        "Volt": 0.6,
+        "CU": 0.4,
+        "NSC": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1658": {
+      "name": "Heeze-Leende",
+      "shares": {
+        "VVD": 18.7,
+        "D66": 18.1,
+        "CDA": 17.5,
+        "PVV": 15.4,
+        "GL-PvdA": 9.6,
+        "JA21": 6.5,
+        "FvD": 3.9,
+        "BBB": 3.5,
+        "50+": 1.9,
+        "SP": 1.3,
+        "PvdD": 1.2,
+        "Volt": 1.1,
+        "CU": 0.4,
+        "NSC": 0.4,
+        "DENK": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G1659": {
+      "name": "Laarbeek",
+      "shares": {
+        "PVV": 22.7,
+        "CDA": 16.3,
+        "VVD": 16.2,
+        "D66": 14.9,
+        "JA21": 7.8,
+        "GL-PvdA": 7.1,
+        "FvD": 4.3,
+        "BBB": 3.7,
+        "50+": 2.3,
+        "SP": 1.8,
+        "PvdD": 1.0,
+        "Volt": 0.9,
+        "NSC": 0.3,
+        "DENK": 0.3,
+        "CU": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1667": {
+      "name": "Reusel-De Mierden",
+      "shares": {
+        "PVV": 21.6,
+        "CDA": 19.4,
+        "VVD": 17.1,
+        "D66": 12.5,
+        "JA21": 7.8,
+        "GL-PvdA": 5.8,
+        "BBB": 5.3,
+        "FvD": 4.5,
+        "50+": 2.4,
+        "SP": 1.4,
+        "PvdD": 0.9,
+        "Volt": 0.6,
+        "CU": 0.3,
+        "DENK": 0.2,
+        "NSC": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G1669": {
+      "name": "Roerdalen",
+      "shares": {
+        "PVV": 30.9,
+        "VVD": 13.7,
+        "CDA": 13.3,
+        "D66": 11.6,
+        "GL-PvdA": 8.5,
+        "JA21": 6.3,
+        "FvD": 5.3,
+        "BBB": 3.8,
+        "50+": 2.0,
+        "SP": 1.4,
+        "PvdD": 1.2,
+        "Volt": 0.5,
+        "DENK": 0.5,
+        "NSC": 0.3,
+        "CU": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1674": {
+      "name": "Roosendaal",
+      "shares": {
+        "PVV": 21.7,
+        "VVD": 17.7,
+        "D66": 15.0,
+        "CDA": 12.1,
+        "GL-PvdA": 8.8,
+        "JA21": 7.3,
+        "FvD": 4.5,
+        "DENK": 4.0,
+        "BBB": 2.2,
+        "50+": 2.1,
+        "SP": 1.7,
+        "PvdD": 1.2,
+        "Volt": 0.6,
+        "CU": 0.4,
+        "NSC": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G1676": {
+      "name": "Schouwen-Duiveland",
+      "shares": {
+        "PVV": 16.6,
+        "VVD": 16.2,
+        "CDA": 13.8,
+        "D66": 11.8,
+        "SGP": 9.2,
+        "GL-PvdA": 8.3,
+        "JA21": 7.2,
+        "FvD": 5.5,
+        "BBB": 3.2,
+        "CU": 2.8,
+        "SP": 1.4,
+        "50+": 1.4,
+        "PvdD": 1.2,
+        "Volt": 0.6,
+        "NSC": 0.3,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1680": {
+      "name": "Aa en Hunze",
+      "shares": {
+        "VVD": 18.7,
+        "D66": 17.4,
+        "GL-PvdA": 15.0,
+        "PVV": 12.9,
+        "CDA": 10.4,
+        "BBB": 5.9,
+        "JA21": 5.1,
+        "FvD": 4.9,
+        "SP": 2.8,
+        "PvdD": 1.9,
+        "50+": 1.5,
+        "CU": 1.3,
+        "Volt": 1.1,
+        "SGP": 0.4,
+        "NSC": 0.4,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G1681": {
+      "name": "Borger-Odoorn",
+      "shares": {
+        "PVV": 20.5,
+        "VVD": 15.4,
+        "D66": 12.8,
+        "CDA": 11.7,
+        "GL-PvdA": 11.0,
+        "FvD": 6.9,
+        "BBB": 6.2,
+        "JA21": 5.4,
+        "SP": 2.5,
+        "50+": 2.0,
+        "CU": 1.7,
+        "PvdD": 1.6,
+        "SGP": 1.0,
+        "Volt": 0.6,
+        "NSC": 0.5,
+        "DENK": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1690": {
+      "name": "De Wolden",
+      "shares": {
+        "VVD": 17.5,
+        "PVV": 16.6,
+        "CDA": 14.2,
+        "D66": 12.2,
+        "BBB": 9.6,
+        "GL-PvdA": 8.7,
+        "FvD": 7.1,
+        "JA21": 6.0,
+        "CU": 1.8,
+        "SGP": 1.4,
+        "PvdD": 1.3,
+        "SP": 1.3,
+        "50+": 1.3,
+        "Volt": 0.6,
+        "NSC": 0.3,
+        "DENK": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1695": {
+      "name": "Noord-Beveland",
+      "shares": {
+        "PVV": 19.4,
+        "VVD": 16.3,
+        "CDA": 14.5,
+        "D66": 11.6,
+        "GL-PvdA": 9.0,
+        "JA21": 6.6,
+        "FvD": 6.3,
+        "BBB": 4.4,
+        "SGP": 3.9,
+        "50+": 1.8,
+        "PvdD": 1.6,
+        "CU": 1.5,
+        "SP": 1.5,
+        "Volt": 0.7,
+        "NSC": 0.5,
+        "DENK": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1696": {
+      "name": "Wijdemeren",
+      "shares": {
+        "VVD": 22.6,
+        "D66": 18.5,
+        "PVV": 14.3,
+        "CDA": 12.4,
+        "GL-PvdA": 9.4,
+        "JA21": 7.1,
+        "FvD": 5.2,
+        "BBB": 2.9,
+        "PvdD": 1.8,
+        "CU": 1.1,
+        "SP": 1.1,
+        "50+": 1.0,
+        "Volt": 0.8,
+        "SGP": 0.7,
+        "DENK": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1699": {
+      "name": "Noordenveld",
+      "shares": {
+        "D66": 18.3,
+        "GL-PvdA": 16.1,
+        "VVD": 15.8,
+        "PVV": 14.3,
+        "CDA": 11.5,
+        "BBB": 4.6,
+        "FvD": 4.6,
+        "JA21": 4.2,
+        "CU": 2.7,
+        "SP": 2.6,
+        "PvdD": 1.6,
+        "50+": 1.5,
+        "Volt": 1.0,
+        "SGP": 0.6,
+        "NSC": 0.4,
+        "DENK": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G1700": {
+      "name": "Twenterand",
+      "shares": {
+        "PVV": 25.4,
+        "CDA": 20.6,
+        "VVD": 10.2,
+        "FvD": 7.1,
+        "JA21": 6.7,
+        "BBB": 6.3,
+        "D66": 6.0,
+        "SGP": 5.8,
+        "CU": 4.5,
+        "GL-PvdA": 3.3,
+        "50+": 1.3,
+        "SP": 1.1,
+        "NSC": 0.7,
+        "PvdD": 0.5,
+        "Volt": 0.3,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "BBB"
+      }
+    },
+    "G1701": {
+      "name": "Westerveld",
+      "shares": {
+        "VVD": 16.2,
+        "PVV": 14.6,
+        "GL-PvdA": 14.4,
+        "D66": 14.4,
+        "CDA": 12.0,
+        "BBB": 8.0,
+        "FvD": 5.6,
+        "JA21": 4.9,
+        "PvdD": 2.6,
+        "SP": 1.8,
+        "50+": 1.6,
+        "CU": 1.5,
+        "Volt": 0.9,
+        "SGP": 0.9,
+        "NSC": 0.4,
+        "DENK": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1705": {
+      "name": "Lingewaard",
+      "shares": {
+        "D66": 19.9,
+        "VVD": 19.3,
+        "PVV": 17.6,
+        "CDA": 13.2,
+        "GL-PvdA": 10.0,
+        "JA21": 7.3,
+        "FvD": 3.8,
+        "BBB": 2.3,
+        "50+": 1.9,
+        "SP": 1.5,
+        "PvdD": 1.1,
+        "Volt": 0.8,
+        "CU": 0.4,
+        "DENK": 0.4,
+        "NSC": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1706": {
+      "name": "Cranendonck",
+      "shares": {
+        "PVV": 23.5,
+        "VVD": 18.6,
+        "CDA": 15.4,
+        "D66": 14.0,
+        "JA21": 7.9,
+        "GL-PvdA": 6.4,
+        "FvD": 4.3,
+        "BBB": 4.0,
+        "50+": 1.9,
+        "SP": 1.2,
+        "PvdD": 1.0,
+        "Volt": 0.6,
+        "CU": 0.4,
+        "DENK": 0.3,
+        "NSC": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1708": {
+      "name": "Steenwijkerland",
+      "shares": {
+        "PVV": 19.0,
+        "VVD": 14.8,
+        "CDA": 14.5,
+        "D66": 11.6,
+        "GL-PvdA": 9.2,
+        "FvD": 6.9,
+        "BBB": 6.6,
+        "JA21": 6.3,
+        "CU": 3.5,
+        "SGP": 1.8,
+        "SP": 1.7,
+        "50+": 1.3,
+        "PvdD": 1.3,
+        "Volt": 0.6,
+        "NSC": 0.5,
+        "DENK": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1709": {
+      "name": "Moerdijk",
+      "shares": {
+        "PVV": 24.1,
+        "VVD": 16.7,
+        "CDA": 14.2,
+        "D66": 12.9,
+        "JA21": 8.1,
+        "GL-PvdA": 6.6,
+        "FvD": 5.8,
+        "BBB": 3.2,
+        "50+": 1.9,
+        "SP": 1.6,
+        "CU": 1.4,
+        "PvdD": 1.1,
+        "DENK": 0.7,
+        "Volt": 0.6,
+        "SGP": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1711": {
+      "name": "Echt-Susteren",
+      "shares": {
+        "PVV": 30.3,
+        "CDA": 14.8,
+        "VVD": 13.7,
+        "D66": 11.9,
+        "GL-PvdA": 8.3,
+        "JA21": 6.0,
+        "FvD": 5.4,
+        "BBB": 3.0,
+        "50+": 1.9,
+        "SP": 1.6,
+        "PvdD": 1.2,
+        "Volt": 0.6,
+        "NSC": 0.4,
+        "CU": 0.4,
+        "DENK": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1714": {
+      "name": "Sluis",
+      "shares": {
+        "PVV": 21.2,
+        "VVD": 18.6,
+        "CDA": 12.7,
+        "D66": 11.7,
+        "GL-PvdA": 9.7,
+        "JA21": 6.6,
+        "BBB": 5.5,
+        "FvD": 5.1,
+        "SP": 2.2,
+        "50+": 1.8,
+        "PvdD": 1.5,
+        "SGP": 1.0,
+        "CU": 0.9,
+        "Volt": 0.6,
+        "DENK": 0.4,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G1719": {
+      "name": "Drimmelen",
+      "shares": {
+        "PVV": 23.3,
+        "VVD": 19.0,
+        "D66": 15.1,
+        "CDA": 12.4,
+        "JA21": 7.8,
+        "GL-PvdA": 7.6,
+        "FvD": 4.9,
+        "BBB": 3.8,
+        "50+": 1.9,
+        "SP": 1.3,
+        "PvdD": 1.1,
+        "Volt": 0.6,
+        "CU": 0.3,
+        "DENK": 0.3,
+        "NSC": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1721": {
+      "name": "Bernheze",
+      "shares": {
+        "PVV": 19.2,
+        "VVD": 18.7,
+        "CDA": 17.4,
+        "D66": 16.8,
+        "JA21": 7.8,
+        "GL-PvdA": 6.4,
+        "FvD": 3.7,
+        "BBB": 3.7,
+        "SP": 2.2,
+        "50+": 1.7,
+        "PvdD": 0.8,
+        "Volt": 0.5,
+        "DENK": 0.4,
+        "NSC": 0.2,
+        "CU": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1723": {
+      "name": "Alphen-Chaam",
+      "shares": {
+        "VVD": 22.6,
+        "PVV": 16.5,
+        "CDA": 16.0,
+        "D66": 14.5,
+        "JA21": 7.1,
+        "GL-PvdA": 6.8,
+        "BBB": 6.5,
+        "FvD": 4.7,
+        "50+": 1.5,
+        "PvdD": 1.1,
+        "SP": 1.1,
+        "Volt": 0.6,
+        "DENK": 0.3,
+        "NSC": 0.3,
+        "CU": 0.1,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1724": {
+      "name": "Bergeijk",
+      "shares": {
+        "PVV": 19.1,
+        "VVD": 18.7,
+        "CDA": 18.4,
+        "D66": 12.9,
+        "JA21": 8.9,
+        "GL-PvdA": 6.8,
+        "BBB": 5.1,
+        "FvD": 4.1,
+        "50+": 1.8,
+        "SP": 1.4,
+        "PvdD": 1.0,
+        "Volt": 0.8,
+        "NSC": 0.3,
+        "CU": 0.3,
+        "DENK": 0.1,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1728": {
+      "name": "Bladel",
+      "shares": {
+        "PVV": 20.5,
+        "CDA": 20.3,
+        "VVD": 16.6,
+        "D66": 13.7,
+        "JA21": 8.1,
+        "GL-PvdA": 6.2,
+        "BBB": 4.2,
+        "FvD": 3.6,
+        "50+": 2.0,
+        "SP": 1.7,
+        "PvdD": 1.0,
+        "Volt": 0.8,
+        "DENK": 0.4,
+        "NSC": 0.4,
+        "CU": 0.2,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1729": {
+      "name": "Gulpen-Wittem",
+      "shares": {
+        "PVV": 21.5,
+        "CDA": 15.4,
+        "VVD": 13.9,
+        "D66": 12.7,
+        "GL-PvdA": 12.1,
+        "BBB": 6.9,
+        "JA21": 5.8,
+        "FvD": 4.8,
+        "50+": 1.6,
+        "SP": 1.6,
+        "PvdD": 1.5,
+        "Volt": 0.8,
+        "CU": 0.5,
+        "NSC": 0.2,
+        "SGP": 0.2,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G1730": {
+      "name": "Tynaarlo",
+      "shares": {
+        "D66": 22.7,
+        "GL-PvdA": 18.0,
+        "VVD": 16.8,
+        "CDA": 11.8,
+        "PVV": 10.0,
+        "JA21": 4.1,
+        "FvD": 3.6,
+        "BBB": 3.5,
+        "SP": 2.4,
+        "CU": 2.3,
+        "PvdD": 1.8,
+        "50+": 1.1,
+        "Volt": 1.0,
+        "SGP": 0.4,
+        "NSC": 0.4,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G1731": {
+      "name": "Midden-Drenthe",
+      "shares": {
+        "PVV": 16.8,
+        "VVD": 15.0,
+        "CDA": 14.3,
+        "D66": 12.3,
+        "GL-PvdA": 11.2,
+        "BBB": 8.4,
+        "FvD": 6.7,
+        "JA21": 5.6,
+        "CU": 2.2,
+        "SP": 1.9,
+        "50+": 1.7,
+        "PvdD": 1.3,
+        "SGP": 1.1,
+        "Volt": 0.6,
+        "NSC": 0.6,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G1734": {
+      "name": "Overbetuwe",
+      "shares": {
+        "D66": 19.3,
+        "VVD": 17.2,
+        "PVV": 16.7,
+        "CDA": 13.4,
+        "GL-PvdA": 10.6,
+        "JA21": 6.2,
+        "FvD": 4.3,
+        "BBB": 2.4,
+        "SGP": 1.7,
+        "CU": 1.6,
+        "SP": 1.5,
+        "50+": 1.4,
+        "PvdD": 1.4,
+        "Volt": 0.9,
+        "DENK": 0.8,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G1735": {
+      "name": "Hof van Twente",
+      "shares": {
+        "CDA": 17.9,
+        "VVD": 17.8,
+        "PVV": 15.4,
+        "D66": 12.4,
+        "BBB": 8.9,
+        "JA21": 7.9,
+        "GL-PvdA": 7.8,
+        "FvD": 5.8,
+        "50+": 1.3,
+        "SP": 1.2,
+        "NSC": 0.8,
+        "PvdD": 0.7,
+        "CU": 0.7,
+        "Volt": 0.6,
+        "SGP": 0.6,
+        "DENK": 0.3,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1740": {
+      "name": "Neder-Betuwe",
+      "shares": {
+        "SGP": 34.2,
+        "PVV": 19.8,
+        "VVD": 9.8,
+        "CDA": 8.4,
+        "D66": 5.8,
+        "JA21": 5.0,
+        "FvD": 4.6,
+        "GL-PvdA": 4.1,
+        "CU": 3.0,
+        "BBB": 2.3,
+        "50+": 0.9,
+        "SP": 0.8,
+        "PvdD": 0.5,
+        "DENK": 0.4,
+        "Volt": 0.3,
+        "NSC": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "SGP"
+      }
+    },
+    "G1742": {
+      "name": "Rijssen-Holten",
+      "shares": {
+        "SGP": 23.7,
+        "CDA": 16.1,
+        "PVV": 14.8,
+        "VVD": 9.6,
+        "D66": 6.4,
+        "CU": 6.4,
+        "JA21": 5.4,
+        "FvD": 5.2,
+        "BBB": 5.2,
+        "GL-PvdA": 3.9,
+        "50+": 0.8,
+        "SP": 0.7,
+        "DENK": 0.5,
+        "NSC": 0.5,
+        "PvdD": 0.4,
+        "Volt": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "BBB"
+      }
+    },
+    "G1771": {
+      "name": "Geldrop-Mierlo",
+      "shares": {
+        "PVV": 19.9,
+        "D66": 18.7,
+        "VVD": 14.9,
+        "CDA": 13.7,
+        "GL-PvdA": 11.1,
+        "JA21": 6.4,
+        "FvD": 4.2,
+        "50+": 2.2,
+        "SP": 1.8,
+        "BBB": 1.7,
+        "PvdD": 1.5,
+        "DENK": 1.4,
+        "Volt": 1.1,
+        "CU": 0.6,
+        "NSC": 0.4,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G1773": {
+      "name": "Olst-Wijhe",
+      "shares": {
+        "CDA": 15.6,
+        "D66": 15.1,
+        "PVV": 15.0,
+        "VVD": 14.4,
+        "GL-PvdA": 12.3,
+        "BBB": 8.4,
+        "JA21": 5.9,
+        "FvD": 4.6,
+        "PvdD": 1.7,
+        "50+": 1.5,
+        "SP": 1.5,
+        "CU": 1.3,
+        "Volt": 1.1,
+        "NSC": 0.7,
+        "SGP": 0.5,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G1774": {
+      "name": "Dinkelland",
+      "shares": {
+        "CDA": 22.7,
+        "VVD": 18.2,
+        "PVV": 17.8,
+        "BBB": 10.2,
+        "D66": 9.5,
+        "JA21": 9.2,
+        "FvD": 4.4,
+        "GL-PvdA": 4.1,
+        "50+": 1.1,
+        "SP": 0.8,
+        "NSC": 0.6,
+        "PvdD": 0.5,
+        "Volt": 0.4,
+        "CU": 0.3,
+        "SGP": 0.1,
+        "DENK": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "VVD",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G1783": {
+      "name": "Westland",
+      "shares": {
+        "PVV": 21.3,
+        "VVD": 19.3,
+        "CDA": 16.4,
+        "D66": 11.6,
+        "JA21": 10.1,
+        "FvD": 6.1,
+        "GL-PvdA": 4.8,
+        "BBB": 2.1,
+        "SGP": 1.5,
+        "CU": 1.4,
+        "50+": 1.4,
+        "DENK": 1.3,
+        "PvdD": 1.0,
+        "SP": 0.8,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1842": {
+      "name": "Midden-Delfland",
+      "shares": {
+        "CDA": 18.9,
+        "D66": 18.4,
+        "VVD": 18.1,
+        "PVV": 12.1,
+        "GL-PvdA": 8.9,
+        "JA21": 8.7,
+        "FvD": 3.8,
+        "BBB": 3.0,
+        "CU": 2.0,
+        "PvdD": 1.3,
+        "50+": 1.2,
+        "SP": 1.0,
+        "Volt": 0.9,
+        "DENK": 0.7,
+        "SGP": 0.6,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G1859": {
+      "name": "Berkelland",
+      "shares": {
+        "CDA": 15.9,
+        "PVV": 15.7,
+        "VVD": 15.4,
+        "D66": 13.3,
+        "BBB": 10.1,
+        "GL-PvdA": 9.3,
+        "JA21": 6.9,
+        "FvD": 6.4,
+        "SP": 1.9,
+        "50+": 1.6,
+        "PvdD": 1.0,
+        "Volt": 0.7,
+        "CU": 0.6,
+        "NSC": 0.6,
+        "DENK": 0.3,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1876": {
+      "name": "Bronckhorst",
+      "shares": {
+        "CDA": 16.9,
+        "VVD": 16.8,
+        "PVV": 14.9,
+        "D66": 13.9,
+        "GL-PvdA": 9.6,
+        "BBB": 9.0,
+        "JA21": 7.2,
+        "FvD": 4.5,
+        "SP": 1.4,
+        "50+": 1.3,
+        "PvdD": 1.2,
+        "CU": 1.1,
+        "SGP": 0.8,
+        "Volt": 0.8,
+        "NSC": 0.4,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1883": {
+      "name": "Sittard-Geleen",
+      "shares": {
+        "PVV": 26.5,
+        "D66": 14.5,
+        "CDA": 14.3,
+        "VVD": 12.5,
+        "GL-PvdA": 11.4,
+        "JA21": 5.4,
+        "FvD": 5.1,
+        "SP": 2.1,
+        "50+": 1.9,
+        "BBB": 1.8,
+        "PvdD": 1.7,
+        "DENK": 1.1,
+        "Volt": 0.8,
+        "NSC": 0.5,
+        "CU": 0.3,
+        "BIJ1": 0.2,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1884": {
+      "name": "Kaag en Braassem",
+      "shares": {
+        "VVD": 19.6,
+        "PVV": 17.3,
+        "D66": 16.8,
+        "CDA": 14.5,
+        "JA21": 8.8,
+        "GL-PvdA": 7.1,
+        "FvD": 5.0,
+        "BBB": 3.8,
+        "50+": 1.5,
+        "PvdD": 1.4,
+        "SP": 1.1,
+        "Volt": 0.9,
+        "CU": 0.8,
+        "DENK": 0.6,
+        "SGP": 0.4,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1891": {
+      "name": "Dantumadiel",
+      "shares": {
+        "PVV": 22.0,
+        "CDA": 19.5,
+        "FvD": 8.9,
+        "VVD": 8.4,
+        "GL-PvdA": 6.9,
+        "D66": 6.8,
+        "SGP": 6.5,
+        "JA21": 5.9,
+        "BBB": 5.6,
+        "CU": 4.8,
+        "SP": 1.7,
+        "50+": 1.2,
+        "PvdD": 0.9,
+        "NSC": 0.5,
+        "Volt": 0.3,
+        "DENK": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G1892": {
+      "name": "Zuidplas",
+      "shares": {
+        "PVV": 16.5,
+        "VVD": 16.2,
+        "D66": 14.5,
+        "CDA": 13.0,
+        "JA21": 9.0,
+        "GL-PvdA": 7.2,
+        "SGP": 6.5,
+        "FvD": 5.1,
+        "CU": 3.7,
+        "BBB": 1.7,
+        "DENK": 1.5,
+        "50+": 1.4,
+        "PvdD": 1.3,
+        "SP": 1.1,
+        "Volt": 0.7,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1894": {
+      "name": "Peel en Maas",
+      "shares": {
+        "PVV": 25.2,
+        "CDA": 17.3,
+        "VVD": 16.4,
+        "D66": 12.4,
+        "JA21": 8.4,
+        "GL-PvdA": 6.1,
+        "BBB": 4.3,
+        "FvD": 4.1,
+        "50+": 1.7,
+        "SP": 1.3,
+        "PvdD": 0.9,
+        "DENK": 0.7,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "CU": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1895": {
+      "name": "Oldambt",
+      "shares": {
+        "PVV": 27.3,
+        "VVD": 13.1,
+        "GL-PvdA": 11.8,
+        "D66": 11.5,
+        "CDA": 9.3,
+        "FvD": 7.0,
+        "SP": 4.8,
+        "BBB": 4.3,
+        "JA21": 4.1,
+        "CU": 1.8,
+        "50+": 1.7,
+        "PvdD": 1.3,
+        "SGP": 0.8,
+        "Volt": 0.4,
+        "NSC": 0.4,
+        "DENK": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1896": {
+      "name": "Zwartewaterland",
+      "shares": {
+        "SGP": 22.5,
+        "PVV": 16.3,
+        "CDA": 15.9,
+        "VVD": 8.8,
+        "CU": 8.7,
+        "D66": 6.2,
+        "FvD": 5.5,
+        "JA21": 5.0,
+        "GL-PvdA": 4.5,
+        "BBB": 3.7,
+        "SP": 1.0,
+        "50+": 0.7,
+        "PvdD": 0.4,
+        "NSC": 0.3,
+        "Volt": 0.3,
+        "DENK": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "BBB"
+      }
+    },
+    "G1900": {
+      "name": "Súdwest-Fryslân",
+      "shares": {
+        "CDA": 17.8,
+        "PVV": 16.0,
+        "D66": 13.6,
+        "VVD": 13.3,
+        "GL-PvdA": 11.8,
+        "FvD": 7.0,
+        "BBB": 6.0,
+        "JA21": 5.8,
+        "SP": 1.9,
+        "CU": 1.8,
+        "50+": 1.4,
+        "PvdD": 1.2,
+        "SGP": 0.8,
+        "Volt": 0.7,
+        "NSC": 0.4,
+        "DENK": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "CDA"
+      }
+    },
+    "G1901": {
+      "name": "Bodegraven-Reeuwijk",
+      "shares": {
+        "VVD": 16.5,
+        "CDA": 15.8,
+        "PVV": 14.1,
+        "D66": 13.8,
+        "SGP": 8.4,
+        "GL-PvdA": 7.3,
+        "JA21": 6.7,
+        "CU": 4.3,
+        "FvD": 4.2,
+        "BBB": 3.1,
+        "DENK": 1.7,
+        "SP": 1.0,
+        "50+": 1.0,
+        "PvdD": 1.0,
+        "Volt": 0.7,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "VVD",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1903": {
+      "name": "Eijsden-Margraten",
+      "shares": {
+        "PVV": 18.4,
+        "CDA": 17.8,
+        "VVD": 16.6,
+        "D66": 16.5,
+        "GL-PvdA": 11.8,
+        "JA21": 6.2,
+        "FvD": 3.4,
+        "BBB": 2.8,
+        "50+": 1.8,
+        "PvdD": 1.4,
+        "SP": 1.3,
+        "Volt": 1.0,
+        "CU": 0.4,
+        "NSC": 0.3,
+        "DENK": 0.2,
+        "SGP": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "CDA",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G1904": {
+      "name": "Stichtse Vecht",
+      "shares": {
+        "D66": 19.6,
+        "VVD": 18.3,
+        "PVV": 16.1,
+        "GL-PvdA": 11.6,
+        "CDA": 11.5,
+        "JA21": 6.0,
+        "FvD": 3.7,
+        "BBB": 2.2,
+        "SGP": 2.0,
+        "PvdD": 1.7,
+        "CU": 1.6,
+        "50+": 1.4,
+        "DENK": 1.4,
+        "SP": 1.3,
+        "Volt": 1.1,
+        "NSC": 0.3,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G1911": {
+      "name": "Hollands Kroon",
+      "shares": {
+        "PVV": 20.0,
+        "VVD": 18.1,
+        "D66": 12.8,
+        "CDA": 11.8,
+        "BBB": 7.8,
+        "JA21": 7.6,
+        "FvD": 7.4,
+        "GL-PvdA": 7.4,
+        "50+": 1.8,
+        "SP": 1.4,
+        "PvdD": 1.1,
+        "CU": 1.0,
+        "Volt": 0.6,
+        "SGP": 0.5,
+        "NSC": 0.4,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1916": {
+      "name": "Leidschendam-Voorburg",
+      "shares": {
+        "D66": 23.3,
+        "VVD": 17.7,
+        "GL-PvdA": 13.5,
+        "PVV": 13.4,
+        "CDA": 11.3,
+        "JA21": 5.7,
+        "FvD": 3.6,
+        "PvdD": 2.1,
+        "DENK": 1.8,
+        "BBB": 1.5,
+        "SP": 1.4,
+        "50+": 1.4,
+        "Volt": 1.4,
+        "CU": 1.0,
+        "NSC": 0.4,
+        "SGP": 0.3,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G1924": {
+      "name": "Goeree-Overflakkee",
+      "shares": {
+        "PVV": 21.2,
+        "SGP": 15.5,
+        "CDA": 12.6,
+        "VVD": 12.2,
+        "D66": 8.0,
+        "JA21": 7.1,
+        "FvD": 6.2,
+        "GL-PvdA": 5.3,
+        "CU": 4.8,
+        "BBB": 2.6,
+        "50+": 1.5,
+        "PvdD": 1.0,
+        "SP": 1.0,
+        "Volt": 0.4,
+        "NSC": 0.3,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "BBB"
+      }
+    },
+    "G1926": {
+      "name": "Pijnacker-Nootdorp",
+      "shares": {
+        "D66": 20.2,
+        "VVD": 17.7,
+        "PVV": 15.7,
+        "CDA": 13.4,
+        "GL-PvdA": 10.2,
+        "JA21": 7.9,
+        "FvD": 4.0,
+        "BBB": 1.6,
+        "PvdD": 1.6,
+        "CU": 1.5,
+        "DENK": 1.5,
+        "50+": 1.3,
+        "SP": 1.1,
+        "Volt": 1.1,
+        "SGP": 0.7,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "VVD",
+        "median": "CDA"
+      }
+    },
+    "G1930": {
+      "name": "Nissewaard",
+      "shares": {
+        "PVV": 28.1,
+        "VVD": 13.5,
+        "D66": 11.9,
+        "CDA": 9.3,
+        "JA21": 8.9,
+        "GL-PvdA": 8.3,
+        "FvD": 6.7,
+        "50+": 2.8,
+        "SP": 2.0,
+        "BBB": 1.9,
+        "DENK": 1.8,
+        "PvdD": 1.3,
+        "CU": 1.3,
+        "SGP": 0.8,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1931": {
+      "name": "Krimpenerwaard",
+      "shares": {
+        "PVV": 15.7,
+        "VVD": 14.7,
+        "CDA": 13.9,
+        "D66": 12.4,
+        "SGP": 9.8,
+        "JA21": 8.3,
+        "GL-PvdA": 7.4,
+        "FvD": 5.3,
+        "CU": 3.8,
+        "BBB": 3.0,
+        "50+": 1.4,
+        "SP": 1.2,
+        "PvdD": 1.1,
+        "DENK": 1.1,
+        "Volt": 0.6,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1940": {
+      "name": "De Fryske Marren",
+      "shares": {
+        "CDA": 18.8,
+        "PVV": 17.2,
+        "VVD": 14.8,
+        "D66": 12.3,
+        "GL-PvdA": 9.5,
+        "FvD": 7.2,
+        "BBB": 6.6,
+        "JA21": 6.2,
+        "SP": 1.5,
+        "CU": 1.4,
+        "SGP": 1.2,
+        "50+": 1.0,
+        "PvdD": 0.9,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "DENK": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G1942": {
+      "name": "Gooise Meren",
+      "shares": {
+        "D66": 28.2,
+        "VVD": 22.0,
+        "GL-PvdA": 13.5,
+        "CDA": 10.2,
+        "PVV": 8.4,
+        "JA21": 4.7,
+        "FvD": 3.3,
+        "PvdD": 2.0,
+        "Volt": 1.7,
+        "BBB": 1.3,
+        "SP": 1.2,
+        "DENK": 1.1,
+        "50+": 1.0,
+        "CU": 0.7,
+        "NSC": 0.3,
+        "SGP": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G1945": {
+      "name": "Berg en Dal",
+      "shares": {
+        "PVV": 21.0,
+        "D66": 18.2,
+        "VVD": 14.9,
+        "GL-PvdA": 14.7,
+        "CDA": 10.6,
+        "JA21": 6.3,
+        "FvD": 3.3,
+        "PvdD": 2.6,
+        "BBB": 2.3,
+        "SP": 2.2,
+        "50+": 1.5,
+        "Volt": 1.1,
+        "CU": 0.5,
+        "DENK": 0.3,
+        "NSC": 0.3,
+        "BIJ1": 0.2,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "D66",
+        "rcv": "D66",
+        "median": "CDA"
+      }
+    },
+    "G1948": {
+      "name": "Meierijstad",
+      "shares": {
+        "PVV": 20.2,
+        "VVD": 17.3,
+        "D66": 17.0,
+        "CDA": 15.8,
+        "JA21": 7.5,
+        "GL-PvdA": 7.4,
+        "FvD": 4.0,
+        "BBB": 3.3,
+        "SP": 2.0,
+        "50+": 1.6,
+        "DENK": 1.5,
+        "PvdD": 1.0,
+        "Volt": 0.7,
+        "NSC": 0.3,
+        "CU": 0.3,
+        "BIJ1": 0.1,
+        "SGP": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1949": {
+      "name": "Waadhoeke",
+      "shares": {
+        "CDA": 17.7,
+        "PVV": 17.6,
+        "VVD": 12.4,
+        "D66": 12.2,
+        "GL-PvdA": 12.1,
+        "FvD": 7.5,
+        "JA21": 6.1,
+        "BBB": 5.8,
+        "CU": 2.0,
+        "SP": 2.0,
+        "50+": 1.4,
+        "PvdD": 1.2,
+        "SGP": 0.7,
+        "Volt": 0.6,
+        "NSC": 0.5,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G1950": {
+      "name": "Westerwolde",
+      "shares": {
+        "PVV": 27.2,
+        "VVD": 12.1,
+        "CDA": 11.3,
+        "GL-PvdA": 9.8,
+        "FvD": 9.1,
+        "D66": 8.9,
+        "BBB": 6.9,
+        "JA21": 4.4,
+        "SP": 3.6,
+        "PvdD": 1.7,
+        "50+": 1.6,
+        "CU": 1.5,
+        "SGP": 0.8,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "DENK": 0.1,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1952": {
+      "name": "Midden-Groningen",
+      "shares": {
+        "PVV": 22.8,
+        "VVD": 13.1,
+        "D66": 13.0,
+        "GL-PvdA": 12.5,
+        "CDA": 9.4,
+        "FvD": 5.9,
+        "SP": 4.7,
+        "BBB": 4.6,
+        "JA21": 3.9,
+        "CU": 3.3,
+        "50+": 1.8,
+        "DENK": 1.5,
+        "PvdD": 1.4,
+        "SGP": 1.1,
+        "Volt": 0.6,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G1954": {
+      "name": "Beekdaelen",
+      "shares": {
+        "PVV": 25.8,
+        "CDA": 15.3,
+        "VVD": 14.5,
+        "D66": 12.9,
+        "GL-PvdA": 10.2,
+        "JA21": 6.1,
+        "FvD": 5.2,
+        "BBB": 2.9,
+        "SP": 2.0,
+        "50+": 1.8,
+        "PvdD": 1.3,
+        "Volt": 0.7,
+        "NSC": 0.5,
+        "CU": 0.4,
+        "DENK": 0.2,
+        "SGP": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "PVV",
+        "median": "VVD"
+      }
+    },
+    "G1955": {
+      "name": "Montferland",
+      "shares": {
+        "PVV": 24.3,
+        "VVD": 17.1,
+        "CDA": 14.6,
+        "D66": 12.3,
+        "JA21": 7.5,
+        "GL-PvdA": 7.1,
+        "FvD": 5.6,
+        "BBB": 5.4,
+        "50+": 1.8,
+        "SP": 1.2,
+        "PvdD": 0.9,
+        "DENK": 0.6,
+        "Volt": 0.6,
+        "CU": 0.4,
+        "NSC": 0.4,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1959": {
+      "name": "Altena",
+      "shares": {
+        "PVV": 21.5,
+        "CDA": 16.4,
+        "SGP": 12.9,
+        "VVD": 12.0,
+        "D66": 7.8,
+        "JA21": 6.6,
+        "FvD": 6.2,
+        "CU": 4.9,
+        "GL-PvdA": 4.7,
+        "BBB": 2.8,
+        "50+": 1.1,
+        "SP": 1.0,
+        "PvdD": 0.9,
+        "Volt": 0.4,
+        "NSC": 0.3,
+        "DENK": 0.2,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "BBB"
+      }
+    },
+    "G1960": {
+      "name": "West Betuwe",
+      "shares": {
+        "PVV": 21.2,
+        "VVD": 15.8,
+        "CDA": 12.0,
+        "D66": 11.4,
+        "SGP": 9.5,
+        "GL-PvdA": 7.3,
+        "JA21": 6.6,
+        "FvD": 5.8,
+        "BBB": 3.4,
+        "CU": 2.3,
+        "50+": 1.1,
+        "SP": 1.1,
+        "PvdD": 1.1,
+        "Volt": 0.7,
+        "DENK": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1961": {
+      "name": "Vijfheerenlanden",
+      "shares": {
+        "PVV": 18.6,
+        "CDA": 14.8,
+        "VVD": 13.5,
+        "D66": 12.3,
+        "SGP": 7.6,
+        "GL-PvdA": 7.6,
+        "JA21": 6.3,
+        "FvD": 5.1,
+        "CU": 4.0,
+        "DENK": 3.0,
+        "BBB": 2.4,
+        "PvdD": 1.3,
+        "SP": 1.3,
+        "50+": 1.2,
+        "Volt": 0.6,
+        "NSC": 0.4,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "PVV",
+        "rcv": "D66",
+        "median": "VVD"
+      }
+    },
+    "G1963": {
+      "name": "Hoeksche Waard",
+      "shares": {
+        "PVV": 18.7,
+        "VVD": 15.3,
+        "CDA": 13.5,
+        "D66": 12.3,
+        "SGP": 8.8,
+        "JA21": 8.7,
+        "GL-PvdA": 7.0,
+        "FvD": 5.7,
+        "CU": 2.7,
+        "BBB": 2.1,
+        "50+": 1.7,
+        "SP": 1.2,
+        "PvdD": 1.2,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "DENK": 0.3,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1966": {
+      "name": "Het Hogeland",
+      "shares": {
+        "CDA": 15.8,
+        "PVV": 15.7,
+        "GL-PvdA": 14.9,
+        "D66": 12.4,
+        "VVD": 10.1,
+        "BBB": 5.6,
+        "CU": 5.6,
+        "FvD": 5.4,
+        "SP": 4.6,
+        "JA21": 3.4,
+        "PvdD": 2.2,
+        "SGP": 1.9,
+        "50+": 1.2,
+        "Volt": 0.7,
+        "NSC": 0.3,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "CDA"
+      }
+    },
+    "G1969": {
+      "name": "Westerkwartier",
+      "shares": {
+        "CDA": 16.9,
+        "PVV": 15.6,
+        "D66": 13.4,
+        "VVD": 11.7,
+        "GL-PvdA": 11.6,
+        "BBB": 6.5,
+        "FvD": 5.7,
+        "CU": 5.6,
+        "JA21": 4.4,
+        "SP": 2.6,
+        "SGP": 2.2,
+        "PvdD": 1.4,
+        "50+": 1.2,
+        "Volt": 0.7,
+        "NSC": 0.4,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "CDA"
+      }
+    },
+    "G1970": {
+      "name": "Noardeast-Fryslân",
+      "shares": {
+        "CDA": 21.5,
+        "PVV": 20.9,
+        "VVD": 9.8,
+        "D66": 8.6,
+        "FvD": 8.5,
+        "GL-PvdA": 7.6,
+        "BBB": 6.5,
+        "JA21": 6.0,
+        "CU": 3.5,
+        "SGP": 2.0,
+        "SP": 1.7,
+        "PvdD": 1.2,
+        "50+": 1.2,
+        "Volt": 0.5,
+        "NSC": 0.4,
+        "DENK": 0.2,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "CDA",
+        "runoff": "PVV",
+        "rcv": "CDA",
+        "median": "VVD"
+      }
+    },
+    "G1978": {
+      "name": "Molenlanden",
+      "shares": {
+        "SGP": 18.4,
+        "CDA": 17.7,
+        "PVV": 14.8,
+        "VVD": 11.2,
+        "D66": 7.6,
+        "CU": 7.6,
+        "JA21": 6.2,
+        "FvD": 5.3,
+        "GL-PvdA": 4.7,
+        "BBB": 2.8,
+        "50+": 1.0,
+        "PvdD": 0.8,
+        "SP": 0.8,
+        "Volt": 0.4,
+        "DENK": 0.4,
+        "NSC": 0.3,
+        "BIJ1": 0.0
+      },
+      "winners": {
+        "fptp": "SGP",
+        "runoff": "SGP",
+        "rcv": "SGP",
+        "median": "VVD"
+      }
+    },
+    "G1979": {
+      "name": "Eemsdelta",
+      "shares": {
+        "PVV": 21.4,
+        "CDA": 13.6,
+        "VVD": 11.8,
+        "GL-PvdA": 11.7,
+        "D66": 11.6,
+        "SP": 6.1,
+        "FvD": 6.0,
+        "BBB": 4.6,
+        "JA21": 4.0,
+        "CU": 3.1,
+        "50+": 1.7,
+        "PvdD": 1.3,
+        "SGP": 1.1,
+        "DENK": 1.0,
+        "Volt": 0.5,
+        "NSC": 0.3,
+        "BIJ1": 0.2
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "CDA",
+        "rcv": "CDA",
+        "median": "CDA"
+      }
+    },
+    "G1980": {
+      "name": "Dijk en Waard",
+      "shares": {
+        "D66": 18.0,
+        "VVD": 17.1,
+        "PVV": 16.2,
+        "CDA": 11.6,
+        "GL-PvdA": 10.2,
+        "JA21": 7.5,
+        "FvD": 6.1,
+        "BBB": 2.7,
+        "50+": 2.0,
+        "SP": 1.8,
+        "DENK": 1.8,
+        "PvdD": 1.7,
+        "CU": 1.2,
+        "Volt": 0.8,
+        "NSC": 0.5,
+        "SGP": 0.4,
+        "BIJ1": 0.3
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1982": {
+      "name": "Land van Cuijk",
+      "shares": {
+        "PVV": 18.5,
+        "VVD": 16.5,
+        "CDA": 16.4,
+        "D66": 16.3,
+        "GL-PvdA": 8.6,
+        "JA21": 7.3,
+        "BBB": 4.4,
+        "FvD": 4.2,
+        "SP": 2.2,
+        "50+": 1.7,
+        "PvdD": 1.2,
+        "DENK": 1.0,
+        "Volt": 0.7,
+        "NSC": 0.3,
+        "CU": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1991": {
+      "name": "Maashorst",
+      "shares": {
+        "D66": 19.9,
+        "PVV": 19.2,
+        "VVD": 18.0,
+        "CDA": 14.5,
+        "GL-PvdA": 7.2,
+        "JA21": 7.1,
+        "FvD": 4.2,
+        "BBB": 3.0,
+        "SP": 2.2,
+        "50+": 1.5,
+        "PvdD": 1.0,
+        "DENK": 0.9,
+        "Volt": 0.7,
+        "NSC": 0.3,
+        "CU": 0.3,
+        "SGP": 0.1,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "D66",
+        "runoff": "PVV",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G1992": {
+      "name": "Voorne aan Zee",
+      "shares": {
+        "PVV": 23.2,
+        "VVD": 18.1,
+        "D66": 13.1,
+        "CDA": 10.0,
+        "JA21": 9.6,
+        "GL-PvdA": 7.6,
+        "FvD": 7.0,
+        "50+": 3.0,
+        "BBB": 2.0,
+        "SP": 1.6,
+        "PvdD": 1.3,
+        "DENK": 1.0,
+        "CU": 0.8,
+        "Volt": 0.6,
+        "SGP": 0.5,
+        "NSC": 0.4,
+        "BIJ1": 0.1
+      },
+      "winners": {
+        "fptp": "PVV",
+        "runoff": "VVD",
+        "rcv": "VVD",
+        "median": "VVD"
+      }
+    },
+    "G9010": {
+      "name": "NBSB",
+      "shares": {
+        "GL-PvdA": 29.3,
+        "D66": 18.7,
+        "CDA": 10.4,
+        "VVD": 9.7,
+        "PVV": 8.7,
+        "JA21": 4.6,
+        "Volt": 4.2,
+        "PvdD": 3.9,
+        "FvD": 3.6,
+        "SP": 1.8,
+        "BBB": 1.4,
+        "CU": 1.3,
+        "SGP": 0.7,
+        "50+": 0.5,
+        "BIJ1": 0.4,
+        "NSC": 0.4,
+        "DENK": 0.4
+      },
+      "winners": {
+        "fptp": "GL-PvdA",
+        "runoff": "D66",
+        "rcv": "GL-PvdA",
+        "median": "D66"
+      }
+    }
+  },
+  "parliament": {
+    "fptp": {
+      "PVV": 158,
+      "D66": 82,
+      "VVD": 42,
+      "CDA": 38,
+      "SGP": 16,
+      "GL-PvdA": 9,
+      "NSC": 1
+    },
+    "runoff": {
+      "VVD": 125,
+      "D66": 109,
+      "PVV": 71,
+      "SGP": 21,
+      "CDA": 19,
+      "NSC": 1
+    },
+    "rcv": {
+      "VVD": 132,
+      "D66": 112,
+      "CDA": 40,
+      "PVV": 39,
+      "SGP": 20,
+      "GL-PvdA": 2,
+      "NSC": 1
+    },
+    "median": {
+      "VVD": 188,
+      "CDA": 92,
+      "D66": 30,
+      "BBB": 13,
+      "NSC": 11,
+      "SGP": 9,
+      "50+": 2,
+      "PVV": 1
+    },
+    "proportional": {
+      "D66": 59,
+      "PVV": 58,
+      "VVD": 50,
+      "GL-PvdA": 45,
+      "CDA": 41,
+      "JA21": 21,
+      "FvD": 16,
+      "BBB": 9,
+      "DENK": 8,
+      "SGP": 8,
+      "SP": 7,
+      "PvdD": 7,
+      "CU": 7,
+      "50+": 5,
+      "Volt": 4,
+      "NSC": 1,
+      "BIJ1": 1
+    }
+  },
+  "proportional_bounds": {
+    "min_lon": 3.311812524485935,
+    "min_lat": 50.714938941415504,
+    "max_lon": 7.275151767342884,
+    "max_lat": 53.58610313844901
+  }
+}

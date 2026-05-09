@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Raw election CSV bundles — fetched by download_data.sh
+data/
+data2025/
+tk2023_csv.zip
+tk2025_csv.zip
+
+# Geo source — fetched by download_data.sh
+gemeenten.gpkg
+
+# Local-only output PNGs from make_map.py
+map_*.png
+map.png
+results.png

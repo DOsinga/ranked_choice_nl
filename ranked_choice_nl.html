@@ -1,0 +1,448 @@
+<script type="text/markdown" id="info">
+name: Ranked Choice NL
+description: >
+  What if the Netherlands used a different voting system? Simulating the 2025
+  Tweede Kamer election under FPTP, runoff, ranked choice, median voter, and
+  proportional representation across all 343 gemeenten.
+type: hacks
+github: ranked_choice_nl
+files:
+  - [ranked_choice.py, "Voting system simulations (FPTP, RCV, runoff, median)"]
+  - [export_data.py, "Pipeline that produces the GeoJSON and results.json"]
+</script>
+
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+<style>
+.rcnl { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #333; }
+.rcnl .controls {
+    display: flex; justify-content: center; gap: 8px;
+    padding: 15px 0; flex-wrap: wrap;
+}
+.rcnl .controls button {
+    padding: 8px 18px; border: 2px solid #ddd; border-radius: 20px;
+    background: white; cursor: pointer; font-size: 14px; font-weight: 500;
+    transition: all 0.2s;
+}
+.rcnl .controls button:hover { border-color: #666; }
+.rcnl .controls button.active {
+    background: #1a1a2e; color: white; border-color: #1a1a2e;
+}
+.rcnl .container {
+    display: flex; gap: 15px; margin-bottom: 25px;
+}
+.rcnl .map-panel {
+    flex: 2; background: white; border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden;
+}
+.rcnl #map { width: 100%; height: 650px; }
+.rcnl .side-panel { flex: 1; display: flex; flex-direction: column; gap: 15px; }
+.rcnl .parliament-card {
+    background: white; border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 20px;
+}
+.rcnl .parliament-card h2 {
+    font-size: 16px; color: #555; margin: 0 0 10px; text-align: center;
+}
+.rcnl #parliament { width: 100%; height: 280px; }
+.rcnl .seat-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.rcnl .seat-table th {
+    text-align: left; padding: 4px 8px;
+    border-bottom: 2px solid #ddd; color: #666;
+}
+.rcnl .seat-table td { padding: 4px 8px; border-bottom: 1px solid #eee; }
+.rcnl .party-dot {
+    display: inline-block; width: 10px; height: 10px;
+    border-radius: 50%; margin-right: 6px;
+}
+.rcnl .pct { text-align: right; color: #888; }
+.rcnl .explanation { max-width: 800px; margin: 0 auto; line-height: 1.6; }
+.rcnl .explanation h2 { margin-top: 25px; font-size: 20px; color: #1a1a2e; }
+.rcnl .explanation h3 { margin-top: 18px; font-size: 16px; color: #333; }
+.rcnl .explanation p { margin: 10px 0; }
+.rcnl .explanation ul { margin: 10px 0 10px 25px; }
+.rcnl .explanation li { margin: 5px 0; }
+.rcnl .explanation code {
+    background: #eee; padding: 1px 5px; border-radius: 3px; font-size: 13px;
+}
+@media (max-width: 900px) {
+    .rcnl .container { flex-direction: column; }
+}
+</style>
+
+<div class="rcnl">
+
+<p>
+The Dutch use proportional representation: every vote counts toward the national
+seat allocation. Other countries divide the country into districts and pick one
+winner per district. What would the 2025 Tweede Kamer election have looked like
+under those alternative systems? Each of the 343 gemeenten is treated as a
+single-member district. Click between systems to compare.
+</p>
+
+<div class="controls" id="rcnl-controls">
+    <button data-system="fptp" class="active">First Past the Post</button>
+    <button data-system="runoff">Two-Round Runoff</button>
+    <button data-system="rcv">Ranked Choice</button>
+    <button data-system="median">Median Voter</button>
+    <button data-system="proportional">Proportional</button>
+</div>
+
+<div class="container">
+    <div class="map-panel">
+        <div id="map"></div>
+    </div>
+    <div class="side-panel">
+        <div class="parliament-card">
+            <h2 id="parl-title">Parliament</h2>
+            <div id="parliament"></div>
+        </div>
+        <div class="parliament-card">
+            <h2>Seat allocation</h2>
+            <table class="seat-table" id="seat-table">
+                <thead><tr><th>Party</th><th>Seats</th><th class="pct">%</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="explanation">
+
+<h2>How this works</h2>
+
+<p>
+The 2025 election results are public, broken down by gemeente (Dutch
+municipality). For each of the 343 gemeenten we know exactly how many votes
+each party got. The actual Dutch system pools all votes nationally and assigns
+seats proportionally — there are no district winners. But to simulate
+district-based systems we treat each gemeente as a single-member constituency
+and compute a winner per gemeente.
+</p>
+
+<p>
+Each party gets a position on a left-to-right political spectrum (0 = far left,
+10 = far right) using positions from the
+<a href="https://www.chesdata.eu/2024-chapel-hill-expert-survey-ches">2024
+Chapel Hill Expert Survey</a>. SP, GL-PvdA, and PvdD sit on the left;
+D66, CDA, and Volt around the center; VVD, JA21, PVV, and FvD on the right.
+This ordering is the only thing the simulation needs beyond the actual votes.
+</p>
+
+<h3>First Past the Post</h3>
+<p>
+Whichever party got the most votes in a gemeente wins it. No spectrum needed.
+PVV won the most votes in the Netherlands overall, so PVV wins the most
+gemeenten — but with only ~17% of the vote nationally, those wins typically
+come on a 25-30% plurality.
+</p>
+
+<h3>Two-Round Runoff</h3>
+<p>
+Top two parties advance. The other parties' voters then split between the two
+finalists based on which is closer on the spectrum. The midpoint between the
+two finalists' positions is the divider — voters left of it go to the more
+left-wing finalist, voters right go to the right-wing one. The finalist with
+more total votes wins.
+</p>
+
+<h3>Ranked Choice (Instant Runoff)</h3>
+<p>
+Repeated rounds. Each round, the smallest party is eliminated and its voters
+get redistributed. In a 1-D spectrum model, an eliminated party's voters split
+between its two surviving neighbors — voters on the left half of its support
+range go to the surviving neighbor on the left, voters on the right half to
+the right neighbor. The split point is always the midpoint between the two
+surviving neighbors' original positions, not the running tally.
+</p>
+<p>
+We add a small twist: when redistributing, only 80% of voters follow the
+spectrum-based logic. The remaining 20% scatter proportionally to all surviving
+parties, modeling voters whose preference was idiosyncratic (single issue,
+specific candidate) rather than purely ideological. Without this softening,
+extreme parties get crushed harder than they probably would in reality.
+</p>
+
+<h3>Median Voter</h3>
+<p>
+Sort all the gemeente's voters left-to-right. Whichever party contains the
+50th-percentile voter wins. This is the theoretical sweet spot of any
+ranked-preference system: in a 1-D model, the median voter's preferred party
+is the
+<a href="https://en.wikipedia.org/wiki/Condorcet_winner_criterion">Condorcet
+winner</a> against any other candidate. Real RCV doesn't quite reach this
+ideal — big wing parties can survive past their median-voter death knell —
+but it's a useful reference point.
+</p>
+
+<h3>Proportional Representation</h3>
+<p>
+What the Netherlands actually uses, applied per gemeente as a counterfactual.
+There's no single winner per district, so the map shows each gemeente as
+diagonal stripes in the colors of its top 2 or 3 parties (depending on whether
+the top party clears 40%, the top two clear 40%, or otherwise). The parliament
+diagram shows the seat allocation if all national votes were translated to
+seats proportionally over 343 seats.
+</p>
+
+<h2>The big picture</h2>
+<p>
+The systems form a spectrum from "rewards plurality winners" (FPTP) to
+"rewards centrist consensus" (median voter). PVV — the largest single party
+nationally — wins about half the gemeenten under FPTP but almost none under the
+median-voter rule. VVD and D66 dominate ranked choice and runoff because
+they're acceptable second choices for voters across a wide swath of the
+spectrum. Only proportional representation reflects the actual fragmentation
+of Dutch politics.
+</p>
+
+<p>
+The simulation has obvious limitations. The 1-D left-right spectrum isn't
+how voters actually rank parties — Dutch politics has religious, urban-rural,
+and EU dimensions that don't map onto a single axis. Centrist parties like CDA
+and D66 sit close together on the spectrum but are quite different in
+practice. Treat the results as a thought experiment rather than a prediction.
+</p>
+
+<h2>Source</h2>
+<p>
+Election results from
+<a href="https://data.overheid.nl/dataset/verkiezingsuitslag-tweede-kamer-2025">data.overheid.nl</a>
+(Kiesraad, CC-0). Gemeente boundaries from
+<a href="https://service.pdok.nl/cbs/wijkenbuurten/2023/wfs/v1_0">PDOK</a>.
+The simulation code, including the matplotlib pipeline that produces the
+striped proportional background, is in the <a
+href="https://github.com/DOsinga/ranked_choice_nl">GitHub repo</a>.
+</p>
+
+</div>
+
+</div>
+
+<script>
+let geojsonData = null;
+let resultsData = null;
+
+async function rcnlInit() {
+    const [geoRes, resRes] = await Promise.all([
+        fetch("{{ static }}gemeenten.geojson"),
+        fetch("{{ static }}results.json"),
+    ]);
+    geojsonData = await geoRes.json();
+    resultsData = await resRes.json();
+
+    geojsonData.features.forEach(f => {
+        f.id = f.properties.id || f.id;
+    });
+
+    rcnlSetupButtons();
+    rcnlRender("fptp");
+}
+
+function rcnlSetupButtons() {
+    document.querySelectorAll("#rcnl-controls button").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll("#rcnl-controls button").forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            rcnlRender(btn.dataset.system);
+        });
+    });
+}
+
+function rcnlRender(system) {
+    rcnlRenderMap(system);
+    rcnlRenderParliament(system);
+    rcnlRenderTable(system);
+}
+
+function rcnlRenderMap(system) {
+    const gemeenten = resultsData.gemeenten;
+    const colors = resultsData.party_colors;
+    const isProportional = system === "proportional";
+
+    const partyFeatures = {};
+
+    geojsonData.features.forEach(f => {
+        const gcode = f.id;
+        const info = gemeenten[gcode];
+        if (!info) return;
+
+        const winner = isProportional
+            ? Object.keys(info.shares)[0]
+            : info.winners[system];
+        if (!winner) return;
+
+        let hover = `<b>${info.name}</b>`;
+        if (!isProportional) hover += `<br>Winner: <b>${winner}</b>`;
+        Object.entries(info.shares).slice(0, 7).forEach(([party, pct]) => {
+            hover += `<br>${party}: ${pct}%`;
+        });
+
+        if (!partyFeatures[winner]) partyFeatures[winner] = [];
+        partyFeatures[winner].push({ feature: f, hover, gcode });
+    });
+
+    const positions = resultsData.party_positions;
+    const sortedParties = Object.keys(partyFeatures).sort(
+        (a, b) => (positions[a] || 5) - (positions[b] || 5)
+    );
+
+    const traces = sortedParties.map(party => {
+        const items = partyFeatures[party];
+        const color = colors[party] || "#999";
+        const subGeo = {
+            type: "FeatureCollection",
+            features: items.map(it => it.feature),
+        };
+        return {
+            type: "choroplethmapbox",
+            geojson: subGeo,
+            locations: items.map(it => it.gcode),
+            z: items.map(() => 1),
+            colorscale: [
+                [0, isProportional ? "rgba(0,0,0,0)" : color],
+                [1, isProportional ? "rgba(0,0,0,0)" : color],
+            ],
+            showscale: false,
+            marker: {
+                opacity: isProportional ? 0 : 0.9,
+                line: {
+                    width: isProportional ? 0 : 0.5,
+                    color: isProportional ? "rgba(0,0,0,0)" : "white",
+                },
+            },
+            text: items.map(it => it.hover),
+            hoverinfo: "text",
+            name: party,
+            showlegend: !isProportional,
+        };
+    });
+
+    const layout = {
+        mapbox: {
+            style: "white-bg",
+            center: { lat: 52.2, lon: 5.3 },
+            zoom: 6.5,
+            layers: [],
+        },
+        margin: { l: 0, r: 0, t: 0, b: 0 },
+        legend: {
+            x: 0.01, y: 0.99,
+            xanchor: "left", yanchor: "top",
+            bgcolor: "rgba(255,255,255,0.9)",
+            bordercolor: "#ccc", borderwidth: 1,
+            font: { size: 12 },
+        },
+    };
+
+    if (isProportional) {
+        const b = resultsData.proportional_bounds;
+        layout.mapbox.layers.push({
+            sourcetype: "image",
+            source: "{{ static }}proportional_bg.png",
+            coordinates: [
+                [b.min_lon, b.max_lat],
+                [b.max_lon, b.max_lat],
+                [b.max_lon, b.min_lat],
+                [b.min_lon, b.min_lat],
+            ],
+            below: "traces",
+            opacity: 1,
+        });
+    }
+
+    Plotly.react("map", traces, layout, { responsive: true });
+}
+
+function rcnlRenderParliament(system) {
+    const seats = resultsData.parliament[system];
+    if (!seats) return;
+
+    const colors = resultsData.party_colors;
+    const positions = resultsData.party_positions;
+    const total = Object.values(seats).reduce((a, b) => a + b, 0);
+    const label = resultsData.systems[system]?.label || system;
+
+    document.getElementById("parl-title").textContent = label;
+
+    const sorted = Object.entries(seats).sort(
+        (a, b) => (positions[a[0]] || 5) - (positions[b[0]] || 5)
+    );
+
+    const traces = [];
+    let startAngle = 180;
+    const nPts = 50;
+
+    sorted.forEach(([party, count]) => {
+        const angle = (count / total) * 180;
+        const endAngle = startAngle - angle;
+        const color = colors[party] || "#999";
+        const pct = ((count / total) * 100).toFixed(0);
+
+        const theta = [];
+        for (let i = 0; i <= nPts; i++) {
+            theta.push(endAngle + (angle * i / nPts));
+        }
+        const xs = [0, ...theta.map(t => Math.cos(t * Math.PI / 180)), 0];
+        const ys = [0, ...theta.map(t => Math.sin(t * Math.PI / 180)), 0];
+
+        traces.push({
+            type: "scatter",
+            x: xs, y: ys,
+            fill: "toself",
+            fillcolor: color,
+            line: { color: "white", width: 1.5 },
+            mode: "lines",
+            name: `${party} (${pct}%)`,
+            hoverinfo: "name",
+            showlegend: false,
+        });
+
+        const midAngle = (startAngle - angle / 2) * Math.PI / 180;
+        if (angle > 12) {
+            traces.push({
+                type: "scatter",
+                x: [0.55 * Math.cos(midAngle)],
+                y: [0.55 * Math.sin(midAngle)],
+                mode: "text",
+                text: [`<b>${party}<br>${pct}%</b>`],
+                textfont: { color: "white", size: 12 },
+                hoverinfo: "none",
+                showlegend: false,
+            });
+        }
+
+        startAngle -= angle;
+    });
+
+    Plotly.react("parliament", traces, {
+        xaxis: { visible: false, range: [-1.3, 1.3] },
+        yaxis: { visible: false, range: [-0.1, 1.15], scaleanchor: "x" },
+        margin: { l: 0, r: 0, t: 0, b: 0 },
+        plot_bgcolor: "white",
+        paper_bgcolor: "white",
+    }, { responsive: true, displayModeBar: false });
+}
+
+function rcnlRenderTable(system) {
+    const seats = resultsData.parliament[system];
+    if (!seats) return;
+
+    const colors = resultsData.party_colors;
+    const total = Object.values(seats).reduce((a, b) => a + b, 0);
+    const sorted = Object.entries(seats).sort((a, b) => b[1] - a[1]);
+
+    const tbody = document.querySelector("#seat-table tbody");
+    tbody.innerHTML = sorted.map(([party, count]) => {
+        const color = colors[party] || "#999";
+        const pct = ((count / total) * 100).toFixed(1);
+        return `<tr>
+            <td><span class="party-dot" style="background:${color}"></span>${party}</td>
+            <td>${count}</td>
+            <td class="pct">${pct}%</td>
+        </tr>`;
+    }).join("");
+}
+
+rcnlInit();
+</script>
