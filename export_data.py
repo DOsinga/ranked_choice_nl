@@ -67,9 +67,13 @@ def main():
           f"{size_kb:.0f} KB)")
 
     # ── Export results.json ──
+    from ranked_choice import LRGEN
     results = {
         "party_colors": PARTY_COLORS,
-        "party_positions": {SHORT_NAMES[p]: pos for p, pos in PARTIES.items()},
+        # 1-D lrgen for legend ordering and the median-voter scenario.
+        "party_positions": {SHORT_NAMES[p]: lr for p, lr in LRGEN.items()},
+        # Full 2-D (lrecon, galtan) for the 2-D scatter visualisation.
+        "party_positions_2d": {SHORT_NAMES[p]: list(pos) for p, pos in PARTIES.items()},
         "systems": {
             "fptp": {"label": "First Past the Post"},
             "runoff": {"label": "Two-Round Runoff"},
