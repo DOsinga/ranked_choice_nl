@@ -136,7 +136,7 @@ def main():
     gdf_rd = gdf[gdf["gcode"].isin(codes_with_data)].copy()  # already in 28992
     striped = compute_stripes(data, gemeente_codes)
 
-    fig, ax = plt.subplots(1, 1, figsize=(12, 14), dpi=200)
+    fig, ax = plt.subplots(1, 1, figsize=(8, 9), dpi=120)
     draw_striped_map(ax, gdf_rd, striped, data, gemeente_codes)
     ax.set_axis_off()
 
@@ -145,9 +145,21 @@ def main():
     ax.set_xlim(bounds_rd[0] - margin_rd, bounds_rd[2] + margin_rd)
     ax.set_ylim(bounds_rd[1] - margin_rd, bounds_rd[3] + margin_rd)
     fig.subplots_adjust(left=0, right=1, top=1, bottom=0)
-    fig.savefig("static/proportional_bg.png", bbox_inches="tight", pad_inches=0,
-                transparent=True, dpi=200)
+
+    # Save to a temp truecolor PNG, then quantize to a palette PNG.
+    # The map only has ~15 distinct colors, so 8-bit palette is lossless
+    # in practice and dramatically smaller.
+    tmp_png = "static/_bg_truecolor.png"
+    fig.savefig(tmp_png, bbox_inches="tight", pad_inches=0,
+                transparent=True, dpi=120)
     plt.close()
+
+    from PIL import Image
+    img = Image.open(tmp_png).convert("RGBA")
+    # Quantize while preserving the alpha channel.
+    img_p = img.quantize(colors=64, method=Image.Quantize.FASTOCTREE)
+    img_p.save("static/proportional_bg.png", optimize=True)
+    os.remove(tmp_png)
 
     # Convert the RD bounds to WGS84 for the mapbox image overlay
     transformer = Transformer.from_crs("EPSG:28992", "EPSG:4326", always_xy=True)
