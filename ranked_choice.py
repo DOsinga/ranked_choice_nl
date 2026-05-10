@@ -18,38 +18,9 @@ import matplotlib.pyplot as plt
 from collections import defaultdict, Counter
 from pathlib import Path
 
-# ── Party positions in 2-D political space ──
-# Used for ranked-choice and runoff simulation: each party is a point in
-# (lrecon, galtan) from the 2024 Chapel Hill Expert Survey, both 0-10.
-#   lrecon: economic left (0) ↔ right (10)
-#   galtan: GAL / progressive (0) ↔ TAN / conservative (10)
-# JA21, BIJ1, 50PLUS not in CHES; values estimated from neighbouring parties.
+# ── Party positions on 0-10 left-right scale (Chapel Hill Expert Survey 2024) ──
+# Only include parties with meaningful vote share
 PARTIES = {
-    "SP (Socialistische Partij)":                   (1.33, 4.67),
-    "Partij voor de Dieren":                        (2.27, 2.25),
-    "BIJ1":                                         (1.00, 1.50),
-    "GROENLINKS / Partij van de Arbeid (PvdA)":     (2.71, 1.75),
-    "DENK":                                         (3.60, 6.29),
-    "Volt":                                         (4.70, 1.09),
-    "ChristenUnie":                                 (4.33, 6.92),
-    "D66":                                          (5.50, 1.33),
-    "50PLUS":                                       (5.00, 5.00),
-    "CDA":                                          (5.75, 6.50),
-    "Nieuw Sociaal Contract":                       (6.00, 6.67),
-    "Nieuw Sociaal Contract (NSC)":                 (6.00, 6.67),
-    "BBB":                                          (7.00, 7.67),
-    "VVD":                                          (7.67, 5.92),
-    "Staatkundig Gereformeerde Partij (SGP)":       (7.20, 9.42),
-    "JA21":                                         (8.25, 8.50),
-    "PVV (Partij voor de Vrijheid)":                (6.33, 8.09),
-    "Forum voor Democratie":                        (8.80, 9.83),
-}
-
-# General left-right (CHES `lrgen`): a holistic 1-D summary used for
-# ordering legends, the parliament half-circle, and the 1-D median-voter
-# scenario. This is intentionally NOT the same as `lrecon` — PVV in
-# particular is economically centrist (~6.3) but generally far right (~9.1).
-LRGEN = {
     "SP (Socialistische Partij)":                   1.17,
     "Partij voor de Dieren":                        1.50,
     "BIJ1":                                         1.00,
@@ -156,20 +127,17 @@ def generate_ballots(vote_shares: dict[str, float], n_voters: int = 1000,
     party_names = list(vote_shares.keys())
     n_parties = len(party_names)
     shares = np.array([vote_shares[p] for p in party_names])
-    positions = np.array([PARTIES[p] for p in party_names])  # (n_parties, 2)
-    n_dims = positions.shape[1]
+    positions = np.array([PARTIES[p] for p in party_names])
 
     # Assign each voter a first-choice party matching real vote shares
     first_choice = rng.choice(n_parties, size=n_voters, p=shares)
 
-    # Place each voter near their chosen party in 2-D
+    # Place each voter near their chosen party on the spectrum
     sigma = 0.5
-    voter_positions = positions[first_choice] + rng.normal(0, sigma,
-                                                            size=(n_voters, n_dims))
+    voter_positions = positions[first_choice] + rng.normal(0, sigma, n_voters)
 
-    # Rank parties by Euclidean distance from each voter
-    diffs = voter_positions[:, None, :] - positions[None, :, :]  # (V, P, D)
-    distances = np.linalg.norm(diffs, axis=2)                    # (V, P)
+    # Build rankings: for each voter, rank parties by distance from voter position
+    distances = np.abs(voter_positions[:, None] - positions[None, :])
     rankings = np.argsort(distances, axis=1)
 
     # Override: ensure actual first choice is always rank 0
@@ -221,10 +189,7 @@ def instant_runoff_np(rankings: np.ndarray, party_names: list[str],
         # Tie-break: eliminate furthest from center
         tied = (active_counts == min_votes) & ~eliminated
         tied_indices = np.where(tied)[0]
-        center = np.array([5.0] * party_positions.shape[1])
-        elim_idx = tied_indices[np.argmax(
-            np.linalg.norm(party_positions[tied_indices] - center, axis=1)
-        )]
+        elim_idx = tied_indices[np.argmax(np.abs(party_positions[tied_indices] - 5.0))]
         eliminated[elim_idx] = True
 
         if eliminated.sum() == n_parties - 1:
@@ -233,35 +198,33 @@ def instant_runoff_np(rankings: np.ndarray, party_names: list[str],
     return party_names[np.argmax(~eliminated)]
 
 
-def pos(party: str) -> np.ndarray:
-    """Return party's 2-D (lrecon, galtan) position as a numpy array."""
-    return np.array(PARTIES[party], dtype=float)
-
-
-def lrgen(party: str) -> float:
-    """General CHES left-right position, used for 1-D ordering and median voter."""
-    return float(LRGEN[party])
-
-
 def runoff(vote_shares: dict[str, float]) -> str:
     """
-    Two-round runoff in 2-D party space.
-
-    Top two parties by vote share advance. Each non-finalist's voters all go
-    to whichever finalist is closer in 2-D Euclidean distance.
+    Two-round runoff: top two parties advance, then all other voters pick
+    whichever of the two is closer on the L-R spectrum.
     """
+    # Find top two by vote share
     sorted_parties = sorted(vote_shares, key=vote_shares.get, reverse=True)
     p1, p2 = sorted_parties[0], sorted_parties[1]
-    pos1, pos2 = pos(p1), pos(p2)
 
+    # Midpoint between the two finalists on the spectrum
+    mid = (PARTIES[p1] + PARTIES[p2]) / 2
+
+    # Each remaining party's voters go to whichever finalist is closer
     votes1 = vote_shares[p1]
     votes2 = vote_shares[p2]
     for p in sorted_parties[2:]:
-        pp = pos(p)
-        if np.linalg.norm(pp - pos1) <= np.linalg.norm(pp - pos2):
-            votes1 += vote_shares[p]
+        if PARTIES[p] <= mid:
+            # Closer to the more left-wing finalist
+            if PARTIES[p1] < PARTIES[p2]:
+                votes1 += vote_shares[p]
+            else:
+                votes2 += vote_shares[p]
         else:
-            votes2 += vote_shares[p]
+            if PARTIES[p1] > PARTIES[p2]:
+                votes1 += vote_shares[p]
+            else:
+                votes2 += vote_shares[p]
 
     return p1 if votes1 >= votes2 else p2
 
@@ -277,16 +240,8 @@ def run_runoff(district_data: dict) -> dict[str, str]:
 
 
 def median_voter(vote_shares: dict[str, float]) -> str:
-    """
-    Median voter on the general left-right axis (CHES lrgen). Sort parties
-    left-to-right by lrgen, accumulate vote shares; the party that crosses
-    50% wins.
-
-    A true 2-D median doesn't exist (no natural total ordering), and a
-    centroid-based proxy over-rewards small parties at the geometric
-    centre, so we stay 1-D for this scenario.
-    """
-    parties = sorted(vote_shares.keys(), key=lrgen)
+    """Find the party of the median voter on the L-R spectrum."""
+    parties = sorted(vote_shares.keys(), key=lambda p: PARTIES[p])
     cumulative = 0.0
     for p in parties:
         cumulative += vote_shares[p]
@@ -336,82 +291,110 @@ def run_ranked_choice(district_data: dict, n_voters: int = 1000,
     return winners
 
 
-def instant_runoff_2d(vote_shares: dict[str, float],
-                      loyalty: float = 0.8,
-                      sigma: float = 3.0) -> str:
+def instant_runoff_range(vote_shares: dict[str, float],
+                         loyalty: float = 0.8) -> str:
     """
-    Deterministic 2-D distance-based instant runoff.
+    Deterministic range-based instant runoff.
 
-    At each round, the smallest surviving party is eliminated and its votes
-    redistributed:
-      - `loyalty` fraction goes to the surviving parties via a softmax of
-        squared 2-D distance: weight ∝ exp(-d² / σ²). Closer parties get
-        most of the share, but distant parties still get a sliver.
-      - `1 - loyalty` fraction goes proportionally to surviving parties'
-        current vote counts, modeling voters whose preference is
-        idiosyncratic rather than driven by ideology.
+    Lay out parties left-to-right on a number line, each occupying a segment
+    proportional to their vote share. Eliminate the smallest party each round.
 
-    σ controls how peaked the loyalty kernel is. With σ = 3 in a 0-10 ×
-    0-10 space, distance 3 → weight 1/e ≈ 0.37, distance 6 → weight ≈ 0.02.
+    When a party is eliminated:
+    - `loyalty` fraction (default 80%) of its votes split between the two
+      neighboring surviving parties (based on original range proximity)
+    - The remaining (1 - loyalty) fraction is distributed proportionally
+      among ALL remaining parties, representing voters whose preference
+      was idiosyncratic rather than spectrum-based.
     """
-    parties = list(vote_shares.keys())
+    # Sort parties by L-R position
+    parties = sorted(vote_shares.keys(), key=lambda p: PARTIES[p])
+
+    # Build initial ranges (fixed, never modified)
+    original_ranges = {}
+    cursor = 0.0
+    for p in parties:
+        width = vote_shares[p]
+        original_ranges[p] = (cursor, cursor + width)
+        cursor += width
+
+    # Track current vote counts and the span of positions each party "owns"
     votes = {p: vote_shares[p] for p in parties}
-    active = list(parties)
+    spans = {p: list(original_ranges[p]) for p in parties}
+
+    active = list(parties)  # in L-R order
 
     while len(active) > 1:
+        # Check for majority
         total = sum(votes[p] for p in active)
         for p in active:
             if votes[p] > total / 2:
                 return p
 
-        # Eliminate the smallest. Tie-break: furthest from the centre (5, 5).
+        # Find party with fewest votes
         min_votes = min(votes[p] for p in active)
+        # Tie-break: eliminate furthest from center
         candidates = [p for p in active if votes[p] == min_votes]
-        center = np.array([5.0, 5.0])
-        eliminated = max(candidates,
-                         key=lambda p: float(np.linalg.norm(pos(p) - center)))
+        eliminated = max(candidates, key=lambda p: abs(PARTIES[p] - 5.0))
 
+        idx = active.index(eliminated)
+        elim_span_left, elim_span_right = spans[eliminated]
         elim_total = votes[eliminated]
-        survivors = [p for p in active if p != eliminated]
 
-        if elim_total > 0 and survivors:
-            elim_pos = pos(eliminated)
-            # Loyalty share: softmax of -d² / σ² across survivors.
-            sq_dists = np.array([
-                float(np.sum((pos(s) - elim_pos) ** 2)) for s in survivors
-            ])
-            kern = np.exp(-sq_dists / (sigma ** 2))
-            kern_w = kern / kern.sum()
+        if elim_total > 0:
+            # Proportional portion: distribute to all remaining parties
+            prop_amount = elim_total * (1 - loyalty)
+            neighbor_amount = elim_total * loyalty
 
-            # Proportional share: weighted by current vote share.
-            surv_total = sum(votes[s] for s in survivors)
-            if surv_total > 0:
-                prop_w = np.array([votes[s] / surv_total for s in survivors])
-            else:
-                prop_w = np.full(len(survivors), 1.0 / len(survivors))
+            remaining = [p for p in active if p != eliminated]
+            remaining_total = sum(votes[p] for p in remaining)
+            if remaining_total > 0:
+                for p in remaining:
+                    votes[p] += prop_amount * (votes[p] / remaining_total)
 
-            for s, lw, pw in zip(survivors, kern_w, prop_w):
-                votes[s] += elim_total * (loyalty * lw + (1 - loyalty) * pw)
+            # Neighbor portion: split between L-R neighbors
+            left_neighbor = active[idx - 1] if idx > 0 else None
+            right_neighbor = active[idx + 1] if idx < len(active) - 1 else None
+
+            if left_neighbor and right_neighbor:
+                ln_orig_right = original_ranges[left_neighbor][1]
+                rn_orig_left = original_ranges[right_neighbor][0]
+                split = (ln_orig_right + rn_orig_left) / 2
+                split = max(elim_span_left, min(split, elim_span_right))
+
+                span_width = elim_span_right - elim_span_left
+                if span_width > 0:
+                    left_frac = (split - elim_span_left) / span_width
+                    votes[left_neighbor] += neighbor_amount * left_frac
+                    votes[right_neighbor] += neighbor_amount * (1 - left_frac)
+                    spans[left_neighbor][1] = split
+                    spans[right_neighbor][0] = split
+                else:
+                    votes[right_neighbor] += neighbor_amount
+            elif left_neighbor:
+                votes[left_neighbor] += neighbor_amount
+                spans[left_neighbor][1] = elim_span_right
+            elif right_neighbor:
+                votes[right_neighbor] += neighbor_amount
+                spans[right_neighbor][0] = elim_span_left
 
         active.remove(eliminated)
         del votes[eliminated]
+        del spans[eliminated]
 
     return active[0]
 
 
-def run_ranked_choice_2d(district_data: dict) -> dict[str, str]:
-    """Deterministic 2-D ranked choice across all districts."""
+def run_ranked_choice_range(district_data: dict) -> dict[str, str]:
+    """
+    Deterministic range-based ranked choice across all districts.
+    Returns {district: winner}.
+    """
     winners = {}
     for district, dvotes in district_data.items():
         total = sum(dvotes.values())
         shares = {p: v / total for p, v in dvotes.items()}
-        winners[district] = instant_runoff_2d(shares)
+        winners[district] = instant_runoff_range(shares)
     return winners
-
-
-# Backwards-compatibility aliases for external callers.
-instant_runoff_range = instant_runoff_2d
-run_ranked_choice_range = run_ranked_choice_2d
 
 
 def plot_results(fptp_winners: dict, rcv_winners: dict, runoff_winners: dict,
@@ -435,7 +418,7 @@ def plot_results(fptp_winners: dict, rcv_winners: dict, runoff_winners: dict,
     for p, v in national_votes.items():
         if v / total_national > 0.02:
             all_parties_in_play.add(p)
-    parties_sorted = sorted(all_parties_in_play, key=lrgen)
+    parties_sorted = sorted(all_parties_in_play, key=lambda p: PARTIES[p])
     short_sorted = [SHORT_NAMES[p] for p in parties_sorted]
     colors = [PARTY_COLORS[SHORT_NAMES[p]] for p in parties_sorted]
 
@@ -496,23 +479,23 @@ def plot_results(fptp_winners: dict, rcv_winners: dict, runoff_winners: dict,
     ax.set_title("Top 30 gemeenten by size")
     ax.invert_yaxis()
 
-    # ── 2-D political space (lrecon x galtan) ──
+    # ── Political spectrum ──
     ax = axes[1, 0]
     for party in parties_sorted:
         short = SHORT_NAMES[party]
-        x_pos, y_pos = PARTIES[party]
+        pos = PARTIES[party]
         vote_share = national_votes[party] / total_national * 100
-        ax.scatter(x_pos, y_pos, s=vote_share * 80,
-                   color=PARTY_COLORS[short], edgecolors="black", zorder=5)
-        ax.annotate(short, (x_pos, y_pos), textcoords="offset points",
-                    xytext=(8, 0), ha="left", va="center",
-                    fontsize=8, fontweight="bold")
-    ax.set_xlim(0, 10)
-    ax.set_ylim(0, 10)
-    ax.grid(True, alpha=0.3)
-    ax.set_xlabel("Economic: left -> right (lrecon)")
-    ax.set_ylabel("Cultural: GAL -> TAN (galtan)")
-    ax.set_title("Party positions in 2-D (size = national vote share)")
+        ax.scatter(pos, 0, s=vote_share * 80, color=PARTY_COLORS[short],
+                   edgecolors="black", zorder=5)
+        ax.annotate(short, (pos, 0), textcoords="offset points",
+                    xytext=(0, 15 if parties_sorted.index(party) % 2 == 0 else -20),
+                    ha="center", fontsize=8, fontweight="bold")
+    ax.axhline(y=0, color="gray", linewidth=0.5)
+    ax.set_xlim(-0.5, 10.5)
+    ax.set_ylim(-1, 1)
+    ax.set_yticks([])
+    ax.set_xlabel("Left \u2190 \u2192 Right")
+    ax.set_title("Party positions on L-R spectrum (size = vote share)")
 
     # ── Seat summary table ──
     ax = axes[1, 1]
