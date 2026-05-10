@@ -1,10 +1,9 @@
 <script type="text/markdown" id="info">
 name: Ranked Choice NL
 description: >
-  What if the Netherlands used a different voting system? Simulating the 2025
-  Tweede Kamer election under FPTP, runoff, ranked choice, median voter, and
-  proportional representation across all 343 gemeenten.
-type: hacks
+  Exploration into different voting systems for the Netherlands. Simulating the 2025 Tweede Kamer
+  elections under the normal proportional system, ranked choice, first passed the pole,
+  two round run off and median voter.
 github: ranked_choice_nl
 files:
   - [ranked_choice.py, "Voting system simulations (FPTP, RCV, runoff, median)"]
@@ -32,11 +31,15 @@ files:
     display: flex; gap: 15px; margin-bottom: 25px;
 }
 .rcnl .map-panel {
-    flex: 2; background: white; border-radius: 8px;
+    flex: 3; min-width: 0;
+    background: white; border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden;
 }
 .rcnl #map { width: 100%; height: 650px; }
-.rcnl .side-panel { flex: 1; display: flex; flex-direction: column; gap: 15px; }
+.rcnl .side-panel {
+    flex: 2; min-width: 0;
+    display: flex; flex-direction: column; gap: 15px;
+}
 .rcnl .parliament-card {
     background: white; border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 20px;
@@ -44,7 +47,7 @@ files:
 .rcnl .parliament-card h2 {
     font-size: 16px; color: #555; margin: 0 0 10px; text-align: center;
 }
-.rcnl #parliament { width: 100%; height: 280px; }
+.rcnl #parliament { width: 100%; aspect-ratio: 2 / 1; }
 .rcnl .seat-table { width: 100%; border-collapse: collapse; font-size: 13px; }
 .rcnl .seat-table th {
     text-align: left; padding: 4px 8px;
@@ -56,7 +59,7 @@ files:
     border-radius: 50%; margin-right: 6px;
 }
 .rcnl .pct { text-align: right; color: #888; }
-.rcnl .explanation { max-width: 800px; margin: 0 auto; line-height: 1.6; }
+.rcnl .explanation { line-height: 1.6; }
 .rcnl .explanation h2 { margin-top: 25px; font-size: 20px; color: #1a1a2e; }
 .rcnl .explanation h3 { margin-top: 18px; font-size: 16px; color: #333; }
 .rcnl .explanation p { margin: 10px 0; }
@@ -81,11 +84,11 @@ single-member district. Click between systems to compare.
 </p>
 
 <div class="controls" id="rcnl-controls">
-    <button data-system="fptp" class="active">First Past the Post</button>
-    <button data-system="runoff">Two-Round Runoff</button>
+    <button data-system="proportional" class="active">Proportional</button>
     <button data-system="rcv">Ranked Choice</button>
+    <button data-system="fptp">First Past the Post</button>
+    <button data-system="runoff">Two-Round Runoff</button>
     <button data-system="median">Median Voter</button>
-    <button data-system="proportional">Proportional</button>
 </div>
 
 <div class="container">
@@ -185,17 +188,6 @@ diagram shows the seat allocation if all national votes were translated to
 seats proportionally over 343 seats.
 </p>
 
-<h2>The big picture</h2>
-<p>
-The systems form a spectrum from "rewards plurality winners" (FPTP) to
-"rewards centrist consensus" (median voter). PVV — the largest single party
-nationally — wins about half the gemeenten under FPTP but almost none under the
-median-voter rule. VVD and D66 dominate ranked choice and runoff because
-they're acceptable second choices for voters across a wide swath of the
-spectrum. Only proportional representation reflects the actual fragmentation
-of Dutch politics.
-</p>
-
 <p>
 The simulation has obvious limitations. The 1-D left-right spectrum isn't
 how voters actually rank parties — Dutch politics has religious, urban-rural,
@@ -223,6 +215,33 @@ href="https://github.com/DOsinga/ranked_choice_nl">GitHub repo</a>.
 let geojsonData = null;
 let resultsData = null;
 
+// URL hash <-> internal system slug
+const HASH_TO_SYSTEM = {
+    proportional: "proportional",
+    ranked_choice: "rcv",
+    first_past_the_post: "fptp",
+    two_round_runoff: "runoff",
+    median_voter: "median",
+};
+const SYSTEM_TO_HASH = Object.fromEntries(
+    Object.entries(HASH_TO_SYSTEM).map(([h, s]) => [s, h])
+);
+
+function rcnlSelectSystem(system, updateHash) {
+    document.querySelectorAll("#rcnl-controls button").forEach(b => {
+        b.classList.toggle("active", b.dataset.system === system);
+    });
+    if (updateHash) {
+        history.replaceState(null, "", "#" + SYSTEM_TO_HASH[system]);
+    }
+    rcnlRender(system);
+}
+
+function rcnlSystemFromHash() {
+    const hash = location.hash.replace(/^#/, "");
+    return HASH_TO_SYSTEM[hash] || "proportional";
+}
+
 async function rcnlInit() {
     const [geoRes, resRes] = await Promise.all([
         fetch("{{ static }}gemeenten.geojson"),
@@ -236,15 +255,17 @@ async function rcnlInit() {
     });
 
     rcnlSetupButtons();
-    rcnlRender("fptp");
+    rcnlSelectSystem(rcnlSystemFromHash(), false);
+
+    window.addEventListener("hashchange", () => {
+        rcnlSelectSystem(rcnlSystemFromHash(), false);
+    });
 }
 
 function rcnlSetupButtons() {
     document.querySelectorAll("#rcnl-controls button").forEach(btn => {
         btn.addEventListener("click", () => {
-            document.querySelectorAll("#rcnl-controls button").forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-            rcnlRender(btn.dataset.system);
+            rcnlSelectSystem(btn.dataset.system, true);
         });
     });
 }
@@ -416,11 +437,12 @@ function rcnlRenderParliament(system) {
     });
 
     Plotly.react("parliament", traces, {
-        xaxis: { visible: false, range: [-1.3, 1.3] },
-        yaxis: { visible: false, range: [-0.1, 1.15], scaleanchor: "x" },
+        xaxis: { visible: false, range: [-1.1, 1.1], fixedrange: true },
+        yaxis: { visible: false, range: [-0.05, 1.05], fixedrange: true },
         margin: { l: 0, r: 0, t: 0, b: 0 },
         plot_bgcolor: "white",
         paper_bgcolor: "white",
+        autosize: true,
     }, { responsive: true, displayModeBar: false });
 }
 
