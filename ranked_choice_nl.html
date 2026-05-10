@@ -234,7 +234,9 @@ function rcnlSelectSystem(system, updateHash) {
     if (updateHash) {
         history.replaceState(null, "", "#" + SYSTEM_TO_HASH[system]);
     }
-    rcnlRender(system);
+    if (geojsonData && resultsData) {
+        rcnlRender(system);
+    }
 }
 
 function rcnlSystemFromHash() {
@@ -243,6 +245,16 @@ function rcnlSystemFromHash() {
 }
 
 async function rcnlInit() {
+    // Wire up buttons immediately so they're responsive while data loads.
+    rcnlSetupButtons();
+    window.addEventListener("hashchange", () => {
+        rcnlSelectSystem(rcnlSystemFromHash(), false);
+    });
+    // Reflect the current hash on the buttons even before data is ready.
+    document.querySelectorAll("#rcnl-controls button").forEach(b => {
+        b.classList.toggle("active", b.dataset.system === rcnlSystemFromHash());
+    });
+
     const [geoRes, resRes] = await Promise.all([
         fetch("{{ static }}gemeenten.geojson"),
         fetch("{{ static }}results.json"),
@@ -254,12 +266,7 @@ async function rcnlInit() {
         f.id = f.properties.id || f.id;
     });
 
-    rcnlSetupButtons();
     rcnlSelectSystem(rcnlSystemFromHash(), false);
-
-    window.addEventListener("hashchange", () => {
-        rcnlSelectSystem(rcnlSystemFromHash(), false);
-    });
 }
 
 function rcnlSetupButtons() {

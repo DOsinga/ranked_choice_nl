@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Export gemeente shapes and election results as GeoJSON + JSON."""
 
+import os
 import sys
 import csv
 import json
@@ -49,9 +50,21 @@ def main():
     # Dissolve duplicate features (multi-polygon parts) by gemeente code
     gdf_export = gdf_export.dissolve(by="gcode").reset_index()
     gdf_export = gdf_export.rename(columns={"gcode": "id", "gemeentenaam": "name"})
+
+    # Simplify geometry — country-zoom doesn't need every river bend.
+    # Tolerance in degrees: 0.0005° ≈ 50m, invisible at this zoom level.
+    gdf_export["geometry"] = gdf_export["geometry"].simplify(
+        tolerance=0.0005, preserve_topology=True
+    )
+
     gdf_export = gdf_export.set_index("id")
-    gdf_export.to_file("static/gemeenten.geojson", driver="GeoJSON")
-    print(f"Saved static/gemeenten.geojson ({len(gdf_export)} gemeenten)")
+    # Write with reduced coordinate precision (5 decimals ≈ 1m).
+    gdf_export.to_file("static/gemeenten.geojson", driver="GeoJSON",
+                       coordinate_precision=5)
+
+    size_kb = os.path.getsize("static/gemeenten.geojson") / 1024
+    print(f"Saved static/gemeenten.geojson ({len(gdf_export)} gemeenten, "
+          f"{size_kb:.0f} KB)")
 
     # ── Export results.json ──
     results = {
